@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="{{ url_for('static', path='images/logo.png') }}" alt="" width="30" height="24">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/docs/">Docs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/redoc/">Redoc</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Account
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/register/">Signup</a></li>
+            <li><a class="dropdown-item" href="/login/">Login</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Jobs
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/post-a-job/">Create Job post</a></li>
+            <li><a class="dropdown-item" href="/delete-job/">Delete a post</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" action="/search/">
+        <input class="form-control me-2" name="query" id="autocomplete" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
