@@ -13,7 +13,7 @@ class User:
     hashed_password: str
     is_active: bool
     is_super_user: bool
-    jobs: set[Job] = field(init=False, default_factory=set)
+    jobs: set["Job"] = field(init=False, default_factory=set)
     events: list[Event] = field(init=False, default_factory=list)
 
     @classmethod
@@ -96,7 +96,6 @@ class Job:
             date_posted=self.date_posted,
             is_active=self.is_active,
             owner_id=self.owner_id,
-            owner=self.owner,
         )
         self.events.append(job)
 

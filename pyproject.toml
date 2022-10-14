@@ -18,6 +18,8 @@ dependencies = [
     "passlib[bcrypt] >= 1.7.4",
     "python-jose >= 3.3.0",
     "sqlalchemy >= 1.4.41",
+    "databases >= 0.6.1",
+    "databases[sqlite] >= 0.6.1"
 ]
 
 [project.optional-dependencies]

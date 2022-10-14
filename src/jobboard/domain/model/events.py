@@ -1,6 +1,4 @@
-from dataclasses import asdict, dataclass, field
-
-from .model import Job, User
+from dataclasses import asdict, dataclass
 
 
 class Event:
@@ -15,7 +13,6 @@ class UserCreated(Event):
     hashed_password: str
     is_active: bool
     is_super_user: bool
-    jobs: set[Job] = field(init=False, default_factory=set)
 
     @classmethod
     def from_dict(cls, dict_):
@@ -36,7 +33,6 @@ class JobCreated(Event):
     date_posted: str
     is_active: str
     owner_id: int
-    owner: User
 
     @classmethod
     def from_dict(cls, dict_):

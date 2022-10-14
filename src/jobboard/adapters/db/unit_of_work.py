@@ -11,7 +11,7 @@ from src.jobboard.main import config
 
 DEFAULT_SESSION_FACTORY = sessionmaker(
     bind=create_engine(
-        config.get_sqlite_uri(), connect_args={"check_same_thread": False}
+        config.get_database_uri(), connect_args={"check_same_thread": False}
     )
 )
 
