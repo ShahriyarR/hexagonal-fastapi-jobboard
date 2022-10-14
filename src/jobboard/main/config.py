@@ -29,3 +29,11 @@ class Settings:
 
 
 settings = Settings()
+
+
+def get_sqlite_uri() -> str:
+    if settings.USE_SQLITE_DB:
+        return "sqlite:///./sql_app.db"
+
+
+# TODO: implement get postgres uri

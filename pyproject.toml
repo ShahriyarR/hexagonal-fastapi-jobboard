@@ -17,6 +17,7 @@ dependencies = [
     "python-dotenv >= 0.21.0",
     "passlib[bcrypt] >= 1.7.4",
     "python-jose >= 3.3.0",
+    "sqlalchemy >= 1.4.41",
 ]
 
 [project.optional-dependencies]
