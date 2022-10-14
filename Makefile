@@ -12,3 +12,6 @@ format:
 
 lint:
 	./scripts/lint.sh
+
+run:
+	uvicorn src.jobboard.adapters.entrypoints.application:app --reload
