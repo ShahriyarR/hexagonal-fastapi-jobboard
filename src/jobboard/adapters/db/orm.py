@@ -1,13 +1,14 @@
 from sqlalchemy import Boolean, Column, Date, Integer, MetaData, String, Table, event
-from sqlalchemy.orm import mapper, relationship
+from sqlalchemy.orm import registry, relationship
 
 from src.jobboard.domain.model import model
 
 metadata = MetaData()
+mapper_registry = registry(metadata=metadata)
 
 jobs = Table(
     "jobs",
-    metadata,
+    mapper_registry.metadata,
     Column("id", Integer, primary_key=True, autoincrement=True),
     Column("title", String, nullable=False),
     Column("company", String, nullable=False),
@@ -20,7 +21,7 @@ jobs = Table(
 
 users = Table(
     "users",
-    metadata,
+    mapper_registry.metadata,
     Column("id", Integer, primary_key=True, autoincrement=True),
     Column("user_name", String, unique=True, nullable=False),
     Column("email", String, nullable=False, unique=True, index=True),
@@ -31,8 +32,10 @@ users = Table(
 
 
 def start_mappers():
-    jobs_mapper = mapper(model.Job, jobs)
-    mapper(model.User, users, properties={"jobs": relationship(jobs_mapper)})
+    jobs_mapper = mapper_registry.map_imperatively(model.Job, jobs)
+    mapper_registry.map_imperatively(
+        model.User, users, properties={"jobs": relationship(jobs_mapper)}
+    )
 
 
 @event.listens_for(model.Job, "load")
