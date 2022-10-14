@@ -6,14 +6,9 @@ from core.hashing import Hasher
 from core.security import create_access_token
 from db.repository.login import get_user
 from db.session import get_db
-from fastapi import APIRouter
-from fastapi import Depends
-from fastapi import HTTPException
-from fastapi import Response
-from fastapi import status
+from fastapi import APIRouter, Depends, HTTPException, Response, status
 from fastapi.security import OAuth2PasswordRequestForm
-from jose import jwt
-from jose import JWTError
+from jose import JWTError, jwt
 from schemas.tokens import Token
 from sqlalchemy.orm import Session
 

@@ -1,5 +1,4 @@
-from pydantic import BaseModel
-from pydantic import EmailStr
+from pydantic import BaseModel, EmailStr
 
 
 # properties required during user creation

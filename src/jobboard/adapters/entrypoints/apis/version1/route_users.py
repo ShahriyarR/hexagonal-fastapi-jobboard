@@ -1,9 +1,7 @@
 from db.repository.users import create_new_user
 from db.session import get_db
-from fastapi import APIRouter
-from fastapi import Depends
-from schemas.users import ShowUser
-from schemas.users import UserCreate
+from fastapi import APIRouter, Depends
+from schemas.users import ShowUser, UserCreate
 from sqlalchemy.orm import Session
 
 router = APIRouter()

@@ -1,24 +1,20 @@
-from typing import List
-from typing import Optional
+from typing import List, Optional
 
 from apis.version1.route_login import get_current_user_from_token
 from db.models.users import User
-from db.repository.jobs import create_new_job
-from db.repository.jobs import delete_job_by_id
-from db.repository.jobs import list_jobs
-from db.repository.jobs import retreive_job
-from db.repository.jobs import search_job
-from db.repository.jobs import update_job_by_id
+from db.repository.jobs import (
+    create_new_job,
+    delete_job_by_id,
+    list_jobs,
+    retreive_job,
+    search_job,
+    update_job_by_id,
+)
 from db.session import get_db
-from fastapi import APIRouter
-from fastapi import Depends
-from fastapi import HTTPException
-from fastapi import status
+from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.templating import Jinja2Templates
-from schemas.jobs import JobCreate
-from schemas.jobs import ShowJob
+from schemas.jobs import JobCreate, ShowJob
 from sqlalchemy.orm import Session
-
 
 router = APIRouter()
 templates = Jinja2Templates(directory="templates")
