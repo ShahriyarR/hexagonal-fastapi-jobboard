@@ -1,4 +1,14 @@
-from sqlalchemy import Boolean, Column, Date, Integer, MetaData, String, Table, event
+from sqlalchemy import (
+    Boolean,
+    Column,
+    Date,
+    ForeignKey,
+    Integer,
+    MetaData,
+    String,
+    Table,
+    event,
+)
 from sqlalchemy.orm import registry, relationship
 
 from src.jobboard.domain.model import model
@@ -6,18 +16,6 @@ from src.jobboard.domain.model import model
 metadata = MetaData()
 mapper_registry = registry(metadata=metadata)
 
-jobs = Table(
-    "jobs",
-    mapper_registry.metadata,
-    Column("id", Integer, primary_key=True, autoincrement=True),
-    Column("title", String, nullable=False),
-    Column("company", String, nullable=False),
-    Column("company_url", String),
-    Column("location", String, nullable=False),
-    Column("description", String, nullable=False),
-    Column("date_posted", Date),
-    Column("is_active", Boolean(), default=True),
-)
 
 users = Table(
     "users",
@@ -31,10 +29,27 @@ users = Table(
 )
 
 
+jobs = Table(
+    "jobs",
+    mapper_registry.metadata,
+    Column("id", Integer, primary_key=True, autoincrement=True),
+    Column("title", String, nullable=False),
+    Column("company", String, nullable=False),
+    Column("company_url", String),
+    Column("location", String, nullable=False),
+    Column("description", String, nullable=False),
+    Column("date_posted", Date),
+    Column("is_active", Boolean(), default=True),
+    Column("owner_id", ForeignKey("users.id")),
+)
+
+
 def start_mappers():
     jobs_mapper = mapper_registry.map_imperatively(model.Job, jobs)
     mapper_registry.map_imperatively(
-        model.User, users, properties={"jobs": relationship(jobs_mapper)}
+        model.User,
+        users,
+        properties={"jobs": relationship(jobs_mapper, backref="owner")},
     )
 
 
