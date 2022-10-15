@@ -6,7 +6,7 @@ from src.jobboard.domain.ports import messagebus, repository
 class UserUnitOfWorkInterface(abc.ABC):
     users: repository.UserRepositoryInterface
 
-    def __enter__(self) -> UserUnitOfWorkInterface:
+    def __enter__(self) -> "UserUnitOfWorkInterface":
         return self
 
     def __exit__(self, *args):
@@ -34,7 +34,7 @@ class UserUnitOfWorkInterface(abc.ABC):
 class JobUnitOfWorkInterface(abc.ABC):
     jobs: repository.JobRepositoryInterface
 
-    def __enter__(self) -> JobUnitOfWorkInterface:
+    def __enter__(self) -> "JobUnitOfWorkInterface":
         return self
 
     def __exit__(self, *args):
