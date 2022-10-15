@@ -12,6 +12,7 @@ dynamic = ["version", "description"]
 requires-python = ">=3.9"
 dependencies = [
     "fastapi >= 0.85.0",
+    "uvicorn >= 0.18.3",
     "dependency-injector >= 4.40.0",
     "psycopg2-binary >= 2.9.3",
     "python-dotenv >= 0.21.0",
