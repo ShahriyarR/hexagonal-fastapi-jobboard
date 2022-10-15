@@ -2,14 +2,14 @@ from pydantic import BaseModel, EmailStr
 
 
 # properties required during user creation
-class UserCreate(BaseModel):
-    username: str
+class UserInputDto(BaseModel):
+    user_name: str
     email: EmailStr
     password: str
 
 
-class ShowUser(BaseModel):
-    username: str
+class UserOutputDto(BaseModel):
+    user_name: str
     email: EmailStr
     is_active: bool
 

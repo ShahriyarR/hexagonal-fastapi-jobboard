@@ -12,8 +12,8 @@ class UserRepositoryInterface(abc.ABC):
         self._add(user)
         self.seen.add(user)
 
-    def get(self, id_) -> model.User:
-        user = self._get(id_)
+    def get(self, user_name: str) -> model.User:
+        user = self._get(user_name)
         if user:
             self.seen.add(user)
         return user
@@ -23,7 +23,7 @@ class UserRepositoryInterface(abc.ABC):
         raise NotImplementedError
 
     @abc.abstractmethod
-    def _get(self, id_) -> model.User:
+    def _get(self, user_name: str) -> model.User:
         raise NotImplementedError
 
 
