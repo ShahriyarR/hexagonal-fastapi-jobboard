@@ -49,7 +49,7 @@ def start_mappers():
     mapper_registry.map_imperatively(
         model.User,
         users,
-        properties={"jobs": relationship(jobs_mapper, backref="owner")},
+        properties={"jobs": relationship(jobs_mapper, backref="owner", collection_class=set)},
     )
 
 

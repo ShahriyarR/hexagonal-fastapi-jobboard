@@ -34,6 +34,15 @@ class User:
         )
         self.events.append(user)
 
+    def __eq__(self, other):
+        if not isinstance(other, User):
+            return False
+        return self.user_name == other.user_name
+
+    def __hash__(self):
+        return hash(self.user_name)
+
+
 
 def user_model_factory(
     user_name: str,
