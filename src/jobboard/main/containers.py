@@ -13,6 +13,7 @@ class Container(containers.DeclarativeContainer):
         packages=[
             "src.jobboard.adapters.entrypoints.webapps.users",
             "src.jobboard.adapters.entrypoints.webapps.auth",
+            "src.jobboard.adapters.entrypoints.webapps.jobs",
             "src.jobboard.adapters.entrypoints.api.v1",
         ]
     )

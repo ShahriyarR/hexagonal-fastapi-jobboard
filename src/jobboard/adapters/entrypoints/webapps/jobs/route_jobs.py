@@ -9,6 +9,7 @@ from src.jobboard.adapters.entrypoints.api.v1.route_login import (
     get_current_user_from_token,
 )
 from src.jobboard.adapters.entrypoints.webapps.jobs.forms import JobCreateForm
+from src.jobboard.domain.model.model import User
 from src.jobboard.domain.ports.job_service import JobService
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto
 from src.jobboard.main.containers import Container
@@ -49,6 +50,7 @@ def create_job(request: Request):
 
 
 @router.post("/post-a-job/")
+@inject
 async def create_job(
     request: Request,
     job_service: JobService = Depends(Provide[Container.job_service]),
@@ -77,6 +79,7 @@ async def create_job(
 
 
 @router.get("/delete-job/")
+@inject
 def show_jobs_to_delete(
     request: Request, job_service: JobService = Depends(Provide[Container.job_service])
 ):
@@ -87,6 +90,7 @@ def show_jobs_to_delete(
 
 
 @router.get("/search/")
+@inject
 def search(
     request: Request,
     job_service: JobService = Depends(Provide[Container.job_service]),
