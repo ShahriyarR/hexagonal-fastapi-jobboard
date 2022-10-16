@@ -21,11 +21,12 @@ users = Table(
     "users",
     mapper_registry.metadata,
     Column("id", Integer, primary_key=True, autoincrement=True),
+    Column("uuid", String, unique=True, nullable=False),
     Column("user_name", String, unique=True, nullable=False),
     Column("email", String, nullable=False, unique=True, index=True),
     Column("hashed_password", String, nullable=False),
     Column("is_active", Boolean(), default=True),
-    Column("is_superuser", Boolean(), default=False),
+    Column("is_super_user", Boolean(), default=False),
 )
 
 
@@ -33,6 +34,7 @@ jobs = Table(
     "jobs",
     mapper_registry.metadata,
     Column("id", Integer, primary_key=True, autoincrement=True),
+    Column("uuid", String, unique=True, nullable=False),
     Column("title", String, nullable=False),
     Column("company", String, nullable=False),
     Column("company_url", String),
@@ -49,7 +51,9 @@ def start_mappers():
     mapper_registry.map_imperatively(
         model.User,
         users,
-        properties={"jobs": relationship(jobs_mapper, backref="owner", collection_class=set)},
+        properties={
+            "jobs": relationship(jobs_mapper, backref="owner", collection_class=set)
+        },
     )
 
 

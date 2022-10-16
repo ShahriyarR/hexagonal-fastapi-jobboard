@@ -2,8 +2,13 @@ from pydantic import BaseModel, EmailStr
 
 
 # properties required during user creation
-class UserInputDto(BaseModel):
+class UserCreateInputDto(BaseModel):
     user_name: str
+    email: EmailStr
+    password: str
+
+
+class UserLoginInputDto(BaseModel):
     email: EmailStr
     password: str
 

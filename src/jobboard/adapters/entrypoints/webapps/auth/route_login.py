@@ -1,14 +1,8 @@
-from apis.version1.route_login import login_for_access_token
-from dependency_injector.wiring import Provide, inject
-from fastapi import APIRouter
-from fastapi import Depends
-from fastapi import HTTPException
-from fastapi import Request
+from fastapi import APIRouter, HTTPException, Request
 from fastapi.templating import Jinja2Templates
-from sqlalchemy.orm import Session
+
+from src.jobboard.adapters.entrypoints.api.v1.route_login import login_for_access_token
 from src.jobboard.adapters.entrypoints.webapps.auth.forms import LoginForm
-from src.jobboard.domain.ports.user_service import UserService
-from src.jobboard.main.containers import Container
 
 templates = Jinja2Templates(directory="src/jobboard/adapters/entrypoints/templates")
 router = APIRouter(include_in_schema=False)
@@ -20,15 +14,16 @@ def login(request: Request):
 
 
 @router.post("/login/")
-@inject
-async def login(request: Request, user_service: UserService = Depends(Provide[Container.user_service])):
+async def login(
+    request: Request,
+):
     form = LoginForm(request)
     await form.load_data()
     if await form.is_valid():
         try:
             form.__dict__.update(msg="Login Successful :)")
             response = templates.TemplateResponse("auth/login.html", form.__dict__)
-            login_for_access_token(response=response, form_data=form, db=db)
+            login_for_access_token(response=response, form_data=form)
             return response
         except HTTPException:
             form.__dict__.update(msg="")

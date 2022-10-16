@@ -5,7 +5,7 @@ from sqlalchemy.exc import IntegrityError
 
 from src.jobboard.adapters.entrypoints.webapps.users.forms import UserCreateForm
 from src.jobboard.domain.ports.user_service import UserService
-from src.jobboard.domain.schemas.users import UserInputDto
+from src.jobboard.domain.schemas.users import UserCreateInputDto
 from src.jobboard.main.containers import Container
 
 templates = Jinja2Templates(directory="src/jobboard/adapters/entrypoints/templates")
@@ -26,7 +26,7 @@ async def register(
     form = UserCreateForm(request)
     await form.load_data()
     if await form.is_valid():
-        user = UserInputDto(
+        user = UserCreateInputDto(
             user_name=form.username, email=form.email, password=form.password
         )
         try:

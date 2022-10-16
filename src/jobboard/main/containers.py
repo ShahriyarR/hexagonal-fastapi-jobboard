@@ -6,7 +6,11 @@ from src.jobboard.domain.ports.user_service import UserService
 
 class Container(containers.DeclarativeContainer):
     wiring_config = containers.WiringConfiguration(
-        packages=["src.jobboard.adapters.entrypoints.webapps"]
+        packages=[
+            "src.jobboard.adapters.entrypoints.webapps.users",
+            "src.jobboard.adapters.entrypoints.webapps.auth",
+            "src.jobboard.adapters.entrypoints.api.v1",
+        ]
     )
 
     uow = providers.Singleton(UserSqlAlchemyUnitOfWork)

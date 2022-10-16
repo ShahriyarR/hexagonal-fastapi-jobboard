@@ -18,12 +18,22 @@ class UserRepositoryInterface(abc.ABC):
             self.seen.add(user)
         return user
 
+    def get_by_email(self, email: str) -> model.User:
+        user = self._get_by_email(email)
+        if user:
+            self.seen.add(user)
+        return user
+
     @abc.abstractmethod
     def _add(self, user: model.User):
         raise NotImplementedError
 
     @abc.abstractmethod
     def _get(self, user_name: str) -> model.User:
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def _get_by_email(self, email: str) -> model.User:
         raise NotImplementedError
 
 

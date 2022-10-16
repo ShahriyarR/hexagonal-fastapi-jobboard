@@ -43,7 +43,6 @@ class User:
         return hash(self.user_name)
 
 
-
 def user_model_factory(
     user_name: str,
     email: str,

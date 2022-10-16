@@ -16,8 +16,16 @@ or
 
 Generated as:
 
-`alembic -c src/jobboard/adapters/db/alembic.ini revision --autogenerate -m "add users and jobs tables"`
+`make migrations`
+
+or
+
+`alembic -c src/jobboard/adapters/db/alembic.ini revision --autogenerate`
 
 Migrate:
+
+`make migrate`
+
+or
 
 `alembic -c src/jobboard/adapters/db/alembic.ini upgrade head`

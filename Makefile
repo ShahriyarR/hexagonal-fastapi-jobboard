@@ -15,3 +15,9 @@ lint:
 
 run:
 	python -m uvicorn src.jobboard.adapters.entrypoints.application:app --reload
+
+migrations:
+	alembic -c src/jobboard/adapters/db/alembic.ini revision --autogenerate
+
+migrate:
+	alembic -c src/jobboard/adapters/db/alembic.ini upgrade head

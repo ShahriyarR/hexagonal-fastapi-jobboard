@@ -13,8 +13,11 @@ class UserSqlAlchemyRepository(UserRepositoryInterface):
     def _add(self, user):
         self.session.add(user)
 
-    def _get(self, id_):
-        return self.session.query(model.User).filter_by(id=id_).first()
+    def _get(self, user_name: str):
+        return self.session.query(model.User).filter_by(user_name=user_name).first()
+
+    def _get_by_email(self, email: str) -> model.User:
+        return self.session.query(model.User).filter_by(email=email).first()
 
 
 class JobSqlAlchemyRepository(JobRepositoryInterface):

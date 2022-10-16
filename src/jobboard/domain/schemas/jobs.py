@@ -15,15 +15,15 @@ class JobBase(BaseModel):
 
 
 # this will be used to validate data while creating a Job
-class JobCreate(JobBase):
+class JobInputDto(JobBase):
     title: str
     company: str
     location: str
     description: str
 
 
-# this will be used to format the response to not to have id,owner_id etc
-class ShowJob(JobBase):
+# this will be used to format the response to not have id,owner_id etc
+class JobOutputDto(JobBase):
     title: str
     company: str
     company_url: Optional[str]
