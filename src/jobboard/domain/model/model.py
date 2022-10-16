@@ -93,6 +93,13 @@ class Job:
     owner: User
     events: list[Event] = field(init=False, default_factory=list)
 
+    @classmethod
+    def from_dict(cls, dict_):
+        return cls(**dict_)
+
+    def to_dict(self):
+        return asdict(self)
+
     def generate_event(self) -> None:
         job = JobCreated(
             uuid=self.uuid,

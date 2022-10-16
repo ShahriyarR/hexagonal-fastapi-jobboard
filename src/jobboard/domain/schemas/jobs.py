@@ -15,7 +15,7 @@ class JobBase(BaseModel):
 
 
 # this will be used to validate data while creating a Job
-class JobInputDto(JobBase):
+class JobCreateInputDto(JobBase):
     title: str
     company: str
     location: str
