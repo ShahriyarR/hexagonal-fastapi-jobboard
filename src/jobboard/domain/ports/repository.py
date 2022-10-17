@@ -46,10 +46,16 @@ class JobRepositoryInterface(abc.ABC):
         self.seen.add(job)
 
     def get(self, id_) -> model.Job:
-        product = self._get(id_)
-        if product:
-            self.seen.add(product)
-        return product
+        job = self._get(id_)
+        if job:
+            self.seen.add(job)
+        return job
+
+    def get_all(self) -> list[model.Job]:
+        return self._get_all()
+
+    def search(self, query: str):
+        return self._search(query)
 
     @abc.abstractmethod
     def _add(self, job: model.Job):
@@ -57,4 +63,12 @@ class JobRepositoryInterface(abc.ABC):
 
     @abc.abstractmethod
     def _get(self, id_) -> model.Job:
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def _get_all(self) -> list[model.Job]:
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def _search(self, query: str) -> list[model.Job]:
         raise NotImplementedError

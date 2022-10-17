@@ -30,3 +30,9 @@ class JobSqlAlchemyRepository(JobRepositoryInterface):
 
     def _get(self, id_):
         return self.session.query(model.Job).filter_by(id=id_).first()
+
+    def _get_all(self) -> list[model.Job]:
+        return self.session.query(model.Job).all()
+
+    def _search(self, query: str) -> list[model.Job]:
+        return self.session.query(model.Job).filter(model.Job.title.contains(query))
