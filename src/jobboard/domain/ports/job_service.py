@@ -31,7 +31,7 @@ class JobService:
             if not existing_job:
                 return False
             job.__dict__.update(owner_id=owner_id)
-            existing_job.update(job.__dict__)
+            self.uow.session.update(job)
             self.uow.commit()
         return True
 

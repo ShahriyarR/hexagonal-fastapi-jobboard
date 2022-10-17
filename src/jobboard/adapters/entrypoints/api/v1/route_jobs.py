@@ -59,7 +59,7 @@ def update_job(
     job_service: JobService = Depends(Provide[Container.job_service]),
 ):
     current_user = 1
-    message = job_service.update_job_by_id(id=id, job=job, owner_id=current_user)
+    message = job_service.update_job_by_id(id_=id, job=job, owner_id=current_user)
     if not message:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail=f"Job with id {id} not found"
