@@ -40,5 +40,8 @@ class UserService:
             if not Hasher.verify_password(user.password, user_.hashed_password):
                 return False
             return UserOutputDto(
-                user_name=user_.user_name, email=user_.email, is_active=user_.is_active
+                id=user_.id,
+                user_name=user_.user_name,
+                email=user_.email,
+                is_active=user_.is_active,
             )

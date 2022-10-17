@@ -8,7 +8,7 @@ from jose import JWTError, jwt
 from src.jobboard.adapters.entrypoints.api.utils import OAuth2PasswordBearerWithCookie
 from src.jobboard.domain.ports.user_service import UserService
 from src.jobboard.domain.schemas.tokens import Token
-from src.jobboard.domain.schemas.users import UserLoginInputDto
+from src.jobboard.domain.schemas.users import UserLoginInputDto, UserOutputDto
 from src.jobboard.main.config import settings
 from src.jobboard.main.containers import Container
 from src.jobboard.main.security import create_access_token
@@ -63,7 +63,13 @@ def get_current_user_from_token(
     except JWTError as e:
         raise credentials_exception from e
     with user_service.uow:
-        user = user_service.uow.users.get(user_name)
+        user = user_service.uow.users.get_by_email(user_name)
         if user is None:
             raise credentials_exception
-    return user
+        return UserOutputDto(
+            id=user.id,
+            user_name=user.user_name,
+            email=user.email,
+            is_active=user.is_active,
+            is_super_user=user.is_super_user,
+        )

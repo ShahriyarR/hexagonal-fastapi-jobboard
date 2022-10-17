@@ -12,6 +12,7 @@ class JobBase(BaseModel):
     location: Optional[str] = "Remote"
     description: Optional[str] = None
     date_posted: Optional[date] = datetime.now().date()
+    is_active: Optional[bool] = True
 
 
 # this will be used to validate data while creating a Job
@@ -21,15 +22,21 @@ class JobCreateInputDto(JobBase):
     location: str
     description: str
 
+    class Config:
+        arbitrary_types_allowed = True
+        orm_mode = True
+
 
 # this will be used to format the response to not have id,owner_id etc
 class JobOutputDto(JobBase):
+    id: int
     title: str
     company: str
     company_url: Optional[str]
     location: str
     date_posted: date
     description: Optional[str]
+    owner_id: int
 
     class Config:  # to convert non dict obj to json
         orm_mode = True

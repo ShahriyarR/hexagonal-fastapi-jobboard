@@ -12,17 +12,20 @@ class JobService:
             new_job = job_model_event_factory(**job.dict(), owner_id=owner_id)
             self.uow.jobs.add(new_job)
             self.uow.commit()
-            return JobOutputDto(**new_job.to_dict())
+            print(new_job)
+            job_ = self.uow.jobs.get_by_uuid(new_job.uuid)
+            print(job_)
+            return JobOutputDto.from_orm(job_)
 
     def retrieve_job(self, id_: int) -> JobOutputDto:
         with self.uow:
             job = self.uow.jobs.get(id_)
-            return JobOutputDto(**job.to_dict())
+            return JobOutputDto.from_orm(job)
 
     def list_jobs(self) -> list[JobOutputDto]:
         with self.uow:
             jobs = self.uow.jobs.get_all()
-            return [JobOutputDto(**job.to_dict()) for job in jobs]
+            return [JobOutputDto.from_orm(job) for job in jobs]
 
     def update_job_by_id(self, id_: int, job: JobCreateInputDto, owner_id: int) -> bool:
         with self.uow:

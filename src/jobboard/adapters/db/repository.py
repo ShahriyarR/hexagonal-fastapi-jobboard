@@ -19,6 +19,9 @@ class UserSqlAlchemyRepository(UserRepositoryInterface):
     def _get_by_email(self, email: str) -> model.User:
         return self.session.query(model.User).filter_by(email=email).first()
 
+    def _get_by_id(self, id: int) -> model.User:
+        return self.session.query(model.User).filter_by(id=id).first()
+
 
 class JobSqlAlchemyRepository(JobRepositoryInterface):
     def __init__(self, session):
@@ -28,8 +31,11 @@ class JobSqlAlchemyRepository(JobRepositoryInterface):
     def _add(self, job):
         self.session.add(job)
 
-    def _get(self, id_):
+    def _get(self, id_: int) -> model.Job:
         return self.session.query(model.Job).filter_by(id=id_).first()
+
+    def _get_by_uuid(self, uuid: str) -> model.Job:
+        return self.session.query(model.Job).filter_by(uuid=uuid).first()
 
     def _get_all(self) -> list[model.Job]:
         return self.session.query(model.Job).all()

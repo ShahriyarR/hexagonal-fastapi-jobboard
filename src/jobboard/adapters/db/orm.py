@@ -47,12 +47,18 @@ jobs = Table(
 
 
 def start_mappers():
-    jobs_mapper = mapper_registry.map_imperatively(model.Job, jobs)
+    jobs_mapper = mapper_registry.map_imperatively(
+        model.Job,
+        jobs,
+        properties={"owner": relationship(model.User, back_populates="jobs")},
+    )
     mapper_registry.map_imperatively(
         model.User,
         users,
         properties={
-            "jobs": relationship(jobs_mapper, backref="owner", collection_class=set)
+            "jobs": relationship(
+                jobs_mapper, back_populates="owner", collection_class=set
+            )
         },
     )
 

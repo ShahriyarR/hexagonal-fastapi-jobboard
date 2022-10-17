@@ -90,7 +90,6 @@ class Job:
     date_posted: str
     is_active: str
     owner_id: int
-    owner: User
     events: list[Event] = field(init=False, default_factory=list)
 
     @classmethod
@@ -114,6 +113,19 @@ class Job:
         )
         self.events.append(job)
 
+    def __eq__(self, other):
+        if not isinstance(other, Job):
+            return False
+        return (
+            self.title == other.title
+            and self.company == other.company
+            and self.company_url == other.company_url
+            and self.location == other.location
+        )
+
+    def __hash__(self):
+        return hash(self.title)
+
 
 def job_model_event_factory(
     title: str,
@@ -124,7 +136,6 @@ def job_model_event_factory(
     date_posted: str,
     is_active: str,
     owner_id: int,
-    owner: User,
 ) -> Job:
     date_posted_ = date_posted or datetime.now()
     job = Job(
@@ -137,7 +148,6 @@ def job_model_event_factory(
         date_posted=date_posted_,
         is_active=is_active,
         owner_id=owner_id,
-        owner=owner,
     )
     job.generate_event()
     return job
@@ -152,7 +162,6 @@ def job_model_factory(
     date_posted: str,
     is_active: str,
     owner_id: int,
-    owner: User,
 ):
     date_posted_ = date_posted or datetime.now()
     return Job(
@@ -165,5 +174,4 @@ def job_model_factory(
         date_posted=date_posted_,
         is_active=is_active,
         owner_id=owner_id,
-        owner=owner,
     )

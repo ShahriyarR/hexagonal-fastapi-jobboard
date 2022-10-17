@@ -14,9 +14,11 @@ class UserLoginInputDto(BaseModel):
 
 
 class UserOutputDto(BaseModel):
+    id: int
     user_name: str
     email: EmailStr
     is_active: bool
+    is_super_user: bool
 
     class Config:  # to convert non dict obj to json
         orm_mode = True

@@ -24,6 +24,12 @@ class UserRepositoryInterface(abc.ABC):
             self.seen.add(user)
         return user
 
+    def get_by_id(self, id: int) -> model.User:
+        user = self._get_by_id(id)
+        if user:
+            self.seen.add(user)
+        return user
+
     @abc.abstractmethod
     def _add(self, user: model.User):
         raise NotImplementedError
@@ -34,6 +40,10 @@ class UserRepositoryInterface(abc.ABC):
 
     @abc.abstractmethod
     def _get_by_email(self, email: str) -> model.User:
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def _get_by_id(self, id: int) -> model.User:
         raise NotImplementedError
 
 
@@ -51,6 +61,12 @@ class JobRepositoryInterface(abc.ABC):
             self.seen.add(job)
         return job
 
+    def get_by_uuid(self, uuid: str) -> model.Job:
+        job = self._get_by_uuid(uuid)
+        if job:
+            self.seen.add(job)
+        return job
+
     def get_all(self) -> list[model.Job]:
         return self._get_all()
 
@@ -62,7 +78,11 @@ class JobRepositoryInterface(abc.ABC):
         raise NotImplementedError
 
     @abc.abstractmethod
-    def _get(self, id_) -> model.Job:
+    def _get(self, id_: int) -> model.Job:
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def _get_by_uuid(self, uuid: str) -> model.Job:
         raise NotImplementedError
 
     @abc.abstractmethod
