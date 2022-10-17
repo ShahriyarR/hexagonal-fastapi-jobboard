@@ -34,7 +34,7 @@ def read_job(
     id: int,
     job_service: JobService = Depends(Provide[Container.job_service]),
 ):
-    job = job_service.retreive_job(id=id)
+    job = job_service.retrieve_job(id_=id)
     if not job:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,

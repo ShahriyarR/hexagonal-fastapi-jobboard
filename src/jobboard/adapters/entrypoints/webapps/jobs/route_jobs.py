@@ -72,7 +72,6 @@ async def create_job(
             )
         except Exception as e:
             print(e)
-            print(type(e))
             form.__dict__.get("errors").append(
                 "You might not be logged in, In case problem persists please contact us."
             )

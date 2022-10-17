@@ -12,9 +12,7 @@ class JobService:
             new_job = job_model_event_factory(**job.dict(), owner_id=owner_id)
             self.uow.jobs.add(new_job)
             self.uow.commit()
-            print(new_job)
             job_ = self.uow.jobs.get_by_uuid(new_job.uuid)
-            print(job_)
             return JobOutputDto.from_orm(job_)
 
     def retrieve_job(self, id_: int) -> JobOutputDto:
@@ -42,7 +40,7 @@ class JobService:
             existing_job = self.uow.jobs.get(id_)
             if not existing_job:
                 return False
-            existing_job.delete(synchronize_session=False)
+            self.uow.session.delete(existing_job)
             self.uow.commit()
         return True
 
