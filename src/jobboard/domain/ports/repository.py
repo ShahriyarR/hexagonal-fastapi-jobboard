@@ -2,6 +2,7 @@ import abc
 from typing import Set
 
 from src.jobboard.domain.model import model
+from sqlalchemy.orm import Query
 
 
 class UserRepositoryInterface(abc.ABC):
@@ -67,6 +68,12 @@ class JobRepositoryInterface(abc.ABC):
             self.seen.add(job)
         return job
 
+    def get_by_id_for_update(self, id_: int) -> Query:
+        job = self._get_by_id_for_update(id_)
+        if job and job.first():
+            self.seen.add(job.first())
+        return job
+
     def get_all(self) -> list[model.Job]:
         return self._get_all()
 
@@ -91,4 +98,8 @@ class JobRepositoryInterface(abc.ABC):
 
     @abc.abstractmethod
     def _search(self, query: str) -> list[model.Job]:
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def _get_by_id_for_update(self, id_: int):
         raise NotImplementedError

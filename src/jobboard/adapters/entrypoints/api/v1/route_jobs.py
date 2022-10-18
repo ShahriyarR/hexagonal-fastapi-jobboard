@@ -56,10 +56,11 @@ def read_jobs(
 def update_job(
     id: int,
     job: JobCreateInputDto,
+    current_user: User = Depends(get_current_user_from_token),
     job_service: JobService = Depends(Provide[Container.job_service]),
 ):
-    current_user = 1
-    message = job_service.update_job_by_id(id_=id, job=job, owner_id=current_user)
+    # TODO: this is still not obvious why we are updating the owner id, just grabbed from original repo.
+    message = job_service.update_job_by_id(id_=id, job=job, owner_id=current_user.id)
     if not message:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail=f"Job with id {id} not found"
@@ -80,7 +81,6 @@ def delete_job(
             status_code=status.HTTP_404_NOT_FOUND,
             detail=f"Job with id {id} does not exist",
         )
-    print(job.owner_id, current_user.id, current_user.is_super_user)
     if job.owner_id == current_user.id or current_user.is_super_user:
         job_service.delete_job_by_id(id_=id)
         return {"detail": "Successfully deleted."}

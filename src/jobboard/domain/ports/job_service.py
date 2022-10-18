@@ -27,11 +27,11 @@ class JobService:
 
     def update_job_by_id(self, id_: int, job: JobCreateInputDto, owner_id: int) -> bool:
         with self.uow:
-            existing_job = self.uow.jobs.get(id_)
+            existing_job = self.uow.jobs.get_by_id_for_update(id_)
             if not existing_job:
                 return False
             job.__dict__.update(owner_id=owner_id)
-            self.uow.session.update(job)
+            existing_job.update(job.__dict__)
             self.uow.commit()
         return True
 

@@ -37,6 +37,9 @@ class JobSqlAlchemyRepository(JobRepositoryInterface):
     def _get_by_uuid(self, uuid: str) -> model.Job:
         return self.session.query(model.Job).filter_by(uuid=uuid).first()
 
+    def _get_by_id_for_update(self, id_: int) -> model.Job:
+        return self.session.query(model.Job).filter_by(id=id_)
+
     def _get_all(self) -> list[model.Job]:
         return self.session.query(model.Job).all()
 
