@@ -3,7 +3,7 @@ from fastapi.encoders import jsonable_encoder
 from src.jobboard.domain.schemas.users import UserCreateInputDto
 
 
-def test_create_user(client, app, get_fake_container):
+def test_create_user(app, client, get_fake_container):
     data = {
         "user_name": "testuser",
         "email": "testuser@nofoobar.com",

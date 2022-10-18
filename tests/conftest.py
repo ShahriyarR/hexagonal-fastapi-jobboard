@@ -20,16 +20,15 @@ engine = create_engine(
 SessionTesting = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="module", autouse=True)
 def get_fake_container():
     return Container()
 
 
 @pytest.fixture(scope="module")
-def app():
+def app(get_fake_container):
     metadata.create_all(engine)
     yield original_app
-    original_app.container.unwire()
     metadata.drop_all(engine)
 
 
