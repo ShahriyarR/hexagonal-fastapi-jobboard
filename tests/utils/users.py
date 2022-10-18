@@ -18,8 +18,12 @@ def authentication_token_from_email(client: TestClient, email: str):
     If the user doesn't exist it is created first.
     """
     password = "random-passW0rd"
-    user = get_user_by_email(email=email,)
+    user = get_user_by_email(
+        email=email,
+    )
     if not user:
-        user_in_create = UserCreateInputDto(username=email, email=email, password=password)
+        user_in_create = UserCreateInputDto(
+            username=email, email=email, password=password
+        )
         user = create_new_user(user=user_in_create)
     return user_authentication_headers(client=client, email=email, password=password)

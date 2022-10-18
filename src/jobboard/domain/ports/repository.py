@@ -1,8 +1,9 @@
 import abc
 from typing import Set
 
-from src.jobboard.domain.model import model
 from sqlalchemy.orm import Query
+
+from src.jobboard.domain.model import model
 
 
 class UserRepositoryInterface(abc.ABC):

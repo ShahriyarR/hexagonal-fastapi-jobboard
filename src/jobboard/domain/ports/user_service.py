@@ -44,5 +44,5 @@ class UserService:
                 user_name=user_.user_name,
                 email=user_.email,
                 is_active=user_.is_active,
-                is_super_user=user_.is_super_user
+                is_super_user=user_.is_super_user,
             )

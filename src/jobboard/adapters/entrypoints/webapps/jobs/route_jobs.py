@@ -11,7 +11,6 @@ from src.jobboard.adapters.entrypoints.api.v1.route_login import (
 from src.jobboard.adapters.entrypoints.webapps.jobs.forms import JobCreateForm
 from src.jobboard.domain.model.model import User
 from src.jobboard.domain.ports.job_service import JobService
-from src.jobboard.domain.ports.user_service import UserService
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto
 from src.jobboard.main.containers import Container
 
