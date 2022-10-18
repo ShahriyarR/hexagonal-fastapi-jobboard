@@ -23,7 +23,6 @@ class JobCreateInputDto(JobBase):
     description: str
 
     class Config:
-        arbitrary_types_allowed = True
         orm_mode = True
 
 

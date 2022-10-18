@@ -6,6 +6,8 @@ class UserCreateInputDto(BaseModel):
     user_name: str
     email: EmailStr
     password: str
+    is_active: bool = True
+    is_super_user: bool = False
 
 
 class UserLoginInputDto(BaseModel):

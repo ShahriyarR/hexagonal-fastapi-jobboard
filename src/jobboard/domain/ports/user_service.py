@@ -23,13 +23,18 @@ class UserService:
                     user_name=user.user_name,
                     hashed_password=hashed_password,
                     email=user.email,
-                    is_active=True,
-                    is_super_user=False,
+                    is_active=user.is_active,
+                    is_super_user=user.is_super_user,
                 )
                 self.uow.users.add(new_user)
             self.uow.commit()
+            user_ = user_ or self.uow.users.get(new_user.user_name)
             return UserOutputDto(
-                user_name=user_.user_name, email=user_.email, is_active=user_.is_active
+                user_name=user_.user_name,
+                email=user_.email,
+                is_active=user_.is_active,
+                id=user_.id,
+                is_super_user=user_.is_super_user,
             )
 
     def authenticate_user(self, user: UserLoginInputDto) -> Union[UserOutputDto, bool]:

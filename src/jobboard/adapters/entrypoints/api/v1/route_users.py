@@ -14,5 +14,7 @@ def create_user(
     user: UserCreateInputDto,
     user_service: UserService = Depends(Provide[Container.user_service]),
 ):
+    print(user)
+    print(user_service.uow)
     user = user_service.create(user=user)
     return user

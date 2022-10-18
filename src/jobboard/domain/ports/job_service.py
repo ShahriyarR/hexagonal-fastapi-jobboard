@@ -18,7 +18,9 @@ class JobService:
     def retrieve_job(self, id_: int) -> JobOutputDto:
         with self.uow:
             job = self.uow.jobs.get(id_)
-            return JobOutputDto.from_orm(job)
+            if job:
+                job_ = self.uow.jobs.get_by_uuid(job.uuid)
+                return JobOutputDto.from_orm(job_)
 
     def list_jobs(self) -> list[JobOutputDto]:
         with self.uow:

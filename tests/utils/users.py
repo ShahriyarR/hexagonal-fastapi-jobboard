@@ -1,9 +1,20 @@
+from dependency_injector.wiring import Provide, inject
+from fastapi import Depends
 from fastapi.testclient import TestClient
 
+from src.jobboard.domain.model.model import user_model_factory
+from src.jobboard.domain.ports.user_service import UserService
 from src.jobboard.domain.schemas.users import UserCreateInputDto
+from src.jobboard.main.hashing import Hasher
+from tests.fake_container import Container
 
 
-def user_authentication_headers(client: TestClient, email: str, password: str):
+@inject
+def user_authentication_headers(
+    client: TestClient,
+    email: str,
+    password: str,
+):
     data = {"username": email, "password": password}
     r = client.post("/login/token", data=data)
     response = r.json()
@@ -12,18 +23,33 @@ def user_authentication_headers(client: TestClient, email: str, password: str):
     return headers
 
 
-def authentication_token_from_email(client: TestClient, email: str):
+@inject
+def authentication_token_from_email(
+    client: TestClient,
+    email: str,
+    user_service: UserService = Depends(Provide[Container.fake_user_service]),
+):
     """
     Return a valid token for the user with given email.
     If the user doesn't exist it is created first.
     """
     password = "random-passW0rd"
-    user = get_user_by_email(
-        email=email,
-    )
-    if not user:
-        user_in_create = UserCreateInputDto(
-            username=email, email=email, password=password
+    with user_service.uow:
+        user = user_service.uow.users.get_by_email(email=email)
+        if not user:
+            user_in_create = UserCreateInputDto(
+                user_name=email, email=email, password=password
+            )
+            hashed_password = Hasher.get_password_hash(user_in_create.password)
+            new_user = user_model_factory(
+                user_name=user_in_create.user_name,
+                hashed_password=hashed_password,
+                email=user_in_create.email,
+                is_active=user_in_create.is_active,
+                is_super_user=user_in_create.is_super_user,
+            )
+            user_service.uow.users.add(new_user)
+            user_service.uow.commit()
+        return user_authentication_headers(
+            client=client, email=email, password=password
         )
-        user = create_new_user(user=user_in_create)
-    return user_authentication_headers(client=client, email=email, password=password)
