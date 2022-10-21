@@ -21,3 +21,9 @@ migrations:
 
 migrate:
 	alembic -c src/jobboard/adapters/db/alembic.ini upgrade head
+
+test:
+	${PYTHON} -m pytest -svv tests
+
+test-cov:
+	${PYTHON} -m pytest --cov-report html --cov=src tests

@@ -1,3 +1,5 @@
+import uuid
+from datetime import datetime
 from typing import Any, Generator
 
 import pytest
@@ -32,9 +34,36 @@ def app(get_fake_container):
     metadata.drop_all(engine)
 
 
+@pytest.fixture
+def get_user_model_dict():
+    return {
+        "uuid": str(uuid.uuid4()),
+        "user_name": "shako",
+        "email": "rzayev.sehriyar@gmail.com",
+        "hashed_password": "password",
+        "is_active": True,
+        "is_super_user": False,
+    }
+
+
+@pytest.fixture
+def get_job_model_dict():
+    return {
+        "uuid": str(uuid.uuid4()),
+        "title": "Awesome Title",
+        "company": "Awesome LLC",
+        "company_url": "http://awesome.com",
+        "location": "Azerbaijan",
+        "description": "It is a trap!",
+        "date_posted": datetime.now(),
+        "is_active": True,
+        "owner_id": 1,
+    }
+
+
 @pytest.fixture(scope="module")
 def client(
-    app: FastAPI,
+        app: FastAPI,
 ) -> Generator[TestClient, Any, None]:
     """
     Create a new FastAPI TestClient that uses the `db_session` fixture to override
@@ -47,9 +76,9 @@ def client(
 
 @pytest.fixture(scope="module")
 def normal_user_token_headers(
-    client: TestClient,
-    get_fake_container,
-    app,
+        client: TestClient,
+        get_fake_container,
+        app,
 ):
     with app.container.user_service.override(get_fake_container.fake_user_service):
         return authentication_token_from_email(
