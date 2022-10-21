@@ -1,4 +1,4 @@
-from src.jobboard.domain.model.events import Event, JobCreated, JobCreated
+from src.jobboard.domain.model.events import Event, JobCreated
 from src.jobboard.domain.model.model import (
     Job,
     job_model_event_factory,

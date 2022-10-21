@@ -1,10 +1,7 @@
-from unittest.mock import patch, MagicMock
-
 from fastapi import status
 from fastapi.encoders import jsonable_encoder
 
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto, JobOutputDto
-from src.jobboard.domain.ports import job_service
 
 
 def test_create_job(client, normal_user_token_headers, app, get_fake_container):
@@ -126,6 +123,8 @@ def test_delete_a_job(client, normal_user_token_headers, get_fake_container, app
             client.delete("/jobs/delete/1", headers=normal_user_token_headers)
             response = client.get("/jobs/get/1/")
             assert response.status_code == status.HTTP_404_NOT_FOUND
-            response = client.delete("/jobs/delete/85", headers=normal_user_token_headers)
+            response = client.delete(
+                "/jobs/delete/85", headers=normal_user_token_headers
+            )
             assert response.status_code == status.HTTP_404_NOT_FOUND
             assert response.json()["detail"] == "Job with id 85 does not exist"

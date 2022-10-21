@@ -1,5 +1,17 @@
 PYTHON=./.venv/bin/python
 
+PHONY = help install install-dev test test-cov run init-db format lint
+
+help:
+	@echo "---------------HELP-----------------"
+	@echo "To install the project type -> make install"
+	@echo "To install the project for development type -> make install-dev"
+	@echo "To test the project type -> make test"
+	@echo "To test with coverage html type -> make test-cov"
+	@echo "To run the project type -> make run"
+	@echo "To format code type -> make format"
+	@echo "To check linter type -> make lint"
+	@echo "------------------------------------"
 
 install:
 	${PYTHON} -m flit install --env --deps=develop

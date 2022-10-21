@@ -63,7 +63,7 @@ def get_job_model_dict():
 
 @pytest.fixture(scope="module")
 def client(
-        app: FastAPI,
+    app: FastAPI,
 ) -> Generator[TestClient, Any, None]:
     """
     Create a new FastAPI TestClient that uses the `db_session` fixture to override
@@ -76,9 +76,9 @@ def client(
 
 @pytest.fixture(scope="module")
 def normal_user_token_headers(
-        client: TestClient,
-        get_fake_container,
-        app,
+    client: TestClient,
+    get_fake_container,
+    app,
 ):
     with app.container.user_service.override(get_fake_container.fake_user_service):
         return authentication_token_from_email(

@@ -1,4 +1,4 @@
-from typing import Optional, Union
+from typing import Union
 
 from src.jobboard.domain.model.model import job_model_event_factory
 from src.jobboard.domain.ports.unit_of_work import JobUnitOfWorkInterface
