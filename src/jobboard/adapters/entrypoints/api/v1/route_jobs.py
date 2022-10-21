@@ -77,7 +77,7 @@ def delete_job(
 ):
     job = job_service.retrieve_job(id_=id)
     if not job:
-        return HTTPException(
+        raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail=f"Job with id {id} does not exist",
         )
