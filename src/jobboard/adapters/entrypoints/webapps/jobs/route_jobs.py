@@ -23,7 +23,7 @@ router = APIRouter(include_in_schema=False)
 async def home(
     request: Request,
     job_service: JobService = Depends(Provide[Container.job_service]),
-    msg: str = None,
+    msg: Optional[str] = None,
 ):
     jobs = job_service.list_jobs()
     return templates.TemplateResponse(

@@ -1,6 +1,6 @@
 PYTHON=./.venv/bin/python
 
-PHONY = help install install-dev test test-cov run init-db format lint
+PHONY = help install install-dev test test-cov run init-db format lint type
 
 help:
 	@echo "---------------HELP-----------------"
@@ -11,6 +11,7 @@ help:
 	@echo "To run the project type -> make run"
 	@echo "To format code type -> make format"
 	@echo "To check linter type -> make lint"
+	@echo "To run static type checker -> make type"
 	@echo "------------------------------------"
 
 install:
@@ -39,3 +40,6 @@ test:
 
 test-cov:
 	${PYTHON} -m pytest --cov-report html --cov=src tests
+
+type:
+	${PYTHON} -m pytype --config=pytype.cfg src/*

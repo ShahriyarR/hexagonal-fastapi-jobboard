@@ -43,7 +43,7 @@ def test_read_job(client, normal_user_token_headers, get_fake_container, app):
                 json=jsonable_encoder(data),
                 headers=normal_user_token_headers,
             )
-
+            assert response.status_code == 200
             response = client.get("/jobs/get/1/")
             assert response.status_code == 200
             assert response.json()["title"] == "SDE super"
