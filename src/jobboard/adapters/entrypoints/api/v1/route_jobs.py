@@ -20,7 +20,7 @@ router = APIRouter()
 templates = Jinja2Templates(directory="src/jobboard/adapters/entrypoints/templates")
 
 
-@router.post("/create-job/", response_model=JobOutputDto)
+@router.post("/create-job/")
 @inject
 def create_job(
     job: JobCreateInputDto,
@@ -31,7 +31,7 @@ def create_job(
 
 
 @router.get(
-    "/get/{id}", response_model=JobOutputDto
+    "/get/{id}"
 )  # if we keep just "{id}" . it would stat catching all routes
 @inject
 def read_job(
@@ -47,7 +47,7 @@ def read_job(
     )
 
 
-@router.get("/all", response_model=list[JobOutputDto])
+@router.get("/all")
 @inject
 def read_jobs(
     job_service: JobService = Depends(Provide[Container.job_service]),
@@ -56,6 +56,7 @@ def read_jobs(
     data = jsonable_encoder(response.value)
     return Response(
         content=json.dumps(data),
+        media_type="application/json",
         status_code=STATUS_CODES[response.type]
     )
 
