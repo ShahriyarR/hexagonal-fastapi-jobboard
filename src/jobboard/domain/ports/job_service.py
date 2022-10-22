@@ -33,10 +33,10 @@ class JobService:
     def update_job_by_id(self, id_: int, job: JobCreateInputDto, owner_id: int) -> bool:
         with self.uow:
             existing_job = self.uow.jobs.get_by_id_for_update(id_)
-            if not existing_job.first():
+            if not existing_job:
                 return False
             job.__dict__.update(owner_id=owner_id)
-            existing_job.update(job.__dict__)
+            existing_job.owner_id = job.owner_id
             self.uow.commit()
         return True
 
