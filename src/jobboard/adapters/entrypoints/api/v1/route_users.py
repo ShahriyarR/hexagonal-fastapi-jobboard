@@ -1,11 +1,12 @@
+import json
+
 from dependency_injector.wiring import Provide, inject
 from fastapi import APIRouter, Depends, Response
 from fastapi.encoders import jsonable_encoder
-import json
 
 from src.jobboard.adapters.entrypoints import STATUS_CODES
 from src.jobboard.domain.ports.user_service import UserService
-from src.jobboard.domain.schemas.users import UserCreateInputDto, UserOutputDto
+from src.jobboard.domain.schemas.users import UserCreateInputDto
 from src.jobboard.main.containers import Container
 
 router = APIRouter()

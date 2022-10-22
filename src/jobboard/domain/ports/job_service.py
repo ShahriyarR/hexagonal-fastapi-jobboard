@@ -1,6 +1,11 @@
 from typing import Union
 
 from src.jobboard.domain.model.model import job_model_event_factory
+from src.jobboard.domain.ports.responses import (
+    ResponseFailure,
+    ResponseSuccess,
+    ResponseTypes,
+)
 from src.jobboard.domain.ports.unit_of_work import JobUnitOfWorkInterface
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto, JobOutputDto
 
@@ -17,18 +22,20 @@ class JobService:
             job_ = self.uow.jobs.get_by_uuid(new_job.uuid)
             return JobOutputDto.from_orm(job_)
 
-    def retrieve_job(self, id_: int) -> Union[JobOutputDto, bool]:
+    def retrieve_job(self, id_: int) -> Union[ResponseFailure, ResponseSuccess]:
         with self.uow:
             job = self.uow.jobs.get(id_)
             if not job:
-                return False
+                return ResponseFailure(ResponseTypes.RESOURCE_ERROR, message=None)
             job_ = self.uow.jobs.get_by_uuid(job.uuid)
-            return JobOutputDto.from_orm(job_)
+            return ResponseSuccess(JobOutputDto.from_orm(job_))
 
-    def list_jobs(self) -> list[JobOutputDto]:
+    def list_jobs(self) -> ResponseSuccess:
         with self.uow:
             jobs = self.uow.jobs.get_all()
-            return [JobOutputDto.from_orm(job) for job in jobs]
+            return ResponseSuccess(
+                [JobOutputDto.from_orm(job) for job in jobs]
+            )
 
     def update_job_by_id(self, id_: int, job: JobCreateInputDto, owner_id: int) -> bool:
         with self.uow:
@@ -40,17 +47,14 @@ class JobService:
             self.uow.commit()
         return True
 
-    def delete_job_by_id(self, id_: int) -> bool:
+    def delete_job_by_id(self, id_: int) -> Union[ResponseFailure, ResponseSuccess]:
         with self.uow:
-            print("inside")
             existing_job = self.uow.jobs.get(id_)
-            print(existing_job)
             if not existing_job:
-                print(">>>>")
-                return False
+                return ResponseFailure(ResponseTypes.RESOURCE_ERROR, message=None)
             self.uow.session.delete(existing_job)
             self.uow.commit()
-        return True
+            return ResponseSuccess(value={"detail": "Successfully deleted."})
 
     def search_job(self, query: str) -> list[JobOutputDto]:
         with self.uow:

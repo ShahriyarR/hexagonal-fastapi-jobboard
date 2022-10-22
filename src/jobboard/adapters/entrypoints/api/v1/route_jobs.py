@@ -1,14 +1,18 @@
+import json
 from typing import Optional
 
 from dependency_injector.wiring import Provide, inject
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, Response, status
+from fastapi.encoders import jsonable_encoder
 from fastapi.templating import Jinja2Templates
 
+from src.jobboard.adapters.entrypoints import STATUS_CODES
 from src.jobboard.adapters.entrypoints.api.v1.route_login import (
     get_current_user_from_token,
 )
 from src.jobboard.domain.model.model import User
 from src.jobboard.domain.ports.job_service import JobService
+from src.jobboard.domain.ports.responses import ResponseTypes
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto, JobOutputDto
 from src.jobboard.main.containers import Container
 
@@ -34,13 +38,13 @@ def read_job(
     id: int,
     job_service: JobService = Depends(Provide[Container.job_service]),
 ):
-    job = job_service.retrieve_job(id_=id)
-    if not job:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Job with this id {id} does not exist",
-        )
-    return job
+    response = job_service.retrieve_job(id_=id)
+    data = jsonable_encoder(response.value)
+    return Response(
+        content=json.dumps(data),
+        media_type="application/json",
+        status_code=STATUS_CODES[response.type],
+    )
 
 
 @router.get("/all", response_model=list[JobOutputDto])
@@ -48,7 +52,12 @@ def read_job(
 def read_jobs(
     job_service: JobService = Depends(Provide[Container.job_service]),
 ):
-    return job_service.list_jobs()
+    response = job_service.list_jobs()
+    data = jsonable_encoder(response.value)
+    return Response(
+        content=json.dumps(data),
+        status_code=STATUS_CODES[response.type]
+    )
 
 
 @router.put("/update/{id}")
@@ -75,17 +84,22 @@ def delete_job(
     current_user: User = Depends(get_current_user_from_token),
     job_service: JobService = Depends(Provide[Container.job_service]),
 ):
-    job = job_service.retrieve_job(id_=id)
-    if not job:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Job with id {id} does not exist",
+    response = job_service.retrieve_job(id_=id)
+    if response.type != ResponseTypes.SUCCESS:
+        return Response(
+            content=json.dumps(response.value),
+            media_type="application/json",
+            status_code=STATUS_CODES[response.type],
         )
-    if job.owner_id == current_user.id or current_user.is_super_user:
-        job_service.delete_job_by_id(id_=id)
-        return {"detail": "Successfully deleted."}
+    if response.value.owner_id == current_user.id or current_user.is_super_user:
+        response = job_service.delete_job_by_id(id_=id)
+        return Response(
+            content=json.dumps(response.value),
+            media_type="application/json",
+            status_code=STATUS_CODES[response.type],
+        )
     raise HTTPException(
-        status_code=status.HTTP_401_UNAUTHORIZED, detail="You are not permitted!!!!"
+        status_code=status.HTTP_401_UNAUTHORIZED, detail="You are not permitted"
     )
 
 

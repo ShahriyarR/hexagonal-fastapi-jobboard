@@ -127,4 +127,3 @@ def test_delete_a_job(client, normal_user_token_headers, get_fake_container, app
                 "/jobs/delete/85", headers=normal_user_token_headers
             )
             assert response.status_code == status.HTTP_404_NOT_FOUND
-            assert response.json()["detail"] == "Job with id 85 does not exist"
