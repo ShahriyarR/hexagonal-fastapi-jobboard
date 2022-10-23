@@ -7,6 +7,7 @@ from src.jobboard.domain.ports.responses import (
     ResponseTypes,
 )
 from src.jobboard.domain.ports.unit_of_work import JobUnitOfWorkInterface
+from src.jobboard.domain.ports.use_cases.jobs import JobsServiceInterface
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto, JobOutputDto
 
 
@@ -26,11 +27,11 @@ def _handle_response_failure(
     )
 
 
-class JobService:
+class JobsService(JobsServiceInterface):
     def __init__(self, uow: JobUnitOfWorkInterface):
         self.uow = uow
 
-    def create(
+    def _create(
         self, job: JobCreateInputDto, owner_id: int
     ) -> Union[ResponseFailure, ResponseSuccess]:
         try:
@@ -50,7 +51,7 @@ class JobService:
         except Exception as exc:
             return ResponseFailure(ResponseTypes.SYSTEM_ERROR, exc)
 
-    def retrieve_job(self, id_: int) -> Union[ResponseFailure, ResponseSuccess]:
+    def _retrieve_job(self, id_: int) -> Union[ResponseFailure, ResponseSuccess]:
         with self.uow:
             job = self.uow.jobs.get(id_)
             return (
@@ -59,12 +60,12 @@ class JobService:
                 else _handle_response_failure(id_)
             )
 
-    def list_jobs(self) -> ResponseSuccess:
+    def _list_jobs(self) -> ResponseSuccess:
         with self.uow:
             jobs = self.uow.jobs.get_all()
             return ResponseSuccess([JobOutputDto.from_orm(job) for job in jobs])
 
-    def update_job_by_id(
+    def _update_job_by_id(
         self, id_: int, job: JobCreateInputDto, owner_id: int
     ) -> Union[ResponseFailure, ResponseSuccess]:
         with self.uow:
@@ -77,7 +78,7 @@ class JobService:
             job_ = self.uow.jobs.get(id_)
             return ResponseSuccess(JobOutputDto.from_orm(job_))
 
-    def delete_job_by_id(self, id_: int) -> Union[ResponseFailure, ResponseSuccess]:
+    def _delete_job_by_id(self, id_: int) -> Union[ResponseFailure, ResponseSuccess]:
         with self.uow:
             existing_job = self.uow.jobs.get(id_)
             if not existing_job:
@@ -86,7 +87,7 @@ class JobService:
             self.uow.commit()
             return ResponseSuccess(value={"detail": "Successfully deleted."})
 
-    def search_job(self, query: str) -> ResponseSuccess:
+    def _search_job(self, query: str) -> ResponseSuccess:
         with self.uow:
             result = self.uow.jobs.search(query)
             return ResponseSuccess(value=result)

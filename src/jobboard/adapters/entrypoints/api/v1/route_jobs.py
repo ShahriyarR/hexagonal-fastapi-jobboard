@@ -11,7 +11,7 @@ from src.jobboard.adapters.entrypoints.api.v1.route_login import (
     get_current_user_from_token,
 )
 from src.jobboard.domain.model.model import User
-from src.jobboard.domain.ports.job_service import JobService
+from src.jobboard.domain.ports.use_cases.jobs import JobsServiceInterface
 from src.jobboard.domain.ports.responses import ResponseTypes
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto
 from src.jobboard.configurator.containers import Container
@@ -25,7 +25,7 @@ templates = Jinja2Templates(directory="src/jobboard/adapters/entrypoints/templat
 def create_job(
     job: JobCreateInputDto,
     current_user: User = Depends(get_current_user_from_token),
-    job_service: JobService = Depends(Provide[Container.job_service]),
+    job_service: JobsServiceInterface = Depends(Provide[Container.job_service]),
 ):
     response = job_service.create(job=job, owner_id=current_user.id)
     data = jsonable_encoder(response.value)
@@ -40,7 +40,7 @@ def create_job(
 @inject
 def read_job(
     id: int,
-    job_service: JobService = Depends(Provide[Container.job_service]),
+    job_service: JobsServiceInterface = Depends(Provide[Container.job_service]),
 ):
     response = job_service.retrieve_job(id_=id)
     data = jsonable_encoder(response.value)
@@ -54,7 +54,7 @@ def read_job(
 @router.get("/all")
 @inject
 def read_jobs(
-    job_service: JobService = Depends(Provide[Container.job_service]),
+    job_service: JobsServiceInterface = Depends(Provide[Container.job_service]),
 ):
     response = job_service.list_jobs()
     data = jsonable_encoder(response.value)
@@ -71,7 +71,7 @@ def update_job(
     id: int,
     job: JobCreateInputDto,
     current_user: User = Depends(get_current_user_from_token),
-    job_service: JobService = Depends(Provide[Container.job_service]),
+    job_service: JobsServiceInterface = Depends(Provide[Container.job_service]),
 ):
     response = job_service.update_job_by_id(id_=id, job=job, owner_id=current_user.id)
     data = jsonable_encoder(response.value)
@@ -87,7 +87,7 @@ def update_job(
 def delete_job(
     id: int,
     current_user: User = Depends(get_current_user_from_token),
-    job_service: JobService = Depends(Provide[Container.job_service]),
+    job_service: JobsServiceInterface = Depends(Provide[Container.job_service]),
 ):
     response = job_service.retrieve_job(id_=id)
     if response.type != ResponseTypes.SUCCESS:
@@ -112,7 +112,7 @@ def delete_job(
 @inject
 def autocomplete(
     term: Optional[str] = None,
-    job_service: JobService = Depends(Provide[Container.job_service]),
+    job_service: JobsServiceInterface = Depends(Provide[Container.job_service]),
 ):
     jobs = job_service.search_job(term)
     return [job.title for job in jobs]

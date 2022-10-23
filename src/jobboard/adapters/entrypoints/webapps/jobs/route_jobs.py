@@ -10,7 +10,7 @@ from src.jobboard.adapters.entrypoints.api.v1.route_login import (
 )
 from src.jobboard.adapters.entrypoints.webapps.jobs.forms import JobCreateForm
 from src.jobboard.domain.model.model import User
-from src.jobboard.domain.ports.job_service import JobService
+from src.jobboard.domain.ports.use_cases.jobs import JobsServiceInterface
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto
 from src.jobboard.configurator.containers import Container
 
@@ -22,7 +22,7 @@ router = APIRouter(include_in_schema=False)
 @inject
 async def home(
     request: Request,
-    job_service: JobService = Depends(Provide[Container.job_service]),
+    job_service: JobsServiceInterface = Depends(Provide[Container.job_service]),
     msg: Optional[str] = None,
 ):
     jobs = job_service.list_jobs()
@@ -36,7 +36,7 @@ async def home(
 def job_detail(
     id: int,
     request: Request,
-    job_service: JobService = Depends(Provide[Container.job_service]),
+    job_service: JobsServiceInterface = Depends(Provide[Container.job_service]),
 ):
     job = job_service.retrieve_job(id_=id)
     return templates.TemplateResponse(
@@ -53,7 +53,7 @@ def create_job(request: Request):
 @inject
 async def create_job(
     request: Request,
-    job_service: JobService = Depends(Provide[Container.job_service]),
+    job_service: JobsServiceInterface = Depends(Provide[Container.job_service]),
 ):
     form = JobCreateForm(request)
     await form.load_data()
@@ -81,7 +81,7 @@ async def create_job(
 @router.get("/delete-job/")
 @inject
 def show_jobs_to_delete(
-    request: Request, job_service: JobService = Depends(Provide[Container.job_service])
+    request: Request, job_service: JobsServiceInterface = Depends(Provide[Container.job_service])
 ):
     jobs = job_service.list_jobs()
     return templates.TemplateResponse(
@@ -93,7 +93,7 @@ def show_jobs_to_delete(
 @inject
 def search(
     request: Request,
-    job_service: JobService = Depends(Provide[Container.job_service]),
+    job_service: JobsServiceInterface = Depends(Provide[Container.job_service]),
     query: Optional[str] = None,
 ):
     jobs = job_service.search_job(query)
