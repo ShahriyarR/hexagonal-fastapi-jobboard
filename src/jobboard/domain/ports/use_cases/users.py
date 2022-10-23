@@ -2,7 +2,7 @@ import abc
 from typing import Union
 
 from src.jobboard.domain.ports.common.responses import ResponseFailure, ResponseSuccess
-from src.jobboard.domain.ports.unit_of_work import UserUnitOfWorkInterface
+from src.jobboard.domain.ports.unit_of_works.users import UserUnitOfWorkInterface
 from src.jobboard.domain.schemas.users import (
     UserCreateInputDto,
     UserLoginInputDto,

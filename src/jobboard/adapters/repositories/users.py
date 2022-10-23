@@ -1,7 +1,5 @@
 from src.jobboard.domain.model import model
-from src.jobboard.domain.ports.repositories.users import (
-    UserRepositoryInterface,
-)
+from src.jobboard.domain.ports.repositories.users import UserRepositoryInterface
 
 
 class UserSqlAlchemyRepository(UserRepositoryInterface):

@@ -2,10 +2,8 @@ from dependency_injector import containers, providers
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from src.jobboard.adapters.db.unit_of_work import (
-    JobSqlAlchemyUnitOfWork,
-    UserSqlAlchemyUnitOfWork,
-)
+from src.jobboard.adapters.unit_of_works.jobs import JobSqlAlchemyUnitOfWork
+from src.jobboard.adapters.unit_of_works.users import UserSqlAlchemyUnitOfWork
 from src.jobboard.adapters.use_cases.jobs import JobService
 from src.jobboard.adapters.use_cases.users import UserService
 
