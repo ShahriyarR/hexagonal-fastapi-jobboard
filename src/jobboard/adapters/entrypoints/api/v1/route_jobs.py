@@ -13,7 +13,7 @@ from src.jobboard.adapters.entrypoints.api.v1.route_login import (
 from src.jobboard.domain.model.model import User
 from src.jobboard.domain.ports.job_service import JobService
 from src.jobboard.domain.ports.responses import ResponseTypes
-from src.jobboard.domain.schemas.jobs import JobCreateInputDto, JobOutputDto
+from src.jobboard.domain.schemas.jobs import JobCreateInputDto
 from src.jobboard.main.containers import Container
 
 router = APIRouter()
@@ -27,12 +27,16 @@ def create_job(
     current_user: User = Depends(get_current_user_from_token),
     job_service: JobService = Depends(Provide[Container.job_service]),
 ):
-    return job_service.create(job=job, owner_id=current_user.id)
+    response = job_service.create(job=job, owner_id=current_user.id)
+    data = jsonable_encoder(response.value)
+    return Response(
+        content=json.dumps(data),
+        media_type="application/json",
+        status_code=STATUS_CODES[response.type],
+    )
 
 
-@router.get(
-    "/get/{id}"
-)  # if we keep just "{id}" . it would stat catching all routes
+@router.get("/get/{id}")  # if we keep just "{id}" . it would stat catching all routes
 @inject
 def read_job(
     id: int,
@@ -57,7 +61,7 @@ def read_jobs(
     return Response(
         content=json.dumps(data),
         media_type="application/json",
-        status_code=STATUS_CODES[response.type]
+        status_code=STATUS_CODES[response.type],
     )
 
 

@@ -51,9 +51,9 @@ class UserService:
     def authenticate_user(self, user: UserLoginInputDto) -> Union[UserOutputDto, bool]:
         with self.uow:
             user_ = self.uow.users.get_by_email(user.email)
-            if not user_:
-                return False
-            if not Hasher.verify_password(user.password, user_.hashed_password):
+            if not user_ or not Hasher.verify_password(
+                user.password, user_.hashed_password
+            ):
                 return False
             return UserOutputDto(
                 id=user_.id,

@@ -14,28 +14,38 @@ class JobService:
     def __init__(self, uow: JobUnitOfWorkInterface):
         self.uow = uow
 
-    def create(self, job: JobCreateInputDto, owner_id: int) -> JobOutputDto:
-        with self.uow:
-            new_job = job_model_event_factory(**job.dict(), owner_id=owner_id)
-            self.uow.jobs.add(new_job)
-            self.uow.commit()
-            job_ = self.uow.jobs.get_by_uuid(new_job.uuid)
-            return JobOutputDto.from_orm(job_)
+    def create(
+        self, job: JobCreateInputDto, owner_id: int
+    ) -> Union[ResponseFailure, ResponseSuccess]:
+        try:
+            with self.uow:
+                new_job = job_model_event_factory(**job.dict(), owner_id=owner_id)
+                self.uow.jobs.add(new_job)
+                self.uow.commit()
+                job_ = self.uow.jobs.get_by_uuid(new_job.uuid)
+                if not job_:
+                    return ResponseFailure(
+                        ResponseTypes.RESOURCE_ERROR,
+                        message={"detail": "Could not find newly created job"},
+                    )
+                return ResponseSuccess(JobOutputDto.from_orm(job_))
+        except Exception as exc:
+            return ResponseFailure(ResponseTypes.SYSTEM_ERROR, exc)
 
     def retrieve_job(self, id_: int) -> Union[ResponseFailure, ResponseSuccess]:
         with self.uow:
             job = self.uow.jobs.get(id_)
             if not job:
-                return ResponseFailure(ResponseTypes.RESOURCE_ERROR, message=None)
-            job_ = self.uow.jobs.get_by_uuid(job.uuid)
-            return ResponseSuccess(JobOutputDto.from_orm(job_))
+                return ResponseFailure(
+                    ResponseTypes.RESOURCE_ERROR,
+                    message={"detail": f"Job with {id_} does not exist"},
+                )
+            return ResponseSuccess(JobOutputDto.from_orm(job))
 
     def list_jobs(self) -> ResponseSuccess:
         with self.uow:
             jobs = self.uow.jobs.get_all()
-            return ResponseSuccess(
-                [JobOutputDto.from_orm(job) for job in jobs]
-            )
+            return ResponseSuccess([JobOutputDto.from_orm(job) for job in jobs])
 
     def update_job_by_id(self, id_: int, job: JobCreateInputDto, owner_id: int) -> bool:
         with self.uow:
@@ -51,7 +61,10 @@ class JobService:
         with self.uow:
             existing_job = self.uow.jobs.get(id_)
             if not existing_job:
-                return ResponseFailure(ResponseTypes.RESOURCE_ERROR, message=None)
+                return ResponseFailure(
+                    ResponseTypes.RESOURCE_ERROR,
+                    message={"detail": f"Job with {id_} does not exist"},
+                )
             self.uow.session.delete(existing_job)
             self.uow.commit()
             return ResponseSuccess(value={"detail": "Successfully deleted."})
