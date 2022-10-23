@@ -1,25 +1,26 @@
 from typing import Union
 
+from src.jobboard.configurator.hashing import Hasher
 from src.jobboard.domain.model.model import user_model_event_factory
-from src.jobboard.domain.ports.responses import (
+from src.jobboard.domain.ports.common.responses import (
     ResponseFailure,
     ResponseSuccess,
     ResponseTypes,
 )
 from src.jobboard.domain.ports.unit_of_work import UserUnitOfWorkInterface
+from src.jobboard.domain.ports.use_cases.users import UsersServiceInterface
 from src.jobboard.domain.schemas.users import (
     UserCreateInputDto,
     UserLoginInputDto,
     UserOutputDto,
 )
-from src.jobboard.configurator.hashing import Hasher
 
 
-class UserService:
+class UsersService(UsersServiceInterface):
     def __init__(self, uow: UserUnitOfWorkInterface):
         self.uow = uow
 
-    def create(
+    def _create(
         self, user: UserCreateInputDto
     ) -> Union[ResponseSuccess, ResponseFailure]:
         try:
@@ -48,7 +49,7 @@ class UserService:
         except Exception as exc:
             return ResponseFailure(ResponseTypes.SYSTEM_ERROR, exc)
 
-    def authenticate_user(self, user: UserLoginInputDto) -> Union[UserOutputDto, bool]:
+    def _authenticate_user(self, user: UserLoginInputDto) -> Union[UserOutputDto, bool]:
         with self.uow:
             user_ = self.uow.users.get_by_email(user.email)
             if not user_ or not Hasher.verify_password(

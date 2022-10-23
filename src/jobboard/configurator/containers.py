@@ -7,7 +7,7 @@ from src.jobboard.adapters.db.unit_of_work import (
     UserSqlAlchemyUnitOfWork,
 )
 from src.jobboard.adapters.use_cases.jobs import JobsService
-from src.jobboard.domain.ports.user_service import UserService
+from src.jobboard.adapters.use_cases.users import UsersService
 from src.jobboard.configurator import config
 
 
@@ -35,7 +35,7 @@ class Container(containers.DeclarativeContainer):
     )
 
     user_service = providers.Factory(
-        UserService,
+        UsersService,
         uow=user_uow,
     )
 

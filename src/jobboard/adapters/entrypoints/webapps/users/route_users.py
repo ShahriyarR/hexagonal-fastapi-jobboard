@@ -4,9 +4,9 @@ from fastapi.templating import Jinja2Templates
 from sqlalchemy.exc import IntegrityError
 
 from src.jobboard.adapters.entrypoints.webapps.users.forms import UserCreateForm
-from src.jobboard.domain.ports.user_service import UserService
-from src.jobboard.domain.schemas.users import UserCreateInputDto
 from src.jobboard.configurator.containers import Container
+from src.jobboard.domain.ports.use_cases.users import UsersServiceInterface
+from src.jobboard.domain.schemas.users import UserCreateInputDto
 
 templates = Jinja2Templates(directory="src/jobboard/adapters/entrypoints/templates")
 router = APIRouter(include_in_schema=False)
@@ -21,7 +21,7 @@ def register(request: Request):
 @inject
 async def register(
     request: Request,
-    user_service: UserService = Depends(Provide[Container.user_service]),
+    user_service: UsersServiceInterface = Depends(Provide[Container.user_service]),
 ):
     form = UserCreateForm(request)
     await form.load_data()

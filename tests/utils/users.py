@@ -2,10 +2,10 @@ from dependency_injector.wiring import Provide, inject
 from fastapi import Depends
 from fastapi.testclient import TestClient
 
-from src.jobboard.domain.model.model import user_model_factory
-from src.jobboard.domain.ports.user_service import UserService
-from src.jobboard.domain.schemas.users import UserCreateInputDto
 from src.jobboard.configurator.hashing import Hasher
+from src.jobboard.domain.model.model import user_model_factory
+from src.jobboard.domain.ports.use_cases.users import UsersServiceInterface
+from src.jobboard.domain.schemas.users import UserCreateInputDto
 from tests.fake_container import Container
 
 
@@ -27,7 +27,7 @@ def user_authentication_headers(
 def authentication_token_from_email(
     client: TestClient,
     email: str,
-    user_service: UserService = Depends(Provide[Container.fake_user_service]),
+    user_service: UsersServiceInterface = Depends(Provide[Container.fake_user_service]),
 ):
     """
     Return a valid token for the user with given email.

@@ -1,6 +1,7 @@
 import abc
 
-from src.jobboard.domain.ports import messagebus, repository
+from src.jobboard.domain.ports import repository
+from src.jobboard.domain.ports.common import messagebus
 
 
 class UserUnitOfWorkInterface(abc.ABC):

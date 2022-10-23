@@ -10,11 +10,11 @@ from src.jobboard.adapters.entrypoints import STATUS_CODES
 from src.jobboard.adapters.entrypoints.api.v1.route_login import (
     get_current_user_from_token,
 )
-from src.jobboard.domain.model.model import User
-from src.jobboard.domain.ports.use_cases.jobs import JobsServiceInterface
-from src.jobboard.domain.ports.responses import ResponseTypes
-from src.jobboard.domain.schemas.jobs import JobCreateInputDto
 from src.jobboard.configurator.containers import Container
+from src.jobboard.domain.model.model import User
+from src.jobboard.domain.ports.common.responses import ResponseTypes
+from src.jobboard.domain.ports.use_cases.jobs import JobsServiceInterface
+from src.jobboard.domain.schemas.jobs import JobCreateInputDto
 
 router = APIRouter()
 templates = Jinja2Templates(directory="src/jobboard/adapters/entrypoints/templates")

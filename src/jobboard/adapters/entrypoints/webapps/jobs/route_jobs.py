@@ -9,10 +9,10 @@ from src.jobboard.adapters.entrypoints.api.v1.route_login import (
     get_current_user_from_token,
 )
 from src.jobboard.adapters.entrypoints.webapps.jobs.forms import JobCreateForm
+from src.jobboard.configurator.containers import Container
 from src.jobboard.domain.model.model import User
 from src.jobboard.domain.ports.use_cases.jobs import JobsServiceInterface
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto
-from src.jobboard.configurator.containers import Container
 
 templates = Jinja2Templates(directory="src/jobboard/adapters/entrypoints/templates")
 router = APIRouter(include_in_schema=False)
@@ -81,7 +81,8 @@ async def create_job(
 @router.get("/delete-job/")
 @inject
 def show_jobs_to_delete(
-    request: Request, job_service: JobsServiceInterface = Depends(Provide[Container.job_service])
+    request: Request,
+    job_service: JobsServiceInterface = Depends(Provide[Container.job_service]),
 ):
     jobs = job_service.list_jobs()
     return templates.TemplateResponse(

@@ -1,19 +1,18 @@
 import abc
 from typing import Union
 
-from src.jobboard.domain.ports.responses import ResponseFailure, ResponseSuccess
+from src.jobboard.domain.ports.common.responses import ResponseFailure, ResponseSuccess
 from src.jobboard.domain.ports.unit_of_work import JobUnitOfWorkInterface
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto
 
 
 class JobsServiceInterface(abc.ABC):
-
     @abc.abstractmethod
     def __init__(self, uow: JobUnitOfWorkInterface):
         self.uow = uow
 
     def create(
-            self, job: JobCreateInputDto, owner_id: int
+        self, job: JobCreateInputDto, owner_id: int
     ) -> Union[ResponseFailure, ResponseSuccess]:
         return self._create(job, owner_id)
 
@@ -24,7 +23,7 @@ class JobsServiceInterface(abc.ABC):
         return self._list_jobs()
 
     def update_job_by_id(
-            self, id_: int, job: JobCreateInputDto, owner_id: int
+        self, id_: int, job: JobCreateInputDto, owner_id: int
     ) -> Union[ResponseFailure, ResponseSuccess]:
         return self._update_job_by_id(id_, job, owner_id)
 
@@ -36,7 +35,7 @@ class JobsServiceInterface(abc.ABC):
 
     @abc.abstractmethod
     def _create(
-            self, job: JobCreateInputDto, owner_id: int
+        self, job: JobCreateInputDto, owner_id: int
     ) -> Union[ResponseFailure, ResponseSuccess]:
         raise NotImplementedError
 
@@ -50,7 +49,7 @@ class JobsServiceInterface(abc.ABC):
 
     @abc.abstractmethod
     def _update_job_by_id(
-            self, id_: int, job: JobCreateInputDto, owner_id: int
+        self, id_: int, job: JobCreateInputDto, owner_id: int
     ) -> Union[ResponseFailure, ResponseSuccess]:
         raise NotImplementedError
 
