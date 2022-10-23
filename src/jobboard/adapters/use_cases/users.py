@@ -8,7 +8,7 @@ from src.jobboard.domain.ports.common.responses import (
     ResponseTypes,
 )
 from src.jobboard.domain.ports.unit_of_work import UserUnitOfWorkInterface
-from src.jobboard.domain.ports.use_cases.users import UsersServiceInterface
+from src.jobboard.domain.ports.use_cases.users import UserServiceInterface
 from src.jobboard.domain.schemas.users import (
     UserCreateInputDto,
     UserLoginInputDto,
@@ -16,7 +16,7 @@ from src.jobboard.domain.schemas.users import (
 )
 
 
-class UsersService(UsersServiceInterface):
+class UserService(UserServiceInterface):
     def __init__(self, uow: UserUnitOfWorkInterface):
         self.uow = uow
 

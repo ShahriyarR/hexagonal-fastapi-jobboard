@@ -7,7 +7,7 @@ from src.jobboard.domain.ports.common.responses import (
     ResponseTypes,
 )
 from src.jobboard.domain.ports.unit_of_work import JobUnitOfWorkInterface
-from src.jobboard.domain.ports.use_cases.jobs import JobsServiceInterface
+from src.jobboard.domain.ports.use_cases.jobs import JobServiceInterface
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto, JobOutputDto
 
 
@@ -27,7 +27,7 @@ def _handle_response_failure(
     )
 
 
-class JobsService(JobsServiceInterface):
+class JobService(JobServiceInterface):
     def __init__(self, uow: JobUnitOfWorkInterface):
         self.uow = uow
 

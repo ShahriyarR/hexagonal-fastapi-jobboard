@@ -9,7 +9,7 @@ from src.jobboard.adapters.entrypoints.api.utils import OAuth2PasswordBearerWith
 from src.jobboard.configurator.config import settings
 from src.jobboard.configurator.containers import Container
 from src.jobboard.configurator.security import create_access_token
-from src.jobboard.domain.ports.use_cases.users import UsersServiceInterface
+from src.jobboard.domain.ports.use_cases.users import UserServiceInterface
 from src.jobboard.domain.schemas.tokens import Token
 from src.jobboard.domain.schemas.users import UserLoginInputDto, UserOutputDto
 
@@ -21,7 +21,7 @@ router = APIRouter()
 def login_for_access_token(
     response: Response,
     form_data: OAuth2PasswordRequestForm = Depends(),
-    user_service: UsersServiceInterface = Depends(Provide[Container.user_service]),
+    user_service: UserServiceInterface = Depends(Provide[Container.user_service]),
 ):
     user = UserLoginInputDto(email=form_data.username, password=form_data.password)
     user = user_service.authenticate_user(user)
@@ -46,7 +46,7 @@ oauth2_scheme = OAuth2PasswordBearerWithCookie(tokenUrl="/login/token")
 @inject
 def get_current_user_from_token(
     token: str = Depends(oauth2_scheme),
-    user_service: UsersServiceInterface = Depends(Provide[Container.user_service]),
+    user_service: UserServiceInterface = Depends(Provide[Container.user_service]),
 ):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,

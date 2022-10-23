@@ -6,7 +6,7 @@ from src.jobboard.domain.ports.unit_of_work import JobUnitOfWorkInterface
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto
 
 
-class JobsServiceInterface(abc.ABC):
+class JobServiceInterface(abc.ABC):
     @abc.abstractmethod
     def __init__(self, uow: JobUnitOfWorkInterface):
         self.uow = uow

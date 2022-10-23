@@ -10,7 +10,7 @@ from src.jobboard.domain.schemas.users import (
 )
 
 
-class UsersServiceInterface(abc.ABC):
+class UserServiceInterface(abc.ABC):
     @abc.abstractmethod
     def __init__(self, uow: UserUnitOfWorkInterface):
         self.uow = uow

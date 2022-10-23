@@ -2,7 +2,8 @@ from typing import Any, Callable
 
 from sqlalchemy.orm.session import Session
 
-from src.jobboard.adapters.db import repository
+from src.jobboard.adapters.repositories.users import UserSqlAlchemyRepository
+from src.jobboard.adapters.repositories.jobs import JobSqlAlchemyRepository
 from src.jobboard.domain.ports.unit_of_work import (
     JobUnitOfWorkInterface,
     UserUnitOfWorkInterface,
@@ -15,7 +16,7 @@ class UserSqlAlchemyUnitOfWork(UserUnitOfWorkInterface):
 
     def __enter__(self):
         self.session = self.session_factory()  # type: Session
-        self.users = repository.UserSqlAlchemyRepository(self.session)
+        self.users = UserSqlAlchemyRepository(self.session)
         return super().__enter__()
 
     def __exit__(self, *args):
@@ -35,7 +36,7 @@ class JobSqlAlchemyUnitOfWork(JobUnitOfWorkInterface):
 
     def __enter__(self):
         self.session = self.session_factory()  # type: Session
-        self.jobs = repository.JobSqlAlchemyRepository(self.session)
+        self.jobs = JobSqlAlchemyRepository(self.session)
         return super().__enter__()
 
     def __exit__(self, *args):

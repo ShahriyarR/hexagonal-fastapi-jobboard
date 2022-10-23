@@ -6,8 +6,8 @@ from src.jobboard.adapters.db.unit_of_work import (
     JobSqlAlchemyUnitOfWork,
     UserSqlAlchemyUnitOfWork,
 )
-from src.jobboard.adapters.use_cases.jobs import JobsService
-from src.jobboard.adapters.use_cases.users import UsersService
+from src.jobboard.adapters.use_cases.jobs import JobService
+from src.jobboard.adapters.use_cases.users import UserService
 
 
 class Container(containers.DeclarativeContainer):
@@ -35,8 +35,8 @@ class Container(containers.DeclarativeContainer):
     )
 
     fake_user_service = providers.Factory(
-        UsersService,
+        UserService,
         uow=user_uow,
     )
 
-    fake_job_service = providers.Factory(JobsService, uow=job_uow)
+    fake_job_service = providers.Factory(JobService, uow=job_uow)

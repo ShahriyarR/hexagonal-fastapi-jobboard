@@ -1,11 +1,12 @@
 import abc
 
-from src.jobboard.domain.ports import repository
+from src.jobboard.domain.ports.repositories.users import UserRepositoryInterface
+from src.jobboard.domain.ports.repositories.jobs import JobRepositoryInterface
 from src.jobboard.domain.ports.common import messagebus
 
 
 class UserUnitOfWorkInterface(abc.ABC):
-    users: repository.UserRepositoryInterface
+    users: UserRepositoryInterface
 
     def __enter__(self) -> "UserUnitOfWorkInterface":
         return self
@@ -33,7 +34,7 @@ class UserUnitOfWorkInterface(abc.ABC):
 
 
 class JobUnitOfWorkInterface(abc.ABC):
-    jobs: repository.JobRepositoryInterface
+    jobs: JobRepositoryInterface
 
     def __enter__(self) -> "JobUnitOfWorkInterface":
         return self
