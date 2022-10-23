@@ -73,13 +73,13 @@ def update_job(
     current_user: User = Depends(get_current_user_from_token),
     job_service: JobService = Depends(Provide[Container.job_service]),
 ):
-    # TODO: this is still not obvious why we are updating the owner id, just grabbed from original repo.
-    message = job_service.update_job_by_id(id_=id, job=job, owner_id=current_user.id)
-    if not message:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND, detail=f"Job with id {id} not found"
-        )
-    return {"msg": "Successfully updated data."}
+    response = job_service.update_job_by_id(id_=id, job=job, owner_id=current_user.id)
+    data = jsonable_encoder(response.value)
+    return Response(
+        content=json.dumps(data),
+        media_type="application/json",
+        status_code=STATUS_CODES[response.type],
+    )
 
 
 @router.delete("/delete/{id}")

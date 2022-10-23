@@ -97,9 +97,10 @@ def test_update_a_job(client, normal_user_token_headers, get_fake_container, app
             )
             data.title = "test new title"
             response = client.put("/jobs/update/1", json=jsonable_encoder(data))
-            assert response.json()["msg"] == "Successfully updated data."
+            assert response.status_code == 200
             response = client.put("/jobs/update/85", json=jsonable_encoder(data))
-            assert response.json()["detail"] == "Job with id 85 not found"
+            print(response.json())
+            assert response.json()["message"]["detail"] == "Job with id 85 not found"
             assert response.status_code == status.HTTP_404_NOT_FOUND
 
 
