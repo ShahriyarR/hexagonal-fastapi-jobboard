@@ -1,13 +1,13 @@
 from typing import Union
 
-from src.jobboard.hexagon.model.model import job_model_event_factory
-from src.jobboard.hexagon.ports.responses import (
+from src.jobboard.domain.model.model import job_model_event_factory
+from src.jobboard.domain.ports.responses import (
     ResponseFailure,
     ResponseSuccess,
     ResponseTypes,
 )
-from src.jobboard.hexagon.ports.unit_of_work import JobUnitOfWorkInterface
-from src.jobboard.hexagon.schemas.jobs import JobCreateInputDto, JobOutputDto
+from src.jobboard.domain.ports.unit_of_work import JobUnitOfWorkInterface
+from src.jobboard.domain.schemas.jobs import JobCreateInputDto, JobOutputDto
 
 
 def _handle_response_failure(

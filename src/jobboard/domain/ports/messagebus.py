@@ -1,6 +1,6 @@
 from typing import Callable, Type
 
-from src.jobboard.hexagon.model import events
+from src.jobboard.domain.model import events
 
 
 def handle(event: events.Event):

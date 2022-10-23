@@ -1,7 +1,7 @@
 import abc
 from typing import Set
 
-from src.jobboard.hexagon.model import model
+from src.jobboard.domain.model import model
 
 
 class UserRepositoryInterface(abc.ABC):

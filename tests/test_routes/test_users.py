@@ -1,6 +1,6 @@
 from fastapi.encoders import jsonable_encoder
 
-from src.jobboard.hexagon.schemas.users import UserCreateInputDto
+from src.jobboard.domain.schemas.users import UserCreateInputDto
 
 
 def test_create_user(app, client, get_fake_container):

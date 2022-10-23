@@ -82,7 +82,7 @@ src/jobboard/
 │           └── users
 │               ├── forms.py
 │               └── route_users.py
-├── hexagon
+├── domain
 │   ├── model
 │   │   ├── events.py
 │   │   ├── __init__.py

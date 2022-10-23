@@ -2,9 +2,9 @@ from dependency_injector.wiring import Provide, inject
 from fastapi import Depends
 from fastapi.testclient import TestClient
 
-from src.jobboard.hexagon.model.model import user_model_factory
-from src.jobboard.hexagon.ports.user_service import UserService
-from src.jobboard.hexagon.schemas.users import UserCreateInputDto
+from src.jobboard.domain.model.model import user_model_factory
+from src.jobboard.domain.ports.user_service import UserService
+from src.jobboard.domain.schemas.users import UserCreateInputDto
 from src.jobboard.configurator.hashing import Hasher
 from tests.fake_container import Container
 

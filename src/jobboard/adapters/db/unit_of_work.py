@@ -3,7 +3,7 @@ from typing import Any, Callable
 from sqlalchemy.orm.session import Session
 
 from src.jobboard.adapters.db import repository
-from src.jobboard.hexagon.ports.unit_of_work import (
+from src.jobboard.domain.ports.unit_of_work import (
     JobUnitOfWorkInterface,
     UserUnitOfWorkInterface,
 )

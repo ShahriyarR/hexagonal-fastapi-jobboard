@@ -11,7 +11,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import registry, relationship
 
-from src.jobboard.hexagon.model import model
+from src.jobboard.domain.model import model
 
 metadata = MetaData()
 mapper_registry = registry(metadata=metadata)

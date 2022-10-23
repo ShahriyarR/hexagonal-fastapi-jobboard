@@ -5,8 +5,8 @@ from fastapi import APIRouter, Depends, Response
 from fastapi.encoders import jsonable_encoder
 
 from src.jobboard.adapters.entrypoints import STATUS_CODES
-from src.jobboard.hexagon.ports.user_service import UserService
-from src.jobboard.hexagon.schemas.users import UserCreateInputDto
+from src.jobboard.domain.ports.user_service import UserService
+from src.jobboard.domain.schemas.users import UserCreateInputDto
 from src.jobboard.configurator.containers import Container
 
 router = APIRouter()

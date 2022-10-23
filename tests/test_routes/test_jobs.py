@@ -1,7 +1,7 @@
 from fastapi import status
 from fastapi.encoders import jsonable_encoder
 
-from src.jobboard.hexagon.schemas.jobs import JobCreateInputDto, JobOutputDto
+from src.jobboard.domain.schemas.jobs import JobCreateInputDto, JobOutputDto
 
 
 def test_create_job(

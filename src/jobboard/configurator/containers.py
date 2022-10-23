@@ -6,8 +6,8 @@ from src.jobboard.adapters.db.unit_of_work import (
     JobSqlAlchemyUnitOfWork,
     UserSqlAlchemyUnitOfWork,
 )
-from src.jobboard.hexagon.ports.job_service import JobService
-from src.jobboard.hexagon.ports.user_service import UserService
+from src.jobboard.domain.ports.job_service import JobService
+from src.jobboard.domain.ports.user_service import UserService
 from src.jobboard.configurator import config
 
 
