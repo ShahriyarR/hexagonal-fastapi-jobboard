@@ -14,7 +14,7 @@ from src.jobboard.domain.model.model import User
 from src.jobboard.domain.ports.job_service import JobService
 from src.jobboard.domain.ports.responses import ResponseTypes
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto
-from src.jobboard.main.containers import Container
+from src.jobboard.configurator.containers import Container
 
 router = APIRouter()
 templates = Jinja2Templates(directory="src/jobboard/adapters/entrypoints/templates")

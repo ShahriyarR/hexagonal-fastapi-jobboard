@@ -1,6 +1,6 @@
 import databases
 
-from src.jobboard.main.config import get_database_uri
+from src.jobboard.configurator.config import get_database_uri
 
 uri = get_database_uri()
 

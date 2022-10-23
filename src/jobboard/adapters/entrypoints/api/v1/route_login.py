@@ -9,9 +9,9 @@ from src.jobboard.adapters.entrypoints.api.utils import OAuth2PasswordBearerWith
 from src.jobboard.domain.ports.user_service import UserService
 from src.jobboard.domain.schemas.tokens import Token
 from src.jobboard.domain.schemas.users import UserLoginInputDto, UserOutputDto
-from src.jobboard.main.config import settings
-from src.jobboard.main.containers import Container
-from src.jobboard.main.security import create_access_token
+from src.jobboard.configurator.config import settings
+from src.jobboard.configurator.containers import Container
+from src.jobboard.configurator.security import create_access_token
 
 router = APIRouter()
 

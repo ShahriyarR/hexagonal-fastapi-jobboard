@@ -8,7 +8,7 @@ from src.jobboard.adapters.db.unit_of_work import (
 )
 from src.jobboard.domain.ports.job_service import JobService
 from src.jobboard.domain.ports.user_service import UserService
-from src.jobboard.main import config
+from src.jobboard.configurator import config
 
 
 class Container(containers.DeclarativeContainer):

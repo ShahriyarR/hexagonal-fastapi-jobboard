@@ -4,7 +4,7 @@ from alembic import context
 from sqlalchemy import engine_from_config, pool
 
 from src.jobboard.adapters.db import orm
-from src.jobboard.main.config import get_database_uri
+from src.jobboard.configurator.config import get_database_uri
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

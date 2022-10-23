@@ -5,7 +5,7 @@ from fastapi.testclient import TestClient
 from src.jobboard.domain.model.model import user_model_factory
 from src.jobboard.domain.ports.user_service import UserService
 from src.jobboard.domain.schemas.users import UserCreateInputDto
-from src.jobboard.main.hashing import Hasher
+from src.jobboard.configurator.hashing import Hasher
 from tests.fake_container import Container
 
 

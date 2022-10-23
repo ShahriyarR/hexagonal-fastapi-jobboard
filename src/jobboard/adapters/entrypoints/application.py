@@ -4,8 +4,8 @@ from fastapi.staticfiles import StaticFiles
 from src.jobboard.adapters.db.orm import start_mappers
 from src.jobboard.adapters.entrypoints.api.base import api_router
 from src.jobboard.adapters.entrypoints.webapps.base import api_router as web_app_router
-from src.jobboard.main.config import settings
-from src.jobboard.main.containers import Container
+from src.jobboard.configurator.config import settings
+from src.jobboard.configurator.containers import Container
 
 
 def configure_static(app):

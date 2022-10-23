@@ -6,7 +6,7 @@ from sqlalchemy.exc import IntegrityError
 from src.jobboard.adapters.entrypoints.webapps.users.forms import UserCreateForm
 from src.jobboard.domain.ports.user_service import UserService
 from src.jobboard.domain.schemas.users import UserCreateInputDto
-from src.jobboard.main.containers import Container
+from src.jobboard.configurator.containers import Container
 
 templates = Jinja2Templates(directory="src/jobboard/adapters/entrypoints/templates")
 router = APIRouter(include_in_schema=False)

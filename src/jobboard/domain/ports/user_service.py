@@ -12,7 +12,7 @@ from src.jobboard.domain.schemas.users import (
     UserLoginInputDto,
     UserOutputDto,
 )
-from src.jobboard.main.hashing import Hasher
+from src.jobboard.configurator.hashing import Hasher
 
 
 class UserService:

@@ -10,7 +10,7 @@ from sqlalchemy.orm import sessionmaker
 
 from src.jobboard.adapters.db.orm import metadata
 from src.jobboard.adapters.entrypoints.application import app as original_app
-from src.jobboard.main.config import settings
+from src.jobboard.configurator.config import settings
 from tests.fake_container import Container
 from tests.utils.users import authentication_token_from_email
 

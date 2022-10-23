@@ -99,7 +99,7 @@ src/jobboard/
 │       ├── tokens.py
 │       └── users.py
 ├── __init__.py
-└── main
+└── configurator
     ├── config.py
     ├── containers.py
     ├── hashing.py
