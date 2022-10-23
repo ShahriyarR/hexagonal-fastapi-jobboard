@@ -4,8 +4,8 @@ from fastapi.templating import Jinja2Templates
 from sqlalchemy.exc import IntegrityError
 
 from src.jobboard.adapters.entrypoints.webapps.users.forms import UserCreateForm
-from src.jobboard.domain.ports.user_service import UserService
-from src.jobboard.domain.schemas.users import UserCreateInputDto
+from src.jobboard.hexagon.ports.user_service import UserService
+from src.jobboard.hexagon.schemas.users import UserCreateInputDto
 from src.jobboard.configurator.containers import Container
 
 templates = Jinja2Templates(directory="src/jobboard/adapters/entrypoints/templates")

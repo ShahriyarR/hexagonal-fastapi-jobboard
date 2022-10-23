@@ -1,5 +1,5 @@
-from src.jobboard.domain.model.events import Event, UserCreated
-from src.jobboard.domain.model.model import (
+from src.jobboard.hexagon.model.events import Event, UserCreated
+from src.jobboard.hexagon.model.model import (
     User,
     user_model_event_factory,
     user_model_factory,

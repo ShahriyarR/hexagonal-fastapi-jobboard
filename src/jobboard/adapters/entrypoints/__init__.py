@@ -1,4 +1,4 @@
-from src.jobboard.domain.ports.responses import ResponseTypes
+from src.jobboard.hexagon.ports.responses import ResponseTypes
 
 STATUS_CODES = {
     ResponseTypes.SUCCESS: 200,

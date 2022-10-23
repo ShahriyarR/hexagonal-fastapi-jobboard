@@ -9,9 +9,9 @@ from src.jobboard.adapters.entrypoints.api.v1.route_login import (
     get_current_user_from_token,
 )
 from src.jobboard.adapters.entrypoints.webapps.jobs.forms import JobCreateForm
-from src.jobboard.domain.model.model import User
-from src.jobboard.domain.ports.job_service import JobService
-from src.jobboard.domain.schemas.jobs import JobCreateInputDto
+from src.jobboard.hexagon.model.model import User
+from src.jobboard.hexagon.ports.job_service import JobService
+from src.jobboard.hexagon.schemas.jobs import JobCreateInputDto
 from src.jobboard.configurator.containers import Container
 
 templates = Jinja2Templates(directory="src/jobboard/adapters/entrypoints/templates")

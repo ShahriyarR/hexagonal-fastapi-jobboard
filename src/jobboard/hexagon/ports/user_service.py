@@ -1,13 +1,13 @@
 from typing import Union
 
-from src.jobboard.domain.model.model import user_model_event_factory
-from src.jobboard.domain.ports.responses import (
+from src.jobboard.hexagon.model.model import user_model_event_factory
+from src.jobboard.hexagon.ports.responses import (
     ResponseFailure,
     ResponseSuccess,
     ResponseTypes,
 )
-from src.jobboard.domain.ports.unit_of_work import UserUnitOfWorkInterface
-from src.jobboard.domain.schemas.users import (
+from src.jobboard.hexagon.ports.unit_of_work import UserUnitOfWorkInterface
+from src.jobboard.hexagon.schemas.users import (
     UserCreateInputDto,
     UserLoginInputDto,
     UserOutputDto,

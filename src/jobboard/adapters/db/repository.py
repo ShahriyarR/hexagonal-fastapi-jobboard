@@ -1,5 +1,5 @@
-from src.jobboard.domain.model import model
-from src.jobboard.domain.ports.repository import (
+from src.jobboard.hexagon.model import model
+from src.jobboard.hexagon.ports.repository import (
     JobRepositoryInterface,
     UserRepositoryInterface,
 )
