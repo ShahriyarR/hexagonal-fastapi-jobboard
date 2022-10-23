@@ -10,7 +10,9 @@ from src.jobboard.domain.ports.unit_of_work import JobUnitOfWorkInterface
 from src.jobboard.domain.schemas.jobs import JobCreateInputDto, JobOutputDto
 
 
-def _handle_response_failure(id_: int = None, message: dict[str] = None):
+def _handle_response_failure(
+    id_: int = None, message: dict[str] = None
+) -> ResponseFailure:
     return (
         ResponseFailure(
             ResponseTypes.RESOURCE_ERROR,
@@ -84,6 +86,7 @@ class JobService:
             self.uow.commit()
             return ResponseSuccess(value={"detail": "Successfully deleted."})
 
-    def search_job(self, query: str) -> list[JobOutputDto]:
+    def search_job(self, query: str) -> ResponseSuccess:
         with self.uow:
-            return self.uow.jobs.search(query)
+            result = self.uow.jobs.search(query)
+            return ResponseSuccess(value=result)

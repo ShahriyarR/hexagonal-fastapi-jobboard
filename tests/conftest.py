@@ -61,6 +61,18 @@ def get_job_model_dict():
     }
 
 
+@pytest.fixture
+def get_job_data():
+    return {
+        "title": "New Job super",
+        "company": "doogle",
+        "company_url": "www.doogle.com",
+        "location": "USA,NY",
+        "description": "fastapi",
+        "date_posted": "2022-03-20",
+    }
+
+
 @pytest.fixture(scope="module")
 def client(
     app: FastAPI,
