@@ -1,5 +1,7 @@
 from typing import Callable, Type
 
+from loguru import logger
+
 from src.jobboard.domain.model import events
 
 
@@ -9,11 +11,13 @@ def handle(event: events.Event):
 
 
 def send_user_created_notification(event: events.UserCreated):
-    print(f"User created {event.user_name}")
+    with logger.contextualize(request_id="SEND_USER_CREATED_NOTIFICATION"):
+        logger.info(f"User created {event.user_name}")
 
 
 def send_job_created_notification(event: events.JobCreated):
-    print(f"Job created {event.title}")
+    with logger.contextualize(request_id="SEND_JOB_CREATED_NOTIFICATION"):
+        logger.info(f"Job created {event.title}")
 
 
 HANDLERS = {

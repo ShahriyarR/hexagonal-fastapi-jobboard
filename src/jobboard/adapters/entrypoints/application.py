@@ -25,6 +25,7 @@ def start_application():
     container = Container()
     app = FastAPI(title=settings.PROJECT_NAME, version=settings.PROJECT_VERSION)
     app.container = container
+    app.logger = Container.LOGGER
     configure_static(app)
     include_router(app)
     start_mappers()
