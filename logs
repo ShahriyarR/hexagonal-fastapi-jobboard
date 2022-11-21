@@ -1053,3 +1053,17 @@ INFO     2022-11-21 22:20:43.370 request id: SEND_JOB_CREATED_NOTIFICATION - src
 INFO     2022-11-21 22:20:43.387 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
 INFO     2022-11-21 22:20:43.409 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
 INFO     2022-11-21 22:20:43.696 request id: SEND_USER_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_user_created_notification - User created testuser
+INFO     2022-11-21 22:31:53.235 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:31:53.246 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:31:53.257 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:31:53.272 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:31:53.287 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:31:53.301 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:31:53.553 request id: SEND_USER_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_user_created_notification - User created testuser
+INFO     2022-11-21 22:32:00.197 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:32:00.209 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:32:00.222 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:32:00.230 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:32:00.241 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:32:00.256 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-21 22:32:00.512 request id: SEND_USER_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_user_created_notification - User created testuser
