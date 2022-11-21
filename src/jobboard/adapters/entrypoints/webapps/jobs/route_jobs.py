@@ -27,7 +27,7 @@ async def home(
 ):
     jobs = job_service.list_jobs()
     return templates.TemplateResponse(
-        "general_pages/homepage.html", {"request": request, "jobs": jobs, "msg": msg}
+        "general_pages/homepage.html", {"request": request, "jobs": jobs.value, "msg": msg}
     )
 
 
