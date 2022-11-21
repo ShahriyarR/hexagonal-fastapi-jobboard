@@ -27,7 +27,8 @@ async def home(
 ):
     jobs = job_service.list_jobs()
     return templates.TemplateResponse(
-        "general_pages/homepage.html", {"request": request, "jobs": jobs.value, "msg": msg}
+        "general_pages/homepage.html",
+        {"request": request, "jobs": jobs.value, "msg": msg},
     )
 
 
@@ -67,7 +68,7 @@ async def create_job(
             job = JobCreateInputDto(**form.__dict__)
             job = job_service.create(job=job, owner_id=current_user.id)
             return responses.RedirectResponse(
-                f"/details/{job.id}", status_code=status.HTTP_302_FOUND
+                f"/details/{job.value.id}", status_code=status.HTTP_302_FOUND
             )
         except Exception as e:
             print(e)
@@ -86,7 +87,7 @@ def show_jobs_to_delete(
 ):
     jobs = job_service.list_jobs()
     return templates.TemplateResponse(
-        "jobs/show_jobs_to_delete.html", {"request": request, "jobs": jobs}
+        "jobs/show_jobs_to_delete.html", {"request": request, "jobs": jobs.value}
     )
 
 
@@ -99,5 +100,5 @@ def search(
 ):
     jobs = job_service.search_job(query)
     return templates.TemplateResponse(
-        "general_pages/homepage.html", {"request": request, "jobs": jobs}
+        "general_pages/homepage.html", {"request": request, "jobs": jobs.value}
     )

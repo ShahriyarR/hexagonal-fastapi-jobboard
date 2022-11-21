@@ -1,0 +1,1027 @@
+INFO     2022-11-21 21:34:01.656 request id: app - uvicorn.server:serve - Started server process [14006]
+INFO     2022-11-21 21:34:01.657 request id: app - uvicorn.server:serve - Started server process [14006]
+INFO     2022-11-21 21:34:01.657 request id: app - uvicorn.server:serve - Started server process [14006]
+INFO     2022-11-21 21:34:01.657 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:34:01.658 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:34:01.658 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:34:01.658 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:34:01.659 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:34:01.659 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:34:25.913 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:47168 - "GET /docs HTTP/1.1" 200
+INFO     2022-11-21 21:34:26.126 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:47168 - "GET /openapi.json HTTP/1.1" 200
+INFO     2022-11-21 21:34:33.676 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:50546 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:34:39.355 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:59186 - "GET /login/ HTTP/1.1" 200
+INFO     2022-11-21 21:34:44.904 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:59200 - "POST /login/ HTTP/1.1" 200
+INFO     2022-11-21 21:34:49.558 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:59200 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:34:49.617 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:59200 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 21:34:52.060 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:55226 - "GET /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:34:52.116 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:55226 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 21:35:10.331 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:33002 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:35:24.143 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:48298 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:35:24.195 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:48298 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 21:35:31.457 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:54284 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:35:31.515 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:54284 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 21:35:40.030 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:33010 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:35:40.087 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:33010 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 21:35:45.741 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:33012 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:35:45.790 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:33012 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 21:35:49.316 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:33014 - "GET /login/ HTTP/1.1" 200
+INFO     2022-11-21 21:35:49.634 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:33014 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 21:35:56.458 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60806 - "POST /login/ HTTP/1.1" 200
+INFO     2022-11-21 21:36:00.409 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60806 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:36:00.460 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60806 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 21:36:03.605 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52852 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:36:03.651 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52852 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 21:36:13.047 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:54442 - "GET /register/ HTTP/1.1" 200
+INFO     2022-11-21 21:36:23.035 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:48186 - "POST /register/ HTTP/1.1" 302
+INFO     2022-11-21 21:36:23.043 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:48186 - "GET /?msg=Successfully-Registered HTTP/1.1" 200
+INFO     2022-11-21 21:36:34.190 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:46542 - "GET /login/ HTTP/1.1" 200
+INFO     2022-11-21 21:36:38.829 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:46542 - "POST /login/ HTTP/1.1" 200
+INFO     2022-11-21 21:36:41.626 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:46542 - "GET /delete-job/ HTTP/1.1" 500
+ERROR    2022-11-21 21:36:41.627 request id: app - uvicorn.protocols.http.h11_impl:run_asgi - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 7
+               └ <function _main at 0x7fcbf0f565e0>
+  File "/usr/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7fcbf10daf70>
+           └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+  File "/usr/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7fcbf10da5e0>
+    └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+  File "/usr/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7fcbf1202c70>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+    │    └ <function subprocess_started at 0x7fcbf03c9940>
+    └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7fcbf1202c10>>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x7fcbf03c8dc0>
+           │       │   └ <uvicorn.server.Server object at 0x7fcbf1202c10>
+           │       └ <function run at 0x7fcbf0f57b80>
+           └ <module 'asyncio' from '/usr/lib/python3.9/asyncio/__init__.py'>
+  File "/usr/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x7fcbf03efec0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x7fcbf0a22f70>
+           └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 634, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7fcbf0a22ee0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 601, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7fcbf0a25a60>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1905, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7fcbf0a514c0>
+    └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+  File "/usr/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+> File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7fcbf03a4580>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7fcbec89c610>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7fcbf03a4580>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7fcbec89c850>
+          └ <fastapi.applications.FastAPI object at 0x7fcbec89c610>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7fcbec4cdf70>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7fcbec89c820>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7fcbec89c850>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7fcbec89c7c0>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7fcbec89c820>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.routing.APIRouter object at 0x7fcbec89c580>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7fcbec89c7c0>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x7fcbef527a60>
+          └ <fastapi.routing.APIRoute object at 0x7fcbec8cf280>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x7fcbec8d20d0>
+          └ <fastapi.routing.APIRoute object at 0x7fcbec8cf280>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x7fcbec473280>
+                     └ <function get_request_handler.<locals>.app at 0x7fcbec8d2040>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x7fcbef511940>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+                 │                 │         │       └ {'job_service': <dependency_injector.wiring.Provide object at 0x7fcbec901eb0>, 'request': <starlette.requests.Request object ...
+                 │                 │         └ <cyfunction show_jobs_to_delete at 0x7fcbec8f4930>
+                 │                 └ <fastapi.dependencies.models.Dependant object at 0x7fcbec8cf2b0>
+                 └ <function run_in_threadpool at 0x7fcbefb28550>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+                 │     │         │        │      └ ()
+                 │     │         │        └ functools.partial(<cyfunction show_jobs_to_delete at 0x7fcbec8f4930>, job_service=<dependency_injector.wiring.Provide object ...
+                 │     │         └ <function run_sync at 0x7fcbefa20040>
+                 │     └ <module 'anyio.to_thread' from '/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/...
+                 └ <module 'anyio' from '/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/__in...
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+                 └ <function get_asynclib at 0x7fcbefb36a60>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+                 └ <Future finished exception=TypeError("'ResponseSuccess' object is not iterable")>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+             │       │   │      └ ()
+             │       │   └ functools.partial(<cyfunction show_jobs_to_delete at 0x7fcbec8f4930>, job_service=<dependency_injector.wiring.Provide object ...
+             │       └ <method 'run' of 'Context' objects>
+             └ <Context object at 0x7fcbec879840>
+  File "src/dependency_injector/_cwiring.pyx", line 28, in dependency_injector._cwiring._get_sync_patched._patched
+
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/./src/jobboard/adapters/entrypoints/webapps/jobs/route_jobs.py", line 89, in show_jobs_to_delete
+    return templates.TemplateResponse(
+           │         └ <function Jinja2Templates.TemplateResponse at 0x7fcbedede3a0>
+           └ <starlette.templating.Jinja2Templates object at 0x7fcbec8f7c70>
+
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/templating.py", line 98, in TemplateResponse
+    return _TemplateResponse(
+           └ <class 'starlette.templating._TemplateResponse'>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/templating.py", line 37, in __init__
+    content = template.render(context)
+              │        │      └ {'request': <starlette.requests.Request object at 0x7fcbec473280>, 'jobs': <src.jobboard.domain.ports.common.responses.Respon...
+              │        └ <function Template.render at 0x7fcbedf4adc0>
+              └ <Template 'jobs/show_jobs_to_delete.html'>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+    │    │           └ <function Environment.handle_exception at 0x7fcbedf4a700>
+    │    └ <jinja2.environment.Environment object at 0x7fcbec8f7d30>
+    └ <Template 'jobs/show_jobs_to_delete.html'>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+          │                              └ None
+          └ <function rewrite_traceback_stack at 0x7fcbec38d0d0>
+  File "src/jobboard/adapters/entrypoints/templates/jobs/show_jobs_to_delete.html", line 1, in top-level template code
+    {% extends "shared/base.html" %}
+  File "src/jobboard/adapters/entrypoints/templates/shared/base.html", line 15, in top-level template code
+    {% block content %}
+  File "src/jobboard/adapters/entrypoints/templates/jobs/show_jobs_to_delete.html", line 30, in block 'content'
+    {% for job in jobs %}
+                  └ <src.jobboard.domain.ports.common.responses.ResponseSuccess object at 0x7fcbec6148b0>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/runtime.py", line 417, in __init__
+    self._iterator = self._to_iterator(iterable)
+    │                │    │            └ <src.jobboard.domain.ports.common.responses.ResponseSuccess object at 0x7fcbec6148b0>
+    │                │    └ <staticmethod object at 0x7fcbedf778e0>
+    │                └ <unprintable LoopContext object>
+    └ <unprintable LoopContext object>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/runtime.py", line 425, in _to_iterator
+    return iter(iterable)
+                └ <src.jobboard.domain.ports.common.responses.ResponseSuccess object at 0x7fcbec6148b0>
+
+TypeError: 'ResponseSuccess' object is not iterable
+ERROR    2022-11-21 21:36:41.656 request id: app - uvicorn.protocols.http.h11_impl:run_asgi - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 7
+               └ <function _main at 0x7fcbf0f565e0>
+  File "/usr/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7fcbf10daf70>
+           └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+  File "/usr/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7fcbf10da5e0>
+    └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+  File "/usr/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7fcbf1202c70>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+    │    └ <function subprocess_started at 0x7fcbf03c9940>
+    └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7fcbf1202c10>>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x7fcbf03c8dc0>
+           │       │   └ <uvicorn.server.Server object at 0x7fcbf1202c10>
+           │       └ <function run at 0x7fcbf0f57b80>
+           └ <module 'asyncio' from '/usr/lib/python3.9/asyncio/__init__.py'>
+  File "/usr/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x7fcbf03efec0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x7fcbf0a22f70>
+           └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 634, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7fcbf0a22ee0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 601, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7fcbf0a25a60>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1905, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7fcbf0a514c0>
+    └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+  File "/usr/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+> File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7fcbf03a4580>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7fcbec89c610>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7fcbf03a4580>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7fcbec89c850>
+          └ <fastapi.applications.FastAPI object at 0x7fcbec89c610>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7fcbec4cdf70>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7fcbec89c820>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7fcbec89c850>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7fcbec89c7c0>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7fcbec89c820>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.routing.APIRouter object at 0x7fcbec89c580>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7fcbec89c7c0>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x7fcbef527a60>
+          └ <fastapi.routing.APIRoute object at 0x7fcbec8cf280>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x7fcbec8d20d0>
+          └ <fastapi.routing.APIRoute object at 0x7fcbec8cf280>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x7fcbec473280>
+                     └ <function get_request_handler.<locals>.app at 0x7fcbec8d2040>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x7fcbef511940>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+                 │                 │         │       └ {'job_service': <dependency_injector.wiring.Provide object at 0x7fcbec901eb0>, 'request': <starlette.requests.Request object ...
+                 │                 │         └ <cyfunction show_jobs_to_delete at 0x7fcbec8f4930>
+                 │                 └ <fastapi.dependencies.models.Dependant object at 0x7fcbec8cf2b0>
+                 └ <function run_in_threadpool at 0x7fcbefb28550>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+                 │     │         │        │      └ ()
+                 │     │         │        └ functools.partial(<cyfunction show_jobs_to_delete at 0x7fcbec8f4930>, job_service=<dependency_injector.wiring.Provide object ...
+                 │     │         └ <function run_sync at 0x7fcbefa20040>
+                 │     └ <module 'anyio.to_thread' from '/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/...
+                 └ <module 'anyio' from '/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/__in...
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+                 └ <function get_asynclib at 0x7fcbefb36a60>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+                 └ <Future finished exception=TypeError("'ResponseSuccess' object is not iterable")>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+             │       │   │      └ ()
+             │       │   └ functools.partial(<cyfunction show_jobs_to_delete at 0x7fcbec8f4930>, job_service=<dependency_injector.wiring.Provide object ...
+             │       └ <method 'run' of 'Context' objects>
+             └ <Context object at 0x7fcbec879840>
+  File "src/dependency_injector/_cwiring.pyx", line 28, in dependency_injector._cwiring._get_sync_patched._patched
+
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/./src/jobboard/adapters/entrypoints/webapps/jobs/route_jobs.py", line 89, in show_jobs_to_delete
+    return templates.TemplateResponse(
+           │         └ <function Jinja2Templates.TemplateResponse at 0x7fcbedede3a0>
+           └ <starlette.templating.Jinja2Templates object at 0x7fcbec8f7c70>
+
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/templating.py", line 98, in TemplateResponse
+    return _TemplateResponse(
+           └ <class 'starlette.templating._TemplateResponse'>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/templating.py", line 37, in __init__
+    content = template.render(context)
+              │        │      └ {'request': <starlette.requests.Request object at 0x7fcbec473280>, 'jobs': <src.jobboard.domain.ports.common.responses.Respon...
+              │        └ <function Template.render at 0x7fcbedf4adc0>
+              └ <Template 'jobs/show_jobs_to_delete.html'>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+    │    │           └ <function Environment.handle_exception at 0x7fcbedf4a700>
+    │    └ <jinja2.environment.Environment object at 0x7fcbec8f7d30>
+    └ <Template 'jobs/show_jobs_to_delete.html'>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+          │                              └ None
+          └ <function rewrite_traceback_stack at 0x7fcbec38d0d0>
+  File "src/jobboard/adapters/entrypoints/templates/jobs/show_jobs_to_delete.html", line 1, in top-level template code
+    {% extends "shared/base.html" %}
+  File "src/jobboard/adapters/entrypoints/templates/shared/base.html", line 15, in top-level template code
+    {% block content %}
+  File "src/jobboard/adapters/entrypoints/templates/jobs/show_jobs_to_delete.html", line 30, in block 'content'
+    {% for job in jobs %}
+                  └ <src.jobboard.domain.ports.common.responses.ResponseSuccess object at 0x7fcbec6148b0>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/runtime.py", line 417, in __init__
+    self._iterator = self._to_iterator(iterable)
+    │                │    │            └ <src.jobboard.domain.ports.common.responses.ResponseSuccess object at 0x7fcbec6148b0>
+    │                │    └ <staticmethod object at 0x7fcbedf778e0>
+    │                └ <unprintable LoopContext object>
+    └ <unprintable LoopContext object>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/runtime.py", line 425, in _to_iterator
+    return iter(iterable)
+                └ <src.jobboard.domain.ports.common.responses.ResponseSuccess object at 0x7fcbec6148b0>
+
+TypeError: 'ResponseSuccess' object is not iterable
+ERROR    2022-11-21 21:36:41.672 request id: app - uvicorn.protocols.http.h11_impl:run_asgi - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 7
+               └ <function _main at 0x7fcbf0f565e0>
+  File "/usr/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7fcbf10daf70>
+           └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+  File "/usr/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7fcbf10da5e0>
+    └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+  File "/usr/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7fcbf1202c70>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+    │    └ <function subprocess_started at 0x7fcbf03c9940>
+    └ <SpawnProcess name='SpawnProcess-4' parent=13899 started>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7fcbf1202c10>>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           │       │   │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+           │       │   │    └ <function Server.serve at 0x7fcbf03c8dc0>
+           │       │   └ <uvicorn.server.Server object at 0x7fcbf1202c10>
+           │       └ <function run at 0x7fcbf0f57b80>
+           └ <module 'asyncio' from '/usr/lib/python3.9/asyncio/__init__.py'>
+  File "/usr/lib/python3.9/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+           │    │                  └ <coroutine object Server.serve at 0x7fcbf03efec0>
+           │    └ <function BaseEventLoop.run_until_complete at 0x7fcbf0a22f70>
+           └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 634, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7fcbf0a22ee0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 601, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7fcbf0a25a60>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1905, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7fcbf0a514c0>
+    └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+  File "/usr/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskWakeupMethWrapper object at 0x7fcbec4736d0>(<Future finis...ot iterable")>)>
+> File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7fcbf03a4580>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7fcbec89c610>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7fcbf03a4580>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7fcbec89c850>
+          └ <fastapi.applications.FastAPI object at 0x7fcbec89c610>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7fcbec4cdf70>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7fcbec89c820>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7fcbec89c850>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 75, in __call__
+    raise exc
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 64, in __call__
+    await self.app(scope, receive, sender)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7fcbec89c7c0>
+          └ <starlette.middleware.exceptions.ExceptionMiddleware object at 0x7fcbec89c820>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <fastapi.routing.APIRouter object at 0x7fcbec89c580>
+          └ <fastapi.middleware.asyncexitstack.AsyncExitStackMiddleware object at 0x7fcbec89c7c0>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 680, in __call__
+    await route.handle(scope, receive, send)
+          │     │      │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │     │      │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │     │      └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │     └ <function Route.handle at 0x7fcbef527a60>
+          └ <fastapi.routing.APIRoute object at 0x7fcbec8cf280>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 275, in handle
+    await self.app(scope, receive, send)
+          │    │   │      │        └ <function ExceptionMiddleware.__call__.<locals>.sender at 0x7fcbec4cd670>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fcbec4732b0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <function request_response.<locals>.app at 0x7fcbec8d20d0>
+          └ <fastapi.routing.APIRoute object at 0x7fcbec8cf280>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+                     │    └ <starlette.requests.Request object at 0x7fcbec473280>
+                     └ <function get_request_handler.<locals>.app at 0x7fcbec8d2040>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 231, in app
+    raw_response = await run_endpoint_function(
+                         └ <function run_endpoint_function at 0x7fcbef511940>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/fastapi/routing.py", line 162, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+                 │                 │         │       └ {'job_service': <dependency_injector.wiring.Provide object at 0x7fcbec901eb0>, 'request': <starlette.requests.Request object ...
+                 │                 │         └ <cyfunction show_jobs_to_delete at 0x7fcbec8f4930>
+                 │                 └ <fastapi.dependencies.models.Dependant object at 0x7fcbec8cf2b0>
+                 └ <function run_in_threadpool at 0x7fcbefb28550>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+                 │     │         │        │      └ ()
+                 │     │         │        └ functools.partial(<cyfunction show_jobs_to_delete at 0x7fcbec8f4930>, job_service=<dependency_injector.wiring.Provide object ...
+                 │     │         └ <function run_sync at 0x7fcbefa20040>
+                 │     └ <module 'anyio.to_thread' from '/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/...
+                 └ <module 'anyio' from '/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/__in...
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+                 └ <function get_asynclib at 0x7fcbefb36a60>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+                 └ <Future finished exception=TypeError("'ResponseSuccess' object is not iterable")>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+             │       │   │      └ ()
+             │       │   └ functools.partial(<cyfunction show_jobs_to_delete at 0x7fcbec8f4930>, job_service=<dependency_injector.wiring.Provide object ...
+             │       └ <method 'run' of 'Context' objects>
+             └ <Context object at 0x7fcbec879840>
+  File "src/dependency_injector/_cwiring.pyx", line 28, in dependency_injector._cwiring._get_sync_patched._patched
+
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/./src/jobboard/adapters/entrypoints/webapps/jobs/route_jobs.py", line 89, in show_jobs_to_delete
+    return templates.TemplateResponse(
+           │         └ <function Jinja2Templates.TemplateResponse at 0x7fcbedede3a0>
+           └ <starlette.templating.Jinja2Templates object at 0x7fcbec8f7c70>
+
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/templating.py", line 98, in TemplateResponse
+    return _TemplateResponse(
+           └ <class 'starlette.templating._TemplateResponse'>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/templating.py", line 37, in __init__
+    content = template.render(context)
+              │        │      └ {'request': <starlette.requests.Request object at 0x7fcbec473280>, 'jobs': <src.jobboard.domain.ports.common.responses.Respon...
+              │        └ <function Template.render at 0x7fcbedf4adc0>
+              └ <Template 'jobs/show_jobs_to_delete.html'>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+    │    │           └ <function Environment.handle_exception at 0x7fcbedf4a700>
+    │    └ <jinja2.environment.Environment object at 0x7fcbec8f7d30>
+    └ <Template 'jobs/show_jobs_to_delete.html'>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+          │                              └ None
+          └ <function rewrite_traceback_stack at 0x7fcbec38d0d0>
+  File "src/jobboard/adapters/entrypoints/templates/jobs/show_jobs_to_delete.html", line 1, in top-level template code
+    {% extends "shared/base.html" %}
+  File "src/jobboard/adapters/entrypoints/templates/shared/base.html", line 15, in top-level template code
+    {% block content %}
+  File "src/jobboard/adapters/entrypoints/templates/jobs/show_jobs_to_delete.html", line 30, in block 'content'
+    {% for job in jobs %}
+                  └ <src.jobboard.domain.ports.common.responses.ResponseSuccess object at 0x7fcbec6148b0>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/runtime.py", line 417, in __init__
+    self._iterator = self._to_iterator(iterable)
+    │                │    │            └ <src.jobboard.domain.ports.common.responses.ResponseSuccess object at 0x7fcbec6148b0>
+    │                │    └ <staticmethod object at 0x7fcbedf778e0>
+    │                └ <unprintable LoopContext object>
+    └ <unprintable LoopContext object>
+  File "/home/shako/REPOS/Learning_Arch/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/jinja2/runtime.py", line 425, in _to_iterator
+    return iter(iterable)
+                └ <src.jobboard.domain.ports.common.responses.ResponseSuccess object at 0x7fcbec6148b0>
+
+TypeError: 'ResponseSuccess' object is not iterable
+INFO     2022-11-21 21:37:09.879 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:37:09.879 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:37:09.880 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:37:09.980 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:37:09.981 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:37:09.982 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:37:09.982 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:37:09.983 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:37:09.983 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:37:09.984 request id: app - uvicorn.server:serve - Finished server process [14006]
+INFO     2022-11-21 21:37:09.984 request id: app - uvicorn.server:serve - Finished server process [14006]
+INFO     2022-11-21 21:37:09.985 request id: app - uvicorn.server:serve - Finished server process [14006]
+INFO     2022-11-21 21:37:10.534 request id: app - uvicorn.server:serve - Started server process [14181]
+INFO     2022-11-21 21:37:10.534 request id: app - uvicorn.server:serve - Started server process [14181]
+INFO     2022-11-21 21:37:10.535 request id: app - uvicorn.server:serve - Started server process [14181]
+INFO     2022-11-21 21:37:10.535 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:37:10.535 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:37:10.536 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:37:10.536 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:37:10.537 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:37:10.537 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:37:12.700 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:49896 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:37:15.035 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:49908 - "DELETE /jobs/delete/4 HTTP/1.1" 200
+INFO     2022-11-21 21:37:16.638 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:49908 - "DELETE /jobs/delete/5 HTTP/1.1" 200
+INFO     2022-11-21 21:37:17.489 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:49908 - "DELETE /jobs/delete/6 HTTP/1.1" 200
+INFO     2022-11-21 21:37:18.080 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:49908 - "DELETE /jobs/delete/7 HTTP/1.1" 200
+INFO     2022-11-21 21:37:27.798 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:35934 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:37:30.706 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:35934 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:37:32.055 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:35934 - "GET /details/3 HTTP/1.1" 200
+INFO     2022-11-21 21:37:34.091 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:35934 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:37:36.823 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:35934 - "GET /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:37:57.185 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:39086 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:38:02.328 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52232 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:38:02.925 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52232 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:38:06.124 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52232 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:38:09.359 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52232 - "DELETE /jobs/delete/3 HTTP/1.1" 200
+INFO     2022-11-21 21:38:11.306 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52232 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:38:58.806 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:38:58.806 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:38:58.806 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:38:58.907 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:38:58.908 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:38:58.908 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:38:58.908 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:38:58.909 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:38:58.909 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:38:58.910 request id: app - uvicorn.server:serve - Finished server process [14181]
+INFO     2022-11-21 21:38:58.910 request id: app - uvicorn.server:serve - Finished server process [14181]
+INFO     2022-11-21 21:38:58.910 request id: app - uvicorn.server:serve - Finished server process [14181]
+INFO     2022-11-21 21:38:59.492 request id: app - uvicorn.server:serve - Started server process [14235]
+INFO     2022-11-21 21:38:59.492 request id: app - uvicorn.server:serve - Started server process [14235]
+INFO     2022-11-21 21:38:59.492 request id: app - uvicorn.server:serve - Started server process [14235]
+INFO     2022-11-21 21:38:59.493 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:38:59.493 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:38:59.494 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:38:59.495 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:38:59.495 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:38:59.495 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:40:19.391 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:40:19.391 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:40:19.391 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:40:19.492 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:40:19.493 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:40:19.493 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:40:19.493 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:40:19.493 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:40:19.494 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:40:19.494 request id: app - uvicorn.server:serve - Finished server process [14235]
+INFO     2022-11-21 21:40:19.494 request id: app - uvicorn.server:serve - Finished server process [14235]
+INFO     2022-11-21 21:40:19.494 request id: app - uvicorn.server:serve - Finished server process [14235]
+INFO     2022-11-21 21:40:39.815 request id: app - uvicorn.server:serve - Started server process [14360]
+INFO     2022-11-21 21:40:39.815 request id: app - uvicorn.server:serve - Started server process [14360]
+INFO     2022-11-21 21:40:39.815 request id: app - uvicorn.server:serve - Started server process [14360]
+INFO     2022-11-21 21:40:39.816 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:40:39.816 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:40:39.816 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:40:39.816 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:40:39.817 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:40:39.817 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:40:51.229 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:58434 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:40:53.647 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:58434 - "GET /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:41:08.454 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:50548 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:41:49.068 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:41:49.069 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:41:49.069 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:41:49.170 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:41:49.171 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:41:49.171 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:41:49.172 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:41:49.172 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:41:49.173 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:41:49.173 request id: app - uvicorn.server:serve - Finished server process [14360]
+INFO     2022-11-21 21:41:49.174 request id: app - uvicorn.server:serve - Finished server process [14360]
+INFO     2022-11-21 21:41:49.174 request id: app - uvicorn.server:serve - Finished server process [14360]
+INFO     2022-11-21 21:41:49.709 request id: app - uvicorn.server:serve - Started server process [14401]
+INFO     2022-11-21 21:41:49.710 request id: app - uvicorn.server:serve - Started server process [14401]
+INFO     2022-11-21 21:41:49.710 request id: app - uvicorn.server:serve - Started server process [14401]
+INFO     2022-11-21 21:41:49.710 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:41:49.710 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:41:49.710 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:41:49.711 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:41:49.711 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:41:49.711 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:41:50.462 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:49934 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:41:59.543 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38762 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:42:26.043 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:42:26.043 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:42:26.044 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:42:26.145 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:42:26.145 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:42:26.145 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:42:26.146 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:42:26.146 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:42:26.146 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:42:26.147 request id: app - uvicorn.server:serve - Finished server process [14401]
+INFO     2022-11-21 21:42:26.147 request id: app - uvicorn.server:serve - Finished server process [14401]
+INFO     2022-11-21 21:42:26.147 request id: app - uvicorn.server:serve - Finished server process [14401]
+INFO     2022-11-21 21:42:26.765 request id: app - uvicorn.server:serve - Started server process [14453]
+INFO     2022-11-21 21:42:26.765 request id: app - uvicorn.server:serve - Started server process [14453]
+INFO     2022-11-21 21:42:26.766 request id: app - uvicorn.server:serve - Started server process [14453]
+INFO     2022-11-21 21:42:26.766 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:42:26.766 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:42:26.766 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:42:26.767 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:42:26.767 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:42:26.767 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:42:29.536 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51478 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:48:53.227 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:48:53.228 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:48:53.228 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:48:53.329 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:48:53.329 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:48:53.330 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:48:53.330 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:48:53.330 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:48:53.331 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:48:53.331 request id: app - uvicorn.server:serve - Finished server process [14453]
+INFO     2022-11-21 21:48:53.332 request id: app - uvicorn.server:serve - Finished server process [14453]
+INFO     2022-11-21 21:48:53.332 request id: app - uvicorn.server:serve - Finished server process [14453]
+INFO     2022-11-21 21:48:53.927 request id: app - uvicorn.server:serve - Started server process [14657]
+INFO     2022-11-21 21:48:53.927 request id: app - uvicorn.server:serve - Started server process [14657]
+INFO     2022-11-21 21:48:53.928 request id: app - uvicorn.server:serve - Started server process [14657]
+INFO     2022-11-21 21:48:53.928 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:48:53.928 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:48:53.928 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:48:53.929 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:48:53.929 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:48:53.929 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:48:54.660 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51384 - "POST /post-a-job/ HTTP/1.1" 302
+INFO     2022-11-21 21:48:54.672 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51384 - "GET /details/9 HTTP/1.1" 200
+INFO     2022-11-21 21:48:56.617 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51384 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:49:00.913 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51384 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:49:02.300 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51384 - "DELETE /jobs/delete/5 HTTP/1.1" 200
+INFO     2022-11-21 21:49:03.242 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51384 - "DELETE /jobs/delete/6 HTTP/1.1" 200
+INFO     2022-11-21 21:49:03.836 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51384 - "DELETE /jobs/delete/7 HTTP/1.1" 200
+INFO     2022-11-21 21:49:04.393 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51384 - "DELETE /jobs/delete/8 HTTP/1.1" 200
+INFO     2022-11-21 21:49:04.983 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51384 - "DELETE /jobs/delete/9 HTTP/1.1" 200
+INFO     2022-11-21 21:49:06.630 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51384 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:49:08.660 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51384 - "GET /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:49:25.716 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57506 - "POST /post-a-job/ HTTP/1.1" 302
+INFO     2022-11-21 21:49:25.728 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57506 - "GET /details/5 HTTP/1.1" 200
+INFO     2022-11-21 21:49:28.984 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57506 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:49:30.377 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57506 - "GET /details/2 HTTP/1.1" 200
+INFO     2022-11-21 21:49:31.664 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57506 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:49:35.527 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57506 - "GET /search/?query=hey HTTP/1.1" 200
+INFO     2022-11-21 21:49:37.263 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57506 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:54:41.096 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:54:41.096 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:54:41.097 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:54:41.197 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:54:41.198 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:54:41.198 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:54:41.198 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:54:41.198 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:54:41.199 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:54:41.199 request id: app - uvicorn.server:serve - Finished server process [14657]
+INFO     2022-11-21 21:54:41.199 request id: app - uvicorn.server:serve - Finished server process [14657]
+INFO     2022-11-21 21:54:41.200 request id: app - uvicorn.server:serve - Finished server process [14657]
+INFO     2022-11-21 21:54:41.887 request id: app - uvicorn.server:serve - Started server process [14925]
+INFO     2022-11-21 21:54:41.887 request id: app - uvicorn.server:serve - Started server process [14925]
+INFO     2022-11-21 21:54:41.888 request id: app - uvicorn.server:serve - Started server process [14925]
+INFO     2022-11-21 21:54:41.888 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:54:41.888 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:54:41.888 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:54:41.889 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:54:41.889 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:54:41.889 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:54:45.815 request id: None - src.jobboard.adapters.entrypoints.webapps.jobs.route_jobs:home - Hey yoooo
+INFO     2022-11-21 21:54:45.827 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57000 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:54:47.150 request id: None - src.jobboard.adapters.entrypoints.webapps.jobs.route_jobs:home - Hey yoooo
+INFO     2022-11-21 21:54:47.151 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57000 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 21:55:06.395 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:55:06.396 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:55:06.397 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:55:06.498 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:55:06.498 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:55:06.498 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:55:06.499 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:55:06.499 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:55:06.499 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:55:06.500 request id: app - uvicorn.server:serve - Finished server process [14925]
+INFO     2022-11-21 21:55:06.500 request id: app - uvicorn.server:serve - Finished server process [14925]
+INFO     2022-11-21 21:55:06.500 request id: app - uvicorn.server:serve - Finished server process [14925]
+INFO     2022-11-21 21:55:07.031 request id: app - uvicorn.server:serve - Started server process [14952]
+INFO     2022-11-21 21:55:07.031 request id: app - uvicorn.server:serve - Started server process [14952]
+INFO     2022-11-21 21:55:07.032 request id: app - uvicorn.server:serve - Started server process [14952]
+INFO     2022-11-21 21:55:07.032 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:55:07.032 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:55:07.032 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:55:07.033 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:55:07.033 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:55:07.033 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:55:11.046 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:55:11.046 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:55:11.046 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:55:11.148 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:55:11.149 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:55:11.149 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:55:11.149 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:55:11.150 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:55:11.150 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:55:11.150 request id: app - uvicorn.server:serve - Finished server process [14952]
+INFO     2022-11-21 21:55:11.150 request id: app - uvicorn.server:serve - Finished server process [14952]
+INFO     2022-11-21 21:55:11.150 request id: app - uvicorn.server:serve - Finished server process [14952]
+INFO     2022-11-21 21:55:11.827 request id: app - uvicorn.server:serve - Started server process [14983]
+INFO     2022-11-21 21:55:11.827 request id: app - uvicorn.server:serve - Started server process [14983]
+INFO     2022-11-21 21:55:11.827 request id: app - uvicorn.server:serve - Started server process [14983]
+INFO     2022-11-21 21:55:11.827 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:55:11.827 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:55:11.828 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:55:11.828 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:55:11.828 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:55:11.828 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:59:00.580 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:59:00.580 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:59:00.581 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 21:59:00.682 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:59:00.682 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:59:00.682 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 21:59:00.683 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:59:00.683 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:59:00.683 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 21:59:00.683 request id: app - uvicorn.server:serve - Finished server process [14983]
+INFO     2022-11-21 21:59:00.683 request id: app - uvicorn.server:serve - Finished server process [14983]
+INFO     2022-11-21 21:59:00.683 request id: app - uvicorn.server:serve - Finished server process [14983]
+INFO     2022-11-21 21:59:01.260 request id: app - uvicorn.server:serve - Started server process [15483]
+INFO     2022-11-21 21:59:01.261 request id: app - uvicorn.server:serve - Started server process [15483]
+INFO     2022-11-21 21:59:01.261 request id: app - uvicorn.server:serve - Started server process [15483]
+INFO     2022-11-21 21:59:01.261 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:59:01.261 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:59:01.261 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 21:59:01.261 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:59:01.262 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:59:01.262 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 21:59:16.055 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60668 - "GET /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 21:59:16.112 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60668 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 21:59:32.494 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:55330 - "POST /post-a-job/ HTTP/1.1" 302
+INFO     2022-11-21 21:59:32.504 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:55330 - "GET /details/6 HTTP/1.1" 200
+INFO     2022-11-21 21:59:32.609 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:55330 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 22:07:07.853 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:07:07.854 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:07:07.854 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:07:07.955 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:07:07.956 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:07:07.956 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:07:07.957 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:07:07.957 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:07:07.957 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:07:07.957 request id: app - uvicorn.server:serve - Finished server process [15483]
+INFO     2022-11-21 22:07:07.958 request id: app - uvicorn.server:serve - Finished server process [15483]
+INFO     2022-11-21 22:07:07.958 request id: app - uvicorn.server:serve - Finished server process [15483]
+INFO     2022-11-21 22:07:54.341 request id: app - uvicorn.server:serve - Started server process [16122]
+INFO     2022-11-21 22:07:54.342 request id: app - uvicorn.server:serve - Started server process [16122]
+INFO     2022-11-21 22:07:54.342 request id: app - uvicorn.server:serve - Started server process [16122]
+INFO     2022-11-21 22:07:54.342 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:07:54.342 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:07:54.343 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:07:54.343 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:07:54.343 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:07:54.343 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:07:59.391 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:58174 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 22:07:59.450 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:58174 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 22:08:01.615 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:58190 - "GET /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 22:08:14.934 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:35494 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 22:08:37.885 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:39494 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 22:08:57.919 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51796 - "GET /js/autocomplete.js HTTP/1.1" 200
+INFO     2022-11-21 22:09:01.599 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:39878 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 22:09:01.860 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:39878 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-21 22:09:07.162 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:39888 - "GET /images/logo.png HTTP/1.1" 200
+INFO     2022-11-21 22:09:09.690 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:44824 - "GET /images/logo.png HTTP/1.1" 200
+INFO     2022-11-21 22:09:26.044 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:45452 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 22:09:42.938 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:09:42.938 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:09:42.939 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:09:43.040 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:09:43.040 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:09:43.041 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:09:43.041 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:09:43.041 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:09:43.042 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:09:43.043 request id: app - uvicorn.server:serve - Finished server process [16122]
+INFO     2022-11-21 22:09:43.043 request id: app - uvicorn.server:serve - Finished server process [16122]
+INFO     2022-11-21 22:09:43.043 request id: app - uvicorn.server:serve - Finished server process [16122]
+INFO     2022-11-21 22:09:43.615 request id: app - uvicorn.server:serve - Started server process [16284]
+INFO     2022-11-21 22:09:43.615 request id: app - uvicorn.server:serve - Started server process [16284]
+INFO     2022-11-21 22:09:43.615 request id: app - uvicorn.server:serve - Started server process [16284]
+INFO     2022-11-21 22:09:43.616 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:09:43.616 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:09:43.616 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:09:43.616 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:09:43.616 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:09:43.617 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:09:50.239 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:09:50.240 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:09:50.240 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:09:50.341 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:09:50.341 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:09:50.342 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:09:50.342 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:09:50.342 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:09:50.342 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:09:50.342 request id: app - uvicorn.server:serve - Finished server process [16284]
+INFO     2022-11-21 22:09:50.342 request id: app - uvicorn.server:serve - Finished server process [16284]
+INFO     2022-11-21 22:09:50.343 request id: app - uvicorn.server:serve - Finished server process [16284]
+INFO     2022-11-21 22:09:50.933 request id: app - uvicorn.server:serve - Started server process [16315]
+INFO     2022-11-21 22:09:50.934 request id: app - uvicorn.server:serve - Started server process [16315]
+INFO     2022-11-21 22:09:50.934 request id: app - uvicorn.server:serve - Started server process [16315]
+INFO     2022-11-21 22:09:50.934 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:09:50.934 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:09:50.934 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:09:50.935 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:09:50.935 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:09:50.935 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:10:00.588 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38198 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 22:10:02.825 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38198 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 22:10:04.668 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38198 - "DELETE /jobs/delete/6 HTTP/1.1" 401
+INFO     2022-11-21 22:10:06.693 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38198 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 22:10:10.192 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38198 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 22:10:13.655 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38198 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 22:10:15.376 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38198 - "DELETE /jobs/delete/6 HTTP/1.1" 401
+INFO     2022-11-21 22:10:24.209 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:36616 - "GET /login/ HTTP/1.1" 200
+INFO     2022-11-21 22:10:29.597 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57128 - "POST /login/ HTTP/1.1" 200
+INFO     2022-11-21 22:10:31.164 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57128 - "GET / HTTP/1.1" 200
+INFO     2022-11-21 22:10:33.075 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57128 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 22:10:34.592 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57128 - "DELETE /jobs/delete/6 HTTP/1.1" 200
+INFO     2022-11-21 22:10:36.495 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57128 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 22:10:39.225 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:57128 - "GET /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-21 22:10:50.877 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:10:50.877 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:10:50.877 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:10:50.978 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:10:50.978 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:10:50.979 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:10:50.979 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:10:50.980 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:10:50.980 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:10:50.981 request id: app - uvicorn.server:serve - Finished server process [16315]
+INFO     2022-11-21 22:10:50.981 request id: app - uvicorn.server:serve - Finished server process [16315]
+INFO     2022-11-21 22:10:50.982 request id: app - uvicorn.server:serve - Finished server process [16315]
+INFO     2022-11-21 22:10:51.520 request id: app - uvicorn.server:serve - Started server process [16470]
+INFO     2022-11-21 22:10:51.520 request id: app - uvicorn.server:serve - Started server process [16470]
+INFO     2022-11-21 22:10:51.520 request id: app - uvicorn.server:serve - Started server process [16470]
+INFO     2022-11-21 22:10:51.520 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:10:51.520 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:10:51.521 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-21 22:10:51.521 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:10:51.521 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:10:51.521 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-21 22:11:02.132 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created asdasdassasdasdasdasdasdas
+INFO     2022-11-21 22:11:02.137 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:56026 - "POST /post-a-job/ HTTP/1.1" 302
+INFO     2022-11-21 22:11:02.150 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:56026 - "GET /details/6 HTTP/1.1" 200
+INFO     2022-11-21 22:11:33.757 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:33572 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 22:11:35.325 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:33572 - "DELETE /jobs/delete/6 HTTP/1.1" 200
+INFO     2022-11-21 22:11:36.302 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:33572 - "DELETE /jobs/delete/5 HTTP/1.1" 200
+INFO     2022-11-21 22:11:37.761 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:33572 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-21 22:16:47.078 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:16:47.078 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:16:47.078 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-21 22:16:47.179 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:16:47.179 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:16:47.180 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-21 22:16:47.180 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:16:47.180 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:16:47.180 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-21 22:16:47.181 request id: app - uvicorn.server:serve - Finished server process [16470]
+INFO     2022-11-21 22:16:47.181 request id: app - uvicorn.server:serve - Finished server process [16470]
+INFO     2022-11-21 22:16:47.181 request id: app - uvicorn.server:serve - Finished server process [16470]

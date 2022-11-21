@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from dependency_injector import containers, providers
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -7,6 +9,7 @@ from src.jobboard.adapters.unit_of_works.users import UserSqlAlchemyUnitOfWork
 from src.jobboard.adapters.use_cases.jobs import JobService
 from src.jobboard.adapters.use_cases.users import UserService
 from src.jobboard.configurator import config
+from src.jobboard.configurator.logger.custom_logging import CustomizeLogger
 
 
 class Container(containers.DeclarativeContainer):
@@ -18,6 +21,9 @@ class Container(containers.DeclarativeContainer):
             "src.jobboard.adapters.entrypoints.api.v1",
         ]
     )
+
+    config_path = Path(__file__).parent / "logger/logging_config.json"
+    LOGGER = CustomizeLogger.make_logger(config_path)
 
     DEFAULT_SESSION_FACTORY = lambda: sessionmaker(
         bind=create_engine(
