@@ -1,5 +1,7 @@
 from typing import Callable, Type
+
 from loguru import logger
+
 from src.jobboard.domain.model import events
 
 

@@ -9,7 +9,7 @@ from loguru import logger
 
 
 class InterceptHandler(logging.Handler):
-    loglevel_mapping = {
+    loglevel_mapping: dict[int, str] = {
         50: "CRITICAL",
         40: "ERROR",
         30: "WARNING",
