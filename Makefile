@@ -27,7 +27,7 @@ lint:
 	./scripts/lint.sh
 
 run:
-	python -m uvicorn src.jobboard.adapters.entrypoints.application:app --reload
+	python -m uvicorn src.jobboard.adapters.entrypoints.application:app --host 0.0.0.0 --port 80 --reload
 
 migrations:
 	alembic -c src/jobboard/adapters/db/alembic.ini revision --autogenerate
