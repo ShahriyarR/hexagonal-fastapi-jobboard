@@ -10,5 +10,5 @@ COPY . .
 RUN pip install flit==3.7.1
 RUN FLIT_ROOT_INSTALL=1 flit install
 
-EXPOSE 80
+EXPOSE 8000
 CMD make run
