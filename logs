@@ -3588,3 +3588,83 @@ INFO     2022-11-22 11:55:11.777 request id: app - uvicorn.lifespan.on:startup -
 INFO     2022-11-22 11:55:11.777 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
 INFO     2022-11-22 11:55:11.778 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
 INFO     2022-11-22 11:55:11.778 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 12:01:13.469 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 12:01:13.470 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 12:01:13.572 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 12:01:13.572 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 12:01:13.572 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 12:01:13.573 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 12:01:13.573 request id: app - uvicorn.server:serve - Finished server process [14]
+INFO     2022-11-22 12:01:13.573 request id: app - uvicorn.server:serve - Finished server process [14]
+INFO     2022-11-22 12:06:45.069 request id: app - uvicorn.server:serve - Started server process [8]
+INFO     2022-11-22 12:06:45.069 request id: app - uvicorn.server:serve - Started server process [8]
+INFO     2022-11-22 12:06:45.070 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 12:06:45.070 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 12:06:45.070 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 12:06:45.070 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 12:07:01.032 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:34528 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 12:07:01.114 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:34528 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 12:07:50.695 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 12:07:50.696 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 12:07:50.797 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 12:07:50.798 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 12:07:50.798 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 12:07:50.799 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 12:07:50.800 request id: app - uvicorn.server:serve - Finished server process [8]
+INFO     2022-11-22 12:07:50.800 request id: app - uvicorn.server:serve - Finished server process [8]
+INFO     2022-11-22 12:09:39.247 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 12:09:39.247 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 12:09:39.248 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 12:09:39.248 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 12:09:39.248 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 12:09:39.248 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 12:10:17.254 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:53626 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 12:10:17.289 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:53626 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 12:10:18.907 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:53642 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 12:10:18.960 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:53642 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 12:10:20.085 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:53658 - "GET /details/5 HTTP/1.1" 200
+INFO     2022-11-22 12:10:21.955 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:53658 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-22 12:15:06.380 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 12:15:06.380 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 12:15:06.481 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 12:15:06.482 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 12:15:06.482 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 12:15:06.483 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 12:15:06.483 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 12:15:06.484 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 12:15:19.125 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 12:15:19.125 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 12:15:19.125 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 12:15:19.125 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 12:15:19.125 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 12:15:19.126 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 12:16:41.996 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 12:16:41.997 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 12:16:42.098 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 12:16:42.099 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 12:16:42.100 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 12:16:42.100 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 12:16:42.101 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 12:16:42.102 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 12:16:45.815 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 12:16:45.816 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 12:16:45.816 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 12:16:45.816 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 12:16:45.816 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 12:16:45.816 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 17:07:02.942 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-22 17:07:02.953 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-22 17:07:02.968 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-22 17:07:02.976 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-22 17:07:02.989 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-22 17:07:03.007 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2022-11-22 17:07:03.277 request id: SEND_USER_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_user_created_notification - User created testuser
+WARNING  2022-11-22 17:07:03.305 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 86115, max 65000
+INFO     2022-11-22 13:10:06.939 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 13:10:06.940 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 13:10:07.041 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 13:10:07.042 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 13:10:07.042 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 13:10:07.043 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 13:10:07.043 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 13:10:07.044 request id: app - uvicorn.server:serve - Finished server process [9]
