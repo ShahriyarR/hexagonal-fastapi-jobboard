@@ -3668,3 +3668,336 @@ INFO     2022-11-22 13:10:07.042 request id: app - uvicorn.lifespan.on:shutdown 
 INFO     2022-11-22 13:10:07.043 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
 INFO     2022-11-22 13:10:07.043 request id: app - uvicorn.server:serve - Finished server process [9]
 INFO     2022-11-22 13:10:07.044 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 15:50:48.654 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 15:50:48.655 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 15:50:48.655 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 15:50:48.655 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 15:50:48.656 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 15:50:48.656 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:00:09.923 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:00:09.924 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:00:10.026 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:00:10.026 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:00:10.027 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:00:10.027 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:00:10.028 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:00:10.028 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:00:11.878 request id: app - uvicorn.server:serve - Started server process [13]
+INFO     2022-11-22 16:00:11.878 request id: app - uvicorn.server:serve - Started server process [13]
+INFO     2022-11-22 16:00:11.879 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:00:11.879 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:00:11.880 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:00:11.880 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:00:37.067 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:00:37.068 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:00:37.170 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:00:37.170 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:00:37.170 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:00:37.170 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:00:37.170 request id: app - uvicorn.server:serve - Finished server process [13]
+INFO     2022-11-22 16:00:37.171 request id: app - uvicorn.server:serve - Finished server process [13]
+INFO     2022-11-22 16:00:38.500 request id: app - uvicorn.server:serve - Started server process [17]
+INFO     2022-11-22 16:00:38.500 request id: app - uvicorn.server:serve - Started server process [17]
+INFO     2022-11-22 16:00:38.501 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:00:38.501 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:00:38.501 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:00:38.501 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:01:27.169 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:01:27.170 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:01:27.271 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:01:27.272 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:01:27.273 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:01:27.273 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:01:27.274 request id: app - uvicorn.server:serve - Finished server process [17]
+INFO     2022-11-22 16:01:27.275 request id: app - uvicorn.server:serve - Finished server process [17]
+INFO     2022-11-22 16:01:28.691 request id: app - uvicorn.server:serve - Started server process [21]
+INFO     2022-11-22 16:01:28.691 request id: app - uvicorn.server:serve - Started server process [21]
+INFO     2022-11-22 16:01:28.692 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:01:28.692 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:01:28.692 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:01:28.692 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:01:44.549 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:01:44.550 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:01:44.650 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:01:44.651 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:01:44.652 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:01:44.652 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:01:44.653 request id: app - uvicorn.server:serve - Finished server process [21]
+INFO     2022-11-22 16:01:44.653 request id: app - uvicorn.server:serve - Finished server process [21]
+INFO     2022-11-22 16:01:46.080 request id: app - uvicorn.server:serve - Started server process [25]
+INFO     2022-11-22 16:01:46.080 request id: app - uvicorn.server:serve - Started server process [25]
+INFO     2022-11-22 16:01:46.080 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:01:46.080 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:01:46.081 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:01:46.081 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:01:55.817 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:01:55.817 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:01:55.919 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:01:55.919 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:01:55.920 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:01:55.920 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:01:55.921 request id: app - uvicorn.server:serve - Finished server process [25]
+INFO     2022-11-22 16:01:55.921 request id: app - uvicorn.server:serve - Finished server process [25]
+INFO     2022-11-22 16:02:07.545 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 16:02:07.546 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 16:02:07.546 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:02:07.546 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:02:07.546 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:02:07.547 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:05:17.306 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:05:17.307 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:05:17.408 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:05:17.408 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:05:17.409 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:05:17.410 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:05:17.410 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:05:17.411 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:05:23.293 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 16:05:23.294 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 16:05:23.294 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:05:23.294 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:05:23.294 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:05:23.295 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:05:39.454 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:05:39.454 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:05:39.555 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:05:39.556 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:05:39.556 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:05:39.557 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:05:39.557 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:05:39.558 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:05:44.181 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 16:05:44.182 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 16:05:44.182 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:05:44.182 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:05:44.182 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:05:44.183 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:20:51.633 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:20:51.634 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:20:51.735 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:20:51.736 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:20:51.737 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:20:51.737 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:20:51.738 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:20:51.738 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:20:57.558 request id: app - uvicorn.server:serve - Started server process [8]
+INFO     2022-11-22 16:20:57.558 request id: app - uvicorn.server:serve - Started server process [8]
+INFO     2022-11-22 16:20:57.559 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:20:57.559 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:20:57.559 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:20:57.559 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:21:44.389 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:45448 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 16:21:47.053 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:45448 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-22 16:21:47.112 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:45448 - "GET /favicon.ico HTTP/1.1" 404
+ERROR    2022-11-22 16:21:47.534 request id: app - opentelemetry.sdk.trace.export:_export_batch - Exception while exporting Span batch.
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f6e28f83e50>
+    └ <Thread(OtelBatchSpanProcessor, started daemon 140110951606016)>
+  File "/usr/local/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f6e28f83b80>
+    └ <Thread(OtelBatchSpanProcessor, started daemon 140110951606016)>
+  File "/usr/local/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(OtelBatchSpanProcessor, started daemon 140110951606016)>
+    │    │        │    └ ()
+    │    │        └ <Thread(OtelBatchSpanProcessor, started daemon 140110951606016)>
+    │    └ <bound method BatchSpanProcessor.worker of <opentelemetry.sdk.trace.export.BatchSpanProcessor object at 0x7f6e244e61f0>>
+    └ <Thread(OtelBatchSpanProcessor, started daemon 140110951606016)>
+  File "/usr/local/lib/python3.9/site-packages/opentelemetry/sdk/trace/export/__init__.py", line 283, in worker
+    self._export(flush_request)
+    │    │       └ None
+    │    └ <function BatchSpanProcessor._export at 0x7f6e244eb3a0>
+    └ <opentelemetry.sdk.trace.export.BatchSpanProcessor object at 0x7f6e244e61f0>
+  File "/usr/local/lib/python3.9/site-packages/opentelemetry/sdk/trace/export/__init__.py", line 348, in _export
+    self._export_batch()
+    │    └ <function BatchSpanProcessor._export_batch at 0x7f6e244eb430>
+    └ <opentelemetry.sdk.trace.export.BatchSpanProcessor object at 0x7f6e244e61f0>
+> File "/usr/local/lib/python3.9/site-packages/opentelemetry/sdk/trace/export/__init__.py", line 373, in _export_batch
+    self.span_exporter.export(self.spans_list[:idx])  # type: ignore
+    │    │             │      │    │           └ 16
+    │    │             │      │    └ [<opentelemetry.sdk.trace.ReadableSpan object at 0x7f6e24423160>, <opentelemetry.sdk.trace.ReadableSpan object at 0x7f6e2449a...
+    │    │             │      └ <opentelemetry.sdk.trace.export.BatchSpanProcessor object at 0x7f6e244e61f0>
+    │    │             └ <function JaegerExporter.export at 0x7f6e244e3940>
+    │    └ <opentelemetry.exporter.jaeger.thrift.JaegerExporter object at 0x7f6e2461e0a0>
+    └ <opentelemetry.sdk.trace.export.BatchSpanProcessor object at 0x7f6e244e61f0>
+  File "/usr/local/lib/python3.9/site-packages/opentelemetry/exporter/jaeger/thrift/__init__.py", line 219, in export
+    self._agent_client.emit(batch)
+    │    │             │    └ Batch(process=Process(serviceName='jobboard', tags=None), spans=[Span(traceIdLow=-7501379412424604287, traceIdHigh=-233211465...
+    │    │             └ <function AgentClientUDP.emit at 0x7f6e245765e0>
+    │    └ <opentelemetry.exporter.jaeger.thrift.send.AgentClientUDP object at 0x7f6e244e6880>
+    └ <opentelemetry.exporter.jaeger.thrift.JaegerExporter object at 0x7f6e2461e0a0>
+  File "/usr/local/lib/python3.9/site-packages/opentelemetry/exporter/jaeger/thrift/send.py", line 95, in emit
+    udp_socket.sendto(buff, self.address)
+    │          │      │     │    └ ('jaeger', '6831')
+    │          │      │     └ <opentelemetry.exporter.jaeger.thrift.send.AgentClientUDP object at 0x7f6e244e6880>
+    │          │      └ b'\x82\x81\x00\temitBatch\x1c\x1c\x18\x08jobboard\x00\x19\xfc\x10\x16\xfd\xe9\xf9\xaf\x9c\xb5\xa0\x9a\xd0\x01\x16\x93\xf9\x87...
+    │          └ <method 'sendto' of '_socket.socket' objects>
+    └ <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=0>
+
+TypeError: an integer is required (got type str)
+INFO     2022-11-22 16:27:00.210 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:27:00.211 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:27:00.312 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:27:00.313 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:27:00.314 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:27:00.314 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:27:00.315 request id: app - uvicorn.server:serve - Finished server process [8]
+INFO     2022-11-22 16:27:00.315 request id: app - uvicorn.server:serve - Finished server process [8]
+WARNING  2022-11-22 16:27:01.706 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2022-11-22 16:27:01.742 request id: app - uvicorn.server:serve - Started server process [13]
+INFO     2022-11-22 16:27:01.743 request id: app - uvicorn.server:serve - Started server process [13]
+INFO     2022-11-22 16:27:01.743 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:27:01.743 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:27:01.744 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:27:01.744 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:33:38.031 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:33:38.032 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:33:38.133 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:33:38.134 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:33:38.134 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:33:38.135 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:33:38.135 request id: app - uvicorn.server:serve - Finished server process [13]
+INFO     2022-11-22 16:33:38.135 request id: app - uvicorn.server:serve - Finished server process [13]
+WARNING  2022-11-22 16:33:39.450 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2022-11-22 16:33:39.481 request id: app - uvicorn.server:serve - Started server process [17]
+INFO     2022-11-22 16:33:39.482 request id: app - uvicorn.server:serve - Started server process [17]
+INFO     2022-11-22 16:33:39.482 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:33:39.482 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:33:39.482 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:33:39.483 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:33:57.448 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:33:57.449 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:33:57.550 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:33:57.551 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:33:57.552 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:33:57.552 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:33:57.553 request id: app - uvicorn.server:serve - Finished server process [17]
+INFO     2022-11-22 16:33:57.553 request id: app - uvicorn.server:serve - Finished server process [17]
+INFO     2022-11-22 16:34:03.504 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 16:34:03.504 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 16:34:03.505 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:34:03.505 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:34:03.505 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:34:03.505 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:40:33.351 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:40:33.352 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:40:33.453 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:40:33.453 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:40:33.454 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:40:33.455 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:40:33.455 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:40:33.456 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:40:51.126 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 16:40:51.126 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 16:40:51.126 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:40:51.127 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:40:51.128 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:40:51.128 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:41:23.845 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:51574 - "GET /favicon.ico HTTP/1.1" 404
+ERROR    2022-11-22 16:41:26.087 request id: app - opentelemetry.sdk.trace.export:_export_batch - Exception while exporting Span batch.
+Traceback (most recent call last):
+
+  File "/usr/local/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x7f0b0e1f9e50>
+    └ <Thread(OtelBatchSpanProcessor, started daemon 139685371647744)>
+  File "/usr/local/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x7f0b0e1f9b80>
+    └ <Thread(OtelBatchSpanProcessor, started daemon 139685371647744)>
+  File "/usr/local/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(OtelBatchSpanProcessor, started daemon 139685371647744)>
+    │    │        │    └ ()
+    │    │        └ <Thread(OtelBatchSpanProcessor, started daemon 139685371647744)>
+    │    └ <bound method BatchSpanProcessor.worker of <opentelemetry.sdk.trace.export.BatchSpanProcessor object at 0x7f0b08f55310>>
+    └ <Thread(OtelBatchSpanProcessor, started daemon 139685371647744)>
+  File "/usr/local/lib/python3.9/site-packages/opentelemetry/sdk/trace/export/__init__.py", line 283, in worker
+    self._export(flush_request)
+    │    │       └ None
+    │    └ <function BatchSpanProcessor._export at 0x7f0b08f5e3a0>
+    └ <opentelemetry.sdk.trace.export.BatchSpanProcessor object at 0x7f0b08f55310>
+  File "/usr/local/lib/python3.9/site-packages/opentelemetry/sdk/trace/export/__init__.py", line 348, in _export
+    self._export_batch()
+    │    └ <function BatchSpanProcessor._export_batch at 0x7f0b08f5e430>
+    └ <opentelemetry.sdk.trace.export.BatchSpanProcessor object at 0x7f0b08f55310>
+> File "/usr/local/lib/python3.9/site-packages/opentelemetry/sdk/trace/export/__init__.py", line 373, in _export_batch
+    self.span_exporter.export(self.spans_list[:idx])  # type: ignore
+    │    │             │      │    │           └ 3
+    │    │             │      │    └ [<opentelemetry.sdk.trace.ReadableSpan object at 0x7f0b0873a9a0>, <opentelemetry.sdk.trace.ReadableSpan object at 0x7f0b0872c...
+    │    │             │      └ <opentelemetry.sdk.trace.export.BatchSpanProcessor object at 0x7f0b08f55310>
+    │    │             └ <function JaegerExporter.export at 0x7f0b08f56940>
+    │    └ <opentelemetry.exporter.jaeger.thrift.JaegerExporter object at 0x7f0b09091f70>
+    └ <opentelemetry.sdk.trace.export.BatchSpanProcessor object at 0x7f0b08f55310>
+  File "/usr/local/lib/python3.9/site-packages/opentelemetry/exporter/jaeger/thrift/__init__.py", line 219, in export
+    self._agent_client.emit(batch)
+    │    │             │    └ Batch(process=Process(serviceName='jobboard-jaeger', tags=None), spans=[Span(traceIdLow=-1920650796601374865, traceIdHigh=-20...
+    │    │             └ <function AgentClientUDP.emit at 0x7f0b08fe85e0>
+    │    └ <opentelemetry.exporter.jaeger.thrift.send.AgentClientUDP object at 0x7f0b08f55b80>
+    └ <opentelemetry.exporter.jaeger.thrift.JaegerExporter object at 0x7f0b09091f70>
+  File "/usr/local/lib/python3.9/site-packages/opentelemetry/exporter/jaeger/thrift/send.py", line 95, in emit
+    udp_socket.sendto(buff, self.address)
+    │          │      │     │    └ ('jaeger', '6831')
+    │          │      │     └ <opentelemetry.exporter.jaeger.thrift.send.AgentClientUDP object at 0x7f0b08f55b80>
+    │          │      └ b'\x82\x81\x00\temitBatch\x1c\x1c\x18\x0fjobboard-jaeger\x00\x19<\x16\xa1\xe2\xf7\xcf\xa6\xee\xc2\xa75\x16\xab\xe1\x89\x92\x9...
+    │          └ <method 'sendto' of '_socket.socket' objects>
+    └ <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=0>
+
+TypeError: an integer is required (got type str)
+INFO     2022-11-22 16:42:28.759 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:42:28.761 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:42:28.862 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:42:28.863 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:42:28.864 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:42:28.865 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:42:28.865 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:42:28.866 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 16:42:30.366 request id: app - uvicorn.server:serve - Started server process [13]
+INFO     2022-11-22 16:42:30.367 request id: app - uvicorn.server:serve - Started server process [13]
+INFO     2022-11-22 16:42:30.367 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:42:30.368 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:42:30.368 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:42:30.368 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:42:40.343 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:44286 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-22 16:42:40.403 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:44286 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 16:43:58.267 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:43:58.267 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:43:58.368 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:43:58.368 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:43:58.369 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:43:58.369 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:43:58.369 request id: app - uvicorn.server:serve - Finished server process [13]
+INFO     2022-11-22 16:43:58.369 request id: app - uvicorn.server:serve - Finished server process [13]
+INFO     2022-11-22 16:43:59.923 request id: app - uvicorn.server:serve - Started server process [18]
+INFO     2022-11-22 16:43:59.923 request id: app - uvicorn.server:serve - Started server process [18]
+INFO     2022-11-22 16:43:59.923 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:43:59.923 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:43:59.924 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:43:59.924 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:44:07.350 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:44:07.351 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 16:44:07.452 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:44:07.453 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 16:44:07.453 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:44:07.453 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 16:44:07.453 request id: app - uvicorn.server:serve - Finished server process [18]
+INFO     2022-11-22 16:44:07.454 request id: app - uvicorn.server:serve - Finished server process [18]
+INFO     2022-11-22 16:44:09.095 request id: app - uvicorn.server:serve - Started server process [22]
+INFO     2022-11-22 16:44:09.096 request id: app - uvicorn.server:serve - Started server process [22]
+INFO     2022-11-22 16:44:09.096 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:44:09.097 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 16:44:09.098 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:44:09.098 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 16:44:27.874 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:46336 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 16:44:27.929 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:46336 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 16:44:29.942 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:39154 - "GET /login/ HTTP/1.1" 200
+INFO     2022-11-22 16:44:30.003 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:39154 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 16:44:41.485 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:60662 - "POST /login/ HTTP/1.1" 200
+INFO     2022-11-22 16:46:01.652 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:40774 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 16:46:01.708 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:40774 - "GET /favicon.ico HTTP/1.1" 404
