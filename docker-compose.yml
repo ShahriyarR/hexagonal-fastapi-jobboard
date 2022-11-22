@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  jobboard:
+    build: .
+    command: make run
+    volumes:
+      - .:/app
+    ports:
+      - "80:80"
