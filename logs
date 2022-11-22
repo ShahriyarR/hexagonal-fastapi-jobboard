@@ -1088,3 +1088,19 @@ INFO     2022-11-22 12:08:55.516 request id: app - uvicorn.lifespan.on:shutdown 
 INFO     2022-11-22 12:08:55.517 request id: app - uvicorn.server:serve - Finished server process [6334]
 INFO     2022-11-22 12:08:55.517 request id: app - uvicorn.server:serve - Finished server process [6334]
 INFO     2022-11-22 12:08:55.518 request id: app - uvicorn.server:serve - Finished server process [6334]
+INFO     2022-11-22 09:36:13.256 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 09:36:13.257 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 09:36:13.257 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 09:36:13.257 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 09:36:13.257 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 09:36:13.257 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 09:36:17.656 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:60826 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 09:36:17.739 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:60826 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 09:36:37.243 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 09:36:37.243 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 09:36:37.344 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 09:36:37.345 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 09:36:37.346 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 09:36:37.347 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 09:36:37.347 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 09:36:37.348 request id: app - uvicorn.server:serve - Finished server process [9]
