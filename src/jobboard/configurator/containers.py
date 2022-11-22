@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from dependency_injector import containers, providers
+from opentelemetry.instrumentation.sqlalchemy import SQLAlchemyInstrumentor
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -10,6 +11,10 @@ from src.jobboard.adapters.use_cases.jobs import JobService
 from src.jobboard.adapters.use_cases.users import UserService
 from src.jobboard.configurator import config
 from src.jobboard.configurator.logger.custom_logging import CustomizeLogger
+
+ENGINE = create_engine(
+    config.get_database_uri(), connect_args={"check_same_thread": False}
+)
 
 
 class Container(containers.DeclarativeContainer):
@@ -24,12 +29,10 @@ class Container(containers.DeclarativeContainer):
 
     config_path = Path(__file__).parent / "logger/logging_config.json"
     LOGGER = CustomizeLogger.make_logger(config_path)
-
-    DEFAULT_SESSION_FACTORY = lambda: sessionmaker(
-        bind=create_engine(
-            config.get_database_uri(), connect_args={"check_same_thread": False}
-        )
+    SQLAlchemyInstrumentor().instrument(
+        engine=ENGINE, enable_commenter=True, commenter_options={}
     )
+    DEFAULT_SESSION_FACTORY = lambda: sessionmaker(bind=ENGINE)
 
     user_uow = providers.Singleton(
         UserSqlAlchemyUnitOfWork, session_factory=DEFAULT_SESSION_FACTORY

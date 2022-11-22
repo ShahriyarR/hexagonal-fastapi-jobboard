@@ -1,13 +1,12 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
+from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
 
 from src.jobboard.adapters.db.orm import start_mappers
 from src.jobboard.adapters.entrypoints.api.base import api_router
 from src.jobboard.adapters.entrypoints.webapps.base import api_router as web_app_router
 from src.jobboard.configurator.config import settings
 from src.jobboard.configurator.containers import Container
-from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
-
 from src.jobboard.configurator.tracer.jaeger_tracing import tracer
 
 

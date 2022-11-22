@@ -29,7 +29,8 @@ dependencies = [
     "httpx >=0.23.1",
     "opentelemetry-exporter-jaeger >=1.14.0",
     "opentelemetry-instrumentation-fastapi >=0.35b0",
-    "opentelemetry-instrumentation-logging >=0.35b0 ",
+    "opentelemetry-instrumentation-logging >=0.35b0",
+    "opentelemetry-instrumentation-sqlalchemy >=0.35b0"
 ]
 
 [project.optional-dependencies]
