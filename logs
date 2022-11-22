@@ -1104,3 +1104,82 @@ INFO     2022-11-22 09:36:37.346 request id: app - uvicorn.lifespan.on:shutdown 
 INFO     2022-11-22 09:36:37.347 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
 INFO     2022-11-22 09:36:37.347 request id: app - uvicorn.server:serve - Finished server process [9]
 INFO     2022-11-22 09:36:37.348 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 10:02:21.682 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 10:02:21.682 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 10:02:21.682 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 10:02:21.682 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 10:02:21.683 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 10:02:21.683 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 10:03:47.354 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 10:03:47.355 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 10:03:47.456 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 10:03:47.457 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 10:03:47.458 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 10:03:47.458 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 10:03:47.459 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 10:03:47.460 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 10:04:01.245 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 10:04:01.245 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-22 10:04:01.245 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 10:04:01.245 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 10:04:01.246 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 10:04:01.246 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 10:04:03.139 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:58040 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 10:04:03.213 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:58040 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 10:06:31.453 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:34904 - "GET /login/ HTTP/1.1" 200
+INFO     2022-11-22 10:06:31.501 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:34904 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 10:06:40.489 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:48650 - "POST /login/ HTTP/1.1" 200
+INFO     2022-11-22 10:06:42.446 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:48650 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 10:06:42.493 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:48650 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 10:06:44.996 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:48658 - "GET /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-22 10:07:00.579 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created sdfsdfsdfdfsdf
+INFO     2022-11-22 10:07:00.583 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:42100 - "POST /post-a-job/ HTTP/1.1" 302
+INFO     2022-11-22 10:07:00.595 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:42100 - "GET /details/5 HTTP/1.1" 200
+INFO     2022-11-22 10:07:00.632 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:42100 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 10:07:01.999 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:42102 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 10:07:02.048 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:42102 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 10:07:05.704 request id: app - uvicorn.protocols.http.h11_impl:send - 172.18.0.1:42106 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-22 10:09:15.092 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 10:09:15.093 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-22 10:09:15.195 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 10:09:15.196 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-22 10:09:15.197 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 10:09:15.197 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-22 10:09:15.198 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 10:09:15.198 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-22 14:11:42.728 request id: app - uvicorn.server:serve - Started server process [25829]
+INFO     2022-11-22 14:11:42.728 request id: app - uvicorn.server:serve - Started server process [25829]
+INFO     2022-11-22 14:11:42.728 request id: app - uvicorn.server:serve - Started server process [25829]
+INFO     2022-11-22 14:11:42.728 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 14:11:42.728 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 14:11:42.729 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-22 14:11:42.729 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 14:11:42.729 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 14:11:42.729 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-22 14:11:48.567 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:58038 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 14:11:48.595 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:58038 - "GET /js/autocomplete.js HTTP/1.1" 200
+INFO     2022-11-22 14:11:48.985 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:58038 - "GET /images/logo.png HTTP/1.1" 200
+INFO     2022-11-22 14:11:49.345 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:58038 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 14:12:05.717 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:53862 - "GET /login/ HTTP/1.1" 200
+INFO     2022-11-22 14:12:13.315 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:53878 - "POST /login/ HTTP/1.1" 200
+INFO     2022-11-22 14:12:15.566 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:53878 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 14:12:16.262 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:53878 - "GET /docs/ HTTP/1.1" 307
+INFO     2022-11-22 14:12:16.264 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:53878 - "GET /docs HTTP/1.1" 200
+INFO     2022-11-22 14:12:17.291 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:53878 - "GET /openapi.json HTTP/1.1" 200
+INFO     2022-11-22 14:12:28.141 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:59276 - "GET /jobs/all HTTP/1.1" 200
+INFO     2022-11-22 14:13:52.483 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38526 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 14:13:52.547 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38526 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 14:14:05.804 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:40710 - "GET /post-a-job/ HTTP/1.1" 200
+INFO     2022-11-22 14:14:05.848 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:40710 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 14:14:21.741 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created sdfsdfsfsf
+INFO     2022-11-22 14:14:21.743 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52976 - "POST /post-a-job/ HTTP/1.1" 302
+INFO     2022-11-22 14:14:21.749 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52976 - "GET /details/6 HTTP/1.1" 200
+INFO     2022-11-22 14:14:21.840 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52976 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 14:14:23.446 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52988 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 14:14:23.497 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:52988 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 14:17:03.114 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51090 - "GET / HTTP/1.1" 200
+INFO     2022-11-22 14:17:03.154 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51090 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 14:17:05.054 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51092 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-22 14:17:05.098 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:51092 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-22 14:17:23.217 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60186 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-22 14:17:23.260 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:60186 - "GET /favicon.ico HTTP/1.1" 404
