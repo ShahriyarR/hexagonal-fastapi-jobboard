@@ -30,7 +30,8 @@ dependencies = [
     "opentelemetry-exporter-jaeger >=1.14.0",
     "opentelemetry-instrumentation-fastapi >=0.35b0",
     "opentelemetry-instrumentation-logging >=0.35b0",
-    "opentelemetry-instrumentation-sqlalchemy >=0.35b0"
+    "opentelemetry-instrumentation-sqlalchemy >=0.35b0",
+    "prometheus-fastapi-instrumentator >=5.9.1",
 ]
 
 [project.optional-dependencies]

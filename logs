@@ -4001,3 +4001,352 @@ INFO     2022-11-22 16:44:30.003 request id: app - uvicorn.protocols.http.h11_im
 INFO     2022-11-22 16:44:41.485 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:60662 - "POST /login/ HTTP/1.1" 200
 INFO     2022-11-22 16:46:01.652 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:40774 - "GET / HTTP/1.1" 200
 INFO     2022-11-22 16:46:01.708 request id: app - uvicorn.protocols.http.h11_impl:send - 172.19.0.1:40774 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-23 11:24:16.936 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-23 11:24:16.936 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-23 11:24:16.936 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-23 11:24:16.937 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-23 11:24:16.937 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-23 11:24:16.937 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-23 11:24:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:57700 - "GET /metrics HTTP/1.1" 404
+INFO     2022-11-23 11:24:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:45618 - "GET /metrics HTTP/1.1" 404
+INFO     2022-11-23 11:24:47.451 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-23 11:24:47.451 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-23 11:24:47.553 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-23 11:24:47.553 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-23 11:24:47.554 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-23 11:24:47.554 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-23 11:24:47.554 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-23 11:24:47.554 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-23 11:24:49.012 request id: app - uvicorn.server:serve - Started server process [13]
+INFO     2022-11-23 11:24:49.013 request id: app - uvicorn.server:serve - Started server process [13]
+INFO     2022-11-23 11:24:49.013 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-23 11:24:49.013 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+ERROR    2022-11-23 11:24:49.015 request id: app - uvicorn.lifespan.on:send - Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/app/./src/jobboard/adapters/entrypoints/application.py", line 50, in startup
+    Instrumentator().instrument(app).expose(app)
+NameError: name 'Instrumentator' is not defined
+
+ERROR    2022-11-23 11:24:49.015 request id: app - uvicorn.lifespan.on:send - Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/usr/local/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/app/./src/jobboard/adapters/entrypoints/application.py", line 50, in startup
+    Instrumentator().instrument(app).expose(app)
+NameError: name 'Instrumentator' is not defined
+
+ERROR    2022-11-23 11:24:49.016 request id: app - uvicorn.lifespan.on:startup - Application startup failed. Exiting.
+ERROR    2022-11-23 11:24:49.016 request id: app - uvicorn.lifespan.on:startup - Application startup failed. Exiting.
+INFO     2022-11-23 12:04:04.810 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-23 12:04:04.810 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-23 12:04:04.810 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-23 12:04:04.810 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-23 12:04:04.812 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-23 12:04:04.813 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-23 12:04:13.125 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38934 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:04:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:59542 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:04:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:59614 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:04:56.454 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:37962 - "GET / HTTP/1.1" 200
+INFO     2022-11-23 12:04:56.515 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:37962 - "GET /js/autocomplete.js HTTP/1.1" 200
+INFO     2022-11-23 12:04:56.935 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:37962 - "GET /images/logo.png HTTP/1.1" 200
+INFO     2022-11-23 12:04:57.325 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:37962 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-23 12:04:58.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:44368 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:05:00.168 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:37962 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:05:13.120 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:40144 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:05:28.120 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39274 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:05:43.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:33054 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:05:58.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39790 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:06:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:47682 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:06:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:37732 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:06:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:47374 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:06:58.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38276 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:07:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:40778 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:07:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:47390 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:07:43.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:47892 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:07:58.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:60730 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:08:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:40976 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:08:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:44122 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:08:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:45580 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:08:58.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42614 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:09:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:48536 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:09:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:44976 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:09:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:56780 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:09:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:40218 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:10:05.319 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:48918 - "GET / HTTP/1.1" 200
+INFO     2022-11-23 12:10:07.827 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:48918 - "GET /login/ HTTP/1.1" 200
+INFO     2022-11-23 12:10:13.094 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:48918 - "POST /login/ HTTP/1.1" 200
+INFO     2022-11-23 12:10:13.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52600 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:10:14.786 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:48918 - "GET / HTTP/1.1" 200
+INFO     2022-11-23 12:10:14.850 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:48918 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-23 12:10:16.902 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:34272 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-23 12:10:18.144 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:34272 - "DELETE /jobs/delete/5 HTTP/1.1" 200
+INFO     2022-11-23 12:10:28.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:46144 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:10:43.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:57916 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:10:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:56528 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:11:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:59490 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:11:28.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:57168 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:11:43.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:37580 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:11:58.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42832 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:12:13.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:56376 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:12:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:59502 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:12:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:40950 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:12:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38720 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:13:13.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:37864 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:13:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:36226 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:13:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:44546 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:13:58.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:56662 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:14:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:53514 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:14:28.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52380 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:14:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:51250 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:14:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:58850 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:15:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:35424 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:15:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:48808 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:15:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:46314 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:15:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43948 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:16:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:56110 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:16:28.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:37166 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:16:43.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39934 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:16:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:45092 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:17:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43314 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:17:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:44006 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:17:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38852 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:17:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:35742 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:18:13.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:47172 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:18:28.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:40722 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:18:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38794 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:18:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39360 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:19:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:44058 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:19:28.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:35114 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:19:43.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:46924 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:19:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:56858 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:20:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:59836 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:20:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:46512 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:20:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:50420 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:20:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42902 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:21:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:55648 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:21:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:49462 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:21:43.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52576 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:21:58.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:54242 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:22:13.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43652 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:22:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:48460 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:22:43.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:60096 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:22:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:40640 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:23:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52546 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:23:28.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:55952 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:23:43.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:33438 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:23:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:40040 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:24:13.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:57048 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:24:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:57538 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:24:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:47030 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:24:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:40306 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:25:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52304 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:25:28.120 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43040 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:25:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43998 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:25:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42784 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:26:13.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38386 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:26:28.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39844 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:26:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52146 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:26:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:36036 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:27:13.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:51682 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:27:28.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42472 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:27:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:33158 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:27:58.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:48072 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:28:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:46966 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:28:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:37760 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:28:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:46114 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:28:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38650 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:29:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52240 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:29:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:50364 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:29:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:35506 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:29:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:33028 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:30:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:37442 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:30:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:46396 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:30:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:46850 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:30:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:54434 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:31:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:58974 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:31:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52350 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:31:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:45304 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:31:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38538 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:32:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:48818 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:32:28.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:53446 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:32:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:34346 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:32:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:60254 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:33:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42662 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:33:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:45932 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:33:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:51880 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:33:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:44466 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:34:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:57780 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:34:28.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:41926 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:34:43.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:44796 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:34:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38810 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:35:13.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:57246 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:35:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:51852 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:35:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52988 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:35:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:54664 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:36:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:58966 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:36:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43954 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:36:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43024 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:36:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:47506 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:37:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:57870 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:37:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:36848 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:37:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:34072 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:37:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52134 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:38:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:53678 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:38:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:44046 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:38:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:60638 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:38:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52938 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:39:13.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:59816 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:39:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:55648 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:39:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:51740 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:39:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:59660 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:40:13.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:35168 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:40:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:53654 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:40:43.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:47400 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:40:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:32832 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:41:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52954 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:41:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:56878 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:41:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:57826 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:41:58.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39732 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:42:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:55614 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:42:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:46112 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:42:43.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:53494 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:42:58.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:35476 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:43:13.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:50892 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:43:28.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:55184 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:43:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42812 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:43:58.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:48722 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:44:13.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:40606 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:44:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43716 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:44:43.120 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:46530 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:44:58.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:54538 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:45:13.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:34856 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:45:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:32998 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:45:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52064 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:45:58.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:57688 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:46:13.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:44272 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:46:28.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38214 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:46:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:47304 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:46:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39922 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:47:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:58168 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:47:28.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:51002 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:47:43.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39406 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:47:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:40310 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:48:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39316 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:48:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39624 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:48:43.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:49190 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:48:58.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:45704 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:49:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:54788 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:49:28.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43376 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:49:40.412 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-23 12:49:40.413 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-23 12:49:40.513 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-23 12:49:40.514 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-23 12:49:40.514 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-23 12:49:40.514 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-23 12:49:40.514 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-23 12:49:40.514 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-23 12:54:57.727 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-23 12:54:57.727 request id: app - uvicorn.server:serve - Started server process [9]
+INFO     2022-11-23 12:54:57.727 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-23 12:54:57.728 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2022-11-23 12:54:57.729 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-23 12:54:57.729 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2022-11-23 12:55:00.140 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:40854 - "GET / HTTP/1.1" 200
+INFO     2022-11-23 12:55:00.231 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:40854 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-23 12:55:03.214 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:40864 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:55:03.247 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:40864 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-23 12:55:12.643 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:47124 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:55:13.117 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:36332 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:55:18.425 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:37656 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2022-11-23 12:55:28.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39154 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:55:43.133 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39858 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:55:58.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38520 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:56:13.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43606 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:56:28.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42924 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:56:43.130 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52188 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:56:58.142 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:47978 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:57:13.129 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52414 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:57:28.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:59530 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:57:43.118 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:37790 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:57:58.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42592 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:58:13.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:50750 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:58:28.120 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42118 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:58:43.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43384 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:58:58.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:49224 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:59:13.122 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:33324 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:59:28.137 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:56766 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:59:43.134 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39752 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 12:59:58.126 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:45382 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:00:13.139 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:33356 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:00:28.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:41730 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:00:43.119 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42152 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:00:58.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:59844 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:01:13.142 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:51920 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:01:28.125 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:41174 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:01:43.139 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:56260 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:01:58.126 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:58898 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:02:13.127 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:46438 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:02:28.120 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:37318 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:02:43.142 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:35392 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:02:58.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:53440 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:03:13.131 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:48676 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:03:28.128 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:50826 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:03:43.142 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:56444 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:03:47.204 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:53824 - "GET / HTTP/1.1" 200
+INFO     2022-11-23 13:03:50.717 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:38150 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2022-11-23 13:03:52.169 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:38150 - "DELETE /jobs/delete/4 HTTP/1.1" 401
+INFO     2022-11-23 13:03:54.579 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:38150 - "GET / HTTP/1.1" 200
+INFO     2022-11-23 13:03:55.104 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:38150 - "GET /docs/ HTTP/1.1" 307
+INFO     2022-11-23 13:03:55.139 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:38150 - "GET /docs HTTP/1.1" 200
+INFO     2022-11-23 13:03:56.374 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:38150 - "GET /openapi.json HTTP/1.1" 200
+INFO     2022-11-23 13:03:58.125 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:53878 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:04:11.731 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:49350 - "POST /login/token HTTP/1.1" 200
+INFO     2022-11-23 13:04:13.130 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:49698 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:04:16.786 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:49366 - "GET /docs HTTP/1.1" 200
+INFO     2022-11-23 13:04:17.338 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:49366 - "GET /openapi.json HTTP/1.1" 200
+INFO     2022-11-23 13:04:28.145 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:44544 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:04:40.775 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created string
+INFO     2022-11-23 13:04:40.821 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.1:41202 - "POST /jobs/create-job/ HTTP/1.1" 200
+INFO     2022-11-23 13:04:43.140 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43216 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:04:58.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42418 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:05:13.134 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:35058 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:05:28.134 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39818 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:05:43.145 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:55232 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:05:58.151 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:49532 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:06:13.127 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:39654 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:06:28.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:50916 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:06:43.128 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:55114 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:06:58.150 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:48428 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:07:13.141 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52812 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:07:28.142 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:42074 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:07:43.142 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:58294 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:07:58.133 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52506 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:08:13.137 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:36710 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:08:28.134 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:58502 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:08:43.131 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:47132 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:08:58.123 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:38410 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:09:13.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:34288 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:09:28.142 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:52418 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:09:43.126 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:49152 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:09:58.121 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:35484 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:10:13.120 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:60646 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:10:28.151 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:54566 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:10:43.129 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:53968 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:10:58.144 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:43444 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:11:13.133 request id: app - uvicorn.protocols.http.h11_impl:send - 172.21.0.2:41542 - "GET /metrics HTTP/1.1" 200
+INFO     2022-11-23 13:11:28.809 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-23 13:11:28.810 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2022-11-23 13:11:28.912 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-23 13:11:28.913 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2022-11-23 13:11:28.914 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-23 13:11:28.914 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2022-11-23 13:11:28.915 request id: app - uvicorn.server:serve - Finished server process [9]
+INFO     2022-11-23 13:11:28.916 request id: app - uvicorn.server:serve - Finished server process [9]

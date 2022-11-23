@@ -15,6 +15,7 @@ services:
        - JAEGER_SAMPLER_MANAGER_HOST_PORT=jaeger:5778
     networks:
       - jaeger-example
+      - backend
     depends_on:
       - jaeger
 
@@ -35,5 +36,31 @@ services:
     networks:
       - jaeger-example
 
+  prometheus:
+      container_name: prometheus
+      image: prom/prometheus:v2.28.0
+      ports:
+          - "9090:9090"
+      volumes:
+          - "./src/jobboard/configurator/metrics/prometheus.yml:/etc/prometheus/prometheus.yml"
+      networks:
+          - backend
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:7.5.9
+    ports:
+      - "3000:3000"
+    depends_on:
+      - jobboard
+    environment:
+      - GF_AUTH_BASIC_ENABLED=false
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+    networks:
+      - backend
+
+
 networks:
   jaeger-example:
+  backend:

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
-
+from prometheus_fastapi_instrumentator import Instrumentator
 from src.jobboard.adapters.db.orm import start_mappers
 from src.jobboard.adapters.entrypoints.api.base import api_router
 from src.jobboard.adapters.entrypoints.webapps.base import api_router as web_app_router
@@ -44,3 +44,7 @@ def start_application():
 
 
 app = start_application()
+
+@app.on_event("startup")
+async def startup():
+    Instrumentator().instrument(app).expose(app)
