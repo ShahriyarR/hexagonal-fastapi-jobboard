@@ -6,9 +6,9 @@ from fastapi.security import OAuth2PasswordRequestForm
 from jose import JWTError, jwt
 
 from src.jobboard.adapters.entrypoints.api.utils import OAuth2PasswordBearerWithCookie
+from src.jobboard.configurator.common.security import create_access_token
 from src.jobboard.configurator.config import settings
 from src.jobboard.configurator.containers import Container
-from src.jobboard.configurator.security import create_access_token
 from src.jobboard.domain.ports.use_cases.users import UserServiceInterface
 from src.jobboard.domain.schemas.tokens import Token
 from src.jobboard.domain.schemas.users import UserLoginInputDto, UserOutputDto

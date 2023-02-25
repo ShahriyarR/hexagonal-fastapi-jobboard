@@ -3,7 +3,7 @@ from typing import Optional
 
 from jose import jwt
 
-from .config import settings
+from src.jobboard.configurator.config import settings
 
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):

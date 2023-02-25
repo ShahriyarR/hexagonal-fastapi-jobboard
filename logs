@@ -4608,3 +4608,157 @@ INFO     2023-02-25 22:19:56.478 request id: SEND_JOB_CREATED_NOTIFICATION - src
 INFO     2023-02-25 22:19:56.504 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
 INFO     2023-02-25 22:19:56.729 request id: SEND_USER_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_user_created_notification - User created testuser
 WARNING  2023-02-25 22:19:56.768 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 86346, max 65000
+WARNING  2023-02-25 22:32:18.661 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:32:18.700 request id: app - uvicorn.server:serve - Started server process [20546]
+INFO     2023-02-25 22:32:18.700 request id: app - uvicorn.server:serve - Started server process [20546]
+INFO     2023-02-25 22:32:18.700 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:32:18.700 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:32:18.701 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:32:18.701 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:32:20.584 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38362 - "GET / HTTP/1.1" 200
+INFO     2023-02-25 22:32:23.984 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:38362 - "GET /register/ HTTP/1.1" 200
+INFO     2023-02-25 22:32:30.184 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:36048 - "POST /register/ HTTP/1.1" 302
+INFO     2023-02-25 22:32:30.190 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:36048 - "GET /?msg=Successfully-Registered HTTP/1.1" 200
+INFO     2023-02-25 22:32:30.288 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:36048 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2023-02-25 22:32:33.712 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:36052 - "GET /login/ HTTP/1.1" 200
+INFO     2023-02-25 22:32:41.591 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:34750 - "POST /login/ HTTP/1.1" 200
+INFO     2023-02-25 22:32:44.387 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:34750 - "GET / HTTP/1.1" 200
+INFO     2023-02-25 22:32:46.517 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:34750 - "GET /details/4 HTTP/1.1" 200
+INFO     2023-02-25 22:32:49.142 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:34750 - "GET /post-a-job/ HTTP/1.1" 200
+INFO     2023-02-25 22:32:55.210 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:46324 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2023-02-25 22:33:08.306 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:37114 - "POST /post-a-job/ HTTP/1.1" 200
+INFO     2023-02-25 22:33:15.306 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created asdadas
+INFO     2023-02-25 22:33:15.310 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:37124 - "POST /post-a-job/ HTTP/1.1" 302
+INFO     2023-02-25 22:33:15.315 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:37124 - "GET /details/6 HTTP/1.1" 200
+INFO     2023-02-25 22:33:18.037 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:37124 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2023-02-25 22:33:22.069 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:37124 - "DELETE /jobs/delete/5 HTTP/1.1" 200
+INFO     2023-02-25 22:33:25.258 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:37124 - "DELETE /jobs/delete/2 HTTP/1.1" 200
+INFO     2023-02-25 22:33:26.292 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:37124 - "GET /delete-job/ HTTP/1.1" 200
+INFO     2023-02-25 22:33:28.206 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:37124 - "GET /docs/ HTTP/1.1" 307
+INFO     2023-02-25 22:33:28.208 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:37124 - "GET /docs HTTP/1.1" 200
+INFO     2023-02-25 22:33:28.519 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:37124 - "GET /openapi.json HTTP/1.1" 200
+INFO     2023-02-25 22:33:33.191 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:45920 - "GET /redoc/ HTTP/1.1" 307
+INFO     2023-02-25 22:33:33.194 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:45920 - "GET /redoc HTTP/1.1" 200
+INFO     2023-02-25 22:33:33.430 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:45920 - "GET /openapi.json HTTP/1.1" 200
+INFO     2023-02-25 22:33:35.016 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:45920 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2023-02-25 22:33:42.743 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:43540 - "GET / HTTP/1.1" 200
+INFO     2023-02-25 22:37:07.752 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:37:07.753 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:37:07.854 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:37:07.855 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:37:07.855 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:37:07.856 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:37:07.856 request id: app - uvicorn.server:serve - Finished server process [20546]
+INFO     2023-02-25 22:37:07.856 request id: app - uvicorn.server:serve - Finished server process [20546]
+WARNING  2023-02-25 22:37:08.354 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:37:08.392 request id: app - uvicorn.server:serve - Started server process [21021]
+INFO     2023-02-25 22:37:08.392 request id: app - uvicorn.server:serve - Started server process [21021]
+INFO     2023-02-25 22:37:08.392 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:37:08.393 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:37:08.394 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:37:08.394 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:37:17.528 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:37:17.528 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:37:17.629 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:37:17.629 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:37:17.629 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:37:17.629 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:37:17.629 request id: app - uvicorn.server:serve - Finished server process [21021]
+INFO     2023-02-25 22:37:17.630 request id: app - uvicorn.server:serve - Finished server process [21021]
+WARNING  2023-02-25 22:37:18.080 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:37:18.117 request id: app - uvicorn.server:serve - Started server process [21090]
+INFO     2023-02-25 22:37:18.117 request id: app - uvicorn.server:serve - Started server process [21090]
+INFO     2023-02-25 22:37:18.117 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:37:18.117 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:37:18.118 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:37:18.118 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:37:41.202 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:37:41.203 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:37:41.304 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:37:41.306 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:37:41.307 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:37:41.307 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:37:41.308 request id: app - uvicorn.server:serve - Finished server process [21090]
+INFO     2023-02-25 22:37:41.308 request id: app - uvicorn.server:serve - Finished server process [21090]
+WARNING  2023-02-25 22:37:41.785 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:37:41.820 request id: app - uvicorn.server:serve - Started server process [21221]
+INFO     2023-02-25 22:37:41.821 request id: app - uvicorn.server:serve - Started server process [21221]
+INFO     2023-02-25 22:37:41.821 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:37:41.821 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:37:41.822 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:37:41.822 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:37:42.226 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:37:42.226 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:37:42.327 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:37:42.327 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:37:42.327 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:37:42.327 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:37:42.327 request id: app - uvicorn.server:serve - Finished server process [21221]
+INFO     2023-02-25 22:37:42.327 request id: app - uvicorn.server:serve - Finished server process [21221]
+WARNING  2023-02-25 22:37:42.829 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:37:42.866 request id: app - uvicorn.server:serve - Started server process [21270]
+INFO     2023-02-25 22:37:42.866 request id: app - uvicorn.server:serve - Started server process [21270]
+INFO     2023-02-25 22:37:42.866 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:37:42.866 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:37:42.867 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:37:42.867 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:39:51.369 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:39:51.369 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:39:51.470 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:39:51.470 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:39:51.470 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:39:51.471 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:39:51.471 request id: app - uvicorn.server:serve - Finished server process [21270]
+INFO     2023-02-25 22:39:51.472 request id: app - uvicorn.server:serve - Finished server process [21270]
+WARNING  2023-02-25 22:39:51.932 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:39:51.972 request id: app - uvicorn.server:serve - Started server process [21508]
+INFO     2023-02-25 22:39:51.972 request id: app - uvicorn.server:serve - Started server process [21508]
+INFO     2023-02-25 22:39:51.972 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:39:51.972 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:39:51.973 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:39:51.973 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:40:31.430 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:40:31.430 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:40:31.531 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:40:31.531 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:40:31.532 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:40:31.532 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:40:31.532 request id: app - uvicorn.server:serve - Finished server process [21508]
+INFO     2023-02-25 22:40:31.533 request id: app - uvicorn.server:serve - Finished server process [21508]
+WARNING  2023-02-25 22:40:37.363 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:40:37.402 request id: app - uvicorn.server:serve - Started server process [21613]
+INFO     2023-02-25 22:40:37.402 request id: app - uvicorn.server:serve - Started server process [21613]
+INFO     2023-02-25 22:40:37.402 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:40:37.402 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:40:37.403 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:40:37.403 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:41:15.151 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:41:15.151 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:41:15.254 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:41:15.255 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:41:15.255 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:41:15.256 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:41:15.256 request id: app - uvicorn.server:serve - Finished server process [21613]
+INFO     2023-02-25 22:41:15.257 request id: app - uvicorn.server:serve - Finished server process [21613]
+WARNING  2023-02-25 22:41:16.432 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:41:16.472 request id: app - uvicorn.server:serve - Started server process [21717]
+INFO     2023-02-25 22:41:16.472 request id: app - uvicorn.server:serve - Started server process [21717]
+INFO     2023-02-25 22:41:16.472 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:41:16.472 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:41:16.473 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:41:16.473 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:41:25.707 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:41:25.708 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:41:25.808 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:41:25.809 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:41:25.809 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:41:25.809 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:41:25.809 request id: app - uvicorn.server:serve - Finished server process [21717]
+INFO     2023-02-25 22:41:25.809 request id: app - uvicorn.server:serve - Finished server process [21717]
+WARNING  2023-02-25 22:41:26.261 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:41:26.297 request id: app - uvicorn.server:serve - Started server process [21768]
+INFO     2023-02-25 22:41:26.298 request id: app - uvicorn.server:serve - Started server process [21768]
+INFO     2023-02-25 22:41:26.298 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:41:26.298 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 22:41:26.299 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 22:41:26.299 request id: app - uvicorn.lifespan.on:startup - Application startup complete.

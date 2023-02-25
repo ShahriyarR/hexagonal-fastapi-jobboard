@@ -16,5 +16,5 @@ class UserSqlAlchemyRepository(UserRepositoryInterface):
     def _get_by_email(self, email: str) -> model.User:
         return self.session.query(model.User).filter_by(email=email).first()
 
-    def _get_by_id(self, id: int) -> model.User:
-        return self.session.query(model.User).filter_by(id=id).first()
+    def _get_by_id(self, id_: int) -> model.User:
+        return self.session.query(model.User).filter_by(id_=id_).first()

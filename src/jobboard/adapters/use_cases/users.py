@@ -1,6 +1,6 @@
 from typing import Union
 
-from src.jobboard.configurator.hashing import Hasher
+from src.jobboard.configurator.common.hashing import Hasher
 from src.jobboard.domain.model.model import user_model_event_factory
 from src.jobboard.domain.ports.common.responses import (
     ResponseFailure,

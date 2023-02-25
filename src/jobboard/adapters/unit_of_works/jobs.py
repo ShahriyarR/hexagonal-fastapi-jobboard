@@ -1,5 +1,7 @@
 from typing import Any, Callable
 
+from sqlalchemy.orm import Session
+
 from src.jobboard.adapters.repositories.jobs import JobSqlAlchemyRepository
 from src.jobboard.domain.ports.unit_of_works.jobs import JobUnitOfWorkInterface
 
@@ -9,7 +11,7 @@ class JobSqlAlchemyUnitOfWork(JobUnitOfWorkInterface):
         self.session_factory = session_factory()
 
     def __enter__(self):
-        self.session = self.session_factory()  # type: Session
+        self.session: Session = self.session_factory()
         self.jobs = JobSqlAlchemyRepository(self.session)
         return super().__enter__()
 

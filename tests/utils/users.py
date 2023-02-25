@@ -2,7 +2,7 @@ from dependency_injector.wiring import Provide, inject
 from fastapi import Depends
 from fastapi.testclient import TestClient
 
-from src.jobboard.configurator.hashing import Hasher
+from src.jobboard.configurator.common.hashing import Hasher
 from src.jobboard.domain.model.model import user_model_factory
 from src.jobboard.domain.ports.use_cases.users import UserServiceInterface
 from src.jobboard.domain.schemas.users import UserCreateInputDto
