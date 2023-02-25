@@ -1,3 +1,5 @@
+import contextlib
+
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
@@ -19,29 +21,29 @@ def configure_static(app):
     )
 
 
-def include_router(app):
-    app.include_router(api_router)
-    app.include_router(web_app_router)
+def include_router(app_):
+    app_.include_router(api_router)
+    app_.include_router(web_app_router)
 
 
-def _configure_logger(app):
-    app.logger = Container.LOGGER
+def _configure_logger(app_):
+    app_.logger = Container.LOGGER
 
 
-def _configure_tracer(app):
-    FastAPIInstrumentor.instrument_app(app, tracer_provider=tracer)
+def _configure_tracer(app_):
+    FastAPIInstrumentor.instrument_app(app_, tracer_provider=tracer)
 
 
 def start_application():
     container = Container()
-    app = FastAPI(title=settings.PROJECT_NAME, version=settings.PROJECT_VERSION)
-    app.container = container
-    _configure_logger(app)
-    _configure_tracer(app)
-    configure_static(app)
-    include_router(app)
+    app_ = FastAPI(title=settings.PROJECT_NAME, version=settings.PROJECT_VERSION)
+    app_.container = container
+    _configure_logger(app_)
+    _configure_tracer(app_)
+    configure_static(app_)
+    include_router(app_)
     start_mappers()
-    return app
+    return app_
 
 
 app = start_application()
@@ -49,4 +51,5 @@ app = start_application()
 
 @app.on_event("startup")
 async def startup():
-    Instrumentator().instrument(app).expose(app)
+    with contextlib.suppress(ValueError):
+        Instrumentator().instrument(app).expose(app)

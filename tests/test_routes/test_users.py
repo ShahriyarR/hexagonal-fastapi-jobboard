@@ -14,4 +14,4 @@ def test_create_user(app, client, get_fake_container):
         response = client.post("/users/", json=jsonable_encoder(data))
         assert response.status_code == 200
         assert response.json()["email"] == "testuser@nofoobar.com"
-        assert response.json()["is_active"] == True
+        assert response.json()["is_active"] is True

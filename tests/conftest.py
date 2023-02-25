@@ -1,3 +1,4 @@
+import contextlib
 import uuid
 from datetime import datetime
 from typing import Any, Generator
@@ -22,13 +23,13 @@ engine = create_engine(
 SessionTesting = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 
-@pytest.fixture(scope="module", autouse=True)
+@pytest.fixture(scope="package")
 def get_fake_container():
     return Container()
 
 
-@pytest.fixture(scope="module")
-def app(get_fake_container):
+@pytest.fixture(scope="package")
+def app():
     metadata.create_all(engine)
     yield original_app
     metadata.drop_all(engine)

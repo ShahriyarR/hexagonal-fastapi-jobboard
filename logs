@@ -4350,3 +4350,261 @@ INFO     2022-11-23 13:11:28.914 request id: app - uvicorn.lifespan.on:shutdown 
 INFO     2022-11-23 13:11:28.914 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
 INFO     2022-11-23 13:11:28.915 request id: app - uvicorn.server:serve - Finished server process [9]
 INFO     2022-11-23 13:11:28.916 request id: app - uvicorn.server:serve - Finished server process [9]
+WARNING  2023-02-25 21:48:05.925 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+WARNING  2023-02-25 21:50:55.096 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+WARNING  2023-02-25 21:54:06.433 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 21:54:06.468 request id: app - uvicorn.server:serve - Started server process [13298]
+INFO     2023-02-25 21:54:06.468 request id: app - uvicorn.server:serve - Started server process [13298]
+INFO     2023-02-25 21:54:06.469 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 21:54:06.469 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+ERROR    2023-02-25 21:54:06.470 request id: app - uvicorn.lifespan.on:send - Traceback (most recent call last):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/./src/jobboard/adapters/entrypoints/application.py", line 52, in startup
+    Instrumentator().instrument(app).expose(app)
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/prometheus_fastapi_instrumentator/instrumentation.py", line 121, in instrument
+    app.add_middleware(
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/applications.py", line 135, in add_middleware
+    raise RuntimeError("Cannot add middleware after an application has started")
+RuntimeError: Cannot add middleware after an application has started
+
+ERROR    2023-02-25 21:54:06.471 request id: app - uvicorn.lifespan.on:send - Traceback (most recent call last):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/./src/jobboard/adapters/entrypoints/application.py", line 52, in startup
+    Instrumentator().instrument(app).expose(app)
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/prometheus_fastapi_instrumentator/instrumentation.py", line 121, in instrument
+    app.add_middleware(
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/applications.py", line 135, in add_middleware
+    raise RuntimeError("Cannot add middleware after an application has started")
+RuntimeError: Cannot add middleware after an application has started
+
+ERROR    2023-02-25 21:54:06.471 request id: app - uvicorn.lifespan.on:startup - Application startup failed. Exiting.
+ERROR    2023-02-25 21:54:06.471 request id: app - uvicorn.lifespan.on:startup - Application startup failed. Exiting.
+WARNING  2023-02-25 21:55:46.988 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 21:55:47.023 request id: app - uvicorn.server:serve - Started server process [13937]
+INFO     2023-02-25 21:55:47.023 request id: app - uvicorn.server:serve - Started server process [13937]
+INFO     2023-02-25 21:55:47.023 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 21:55:47.024 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+ERROR    2023-02-25 21:55:47.025 request id: app - uvicorn.lifespan.on:send - Traceback (most recent call last):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/./src/jobboard/adapters/entrypoints/application.py", line 52, in startup
+    Instrumentator().instrument(app).expose(app)
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/prometheus_fastapi_instrumentator/instrumentation.py", line 121, in instrument
+    app.add_middleware(
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/applications.py", line 135, in add_middleware
+    raise RuntimeError("Cannot add middleware after an application has started")
+RuntimeError: Cannot add middleware after an application has started
+
+ERROR    2023-02-25 21:55:47.025 request id: app - uvicorn.lifespan.on:send - Traceback (most recent call last):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/./src/jobboard/adapters/entrypoints/application.py", line 52, in startup
+    Instrumentator().instrument(app).expose(app)
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/prometheus_fastapi_instrumentator/instrumentation.py", line 121, in instrument
+    app.add_middleware(
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/applications.py", line 135, in add_middleware
+    raise RuntimeError("Cannot add middleware after an application has started")
+RuntimeError: Cannot add middleware after an application has started
+
+ERROR    2023-02-25 21:55:47.026 request id: app - uvicorn.lifespan.on:startup - Application startup failed. Exiting.
+ERROR    2023-02-25 21:55:47.026 request id: app - uvicorn.lifespan.on:startup - Application startup failed. Exiting.
+WARNING  2023-02-25 21:56:12.888 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 21:56:12.965 request id: app - uvicorn.server:serve - Started server process [14110]
+INFO     2023-02-25 21:56:12.966 request id: app - uvicorn.server:serve - Started server process [14110]
+INFO     2023-02-25 21:56:12.966 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 21:56:12.966 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+ERROR    2023-02-25 21:56:12.968 request id: app - uvicorn.lifespan.on:send - Traceback (most recent call last):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/./src/jobboard/adapters/entrypoints/application.py", line 52, in startup
+    Instrumentator().instrument(app).expose(app)
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/prometheus_fastapi_instrumentator/instrumentation.py", line 121, in instrument
+    app.add_middleware(
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/applications.py", line 135, in add_middleware
+    raise RuntimeError("Cannot add middleware after an application has started")
+RuntimeError: Cannot add middleware after an application has started
+
+ERROR    2023-02-25 21:56:12.969 request id: app - uvicorn.lifespan.on:send - Traceback (most recent call last):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/./src/jobboard/adapters/entrypoints/application.py", line 52, in startup
+    Instrumentator().instrument(app).expose(app)
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/prometheus_fastapi_instrumentator/instrumentation.py", line 121, in instrument
+    app.add_middleware(
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/applications.py", line 135, in add_middleware
+    raise RuntimeError("Cannot add middleware after an application has started")
+RuntimeError: Cannot add middleware after an application has started
+
+ERROR    2023-02-25 21:56:12.969 request id: app - uvicorn.lifespan.on:startup - Application startup failed. Exiting.
+ERROR    2023-02-25 21:56:12.970 request id: app - uvicorn.lifespan.on:startup - Application startup failed. Exiting.
+WARNING  2023-02-25 21:57:36.770 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 21:57:36.806 request id: app - uvicorn.server:serve - Started server process [14472]
+INFO     2023-02-25 21:57:36.806 request id: app - uvicorn.server:serve - Started server process [14472]
+INFO     2023-02-25 21:57:36.807 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 21:57:36.807 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+ERROR    2023-02-25 21:57:36.808 request id: app - uvicorn.lifespan.on:send - Traceback (most recent call last):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/./src/jobboard/adapters/entrypoints/application.py", line 52, in startup
+    Instrumentator().instrument(app).expose(app)
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/prometheus_fastapi_instrumentator/instrumentation.py", line 121, in instrument
+    app.add_middleware(
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/applications.py", line 135, in add_middleware
+    raise RuntimeError("Cannot add middleware after an application has started")
+RuntimeError: Cannot add middleware after an application has started
+
+ERROR    2023-02-25 21:57:36.808 request id: app - uvicorn.lifespan.on:send - Traceback (most recent call last):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 671, in lifespan
+    async with self.lifespan_context(app):
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __aenter__
+    await self._router.startup()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/routing.py", line 648, in startup
+    await handler()
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/./src/jobboard/adapters/entrypoints/application.py", line 52, in startup
+    Instrumentator().instrument(app).expose(app)
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/prometheus_fastapi_instrumentator/instrumentation.py", line 121, in instrument
+    app.add_middleware(
+  File "/home/shahriyarrzayev/REPOS/others/hexagonal-fastapi-jobboard/.venv/lib/python3.9/site-packages/starlette/applications.py", line 135, in add_middleware
+    raise RuntimeError("Cannot add middleware after an application has started")
+RuntimeError: Cannot add middleware after an application has started
+
+ERROR    2023-02-25 21:57:36.808 request id: app - uvicorn.lifespan.on:startup - Application startup failed. Exiting.
+ERROR    2023-02-25 21:57:36.808 request id: app - uvicorn.lifespan.on:startup - Application startup failed. Exiting.
+WARNING  2023-02-25 21:59:35.903 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 21:59:35.939 request id: app - uvicorn.server:serve - Started server process [15006]
+INFO     2023-02-25 21:59:35.939 request id: app - uvicorn.server:serve - Started server process [15006]
+INFO     2023-02-25 21:59:35.940 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 21:59:35.940 request id: app - uvicorn.lifespan.on:startup - Waiting for application startup.
+INFO     2023-02-25 21:59:35.941 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 21:59:35.941 request id: app - uvicorn.lifespan.on:startup - Application startup complete.
+INFO     2023-02-25 21:59:38.611 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:41096 - "GET / HTTP/1.1" 200
+INFO     2023-02-25 21:59:38.666 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:41096 - "GET /js/autocomplete.js HTTP/1.1" 200
+INFO     2023-02-25 21:59:38.764 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:41096 - "GET /images/logo.png HTTP/1.1" 200
+INFO     2023-02-25 21:59:38.838 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:41096 - "GET /favicon.ico HTTP/1.1" 404
+INFO     2023-02-25 21:59:47.566 request id: app - uvicorn.protocols.http.h11_impl:send - 127.0.0.1:41098 - "GET /register/ HTTP/1.1" 200
+WARNING  2023-02-25 21:59:58.107 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 21:59:58.652 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 21:59:58.670 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 21:59:58.694 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 21:59:58.710 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 21:59:58.731 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 21:59:58.758 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+WARNING  2023-02-25 21:59:59.020 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 81222, max 65000
+INFO     2023-02-25 22:00:32.579 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:00:32.579 request id: app - uvicorn.server:shutdown - Shutting down
+INFO     2023-02-25 22:00:32.681 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:00:32.682 request id: app - uvicorn.lifespan.on:shutdown - Waiting for application shutdown.
+INFO     2023-02-25 22:00:32.684 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:00:32.684 request id: app - uvicorn.lifespan.on:shutdown - Application shutdown complete.
+INFO     2023-02-25 22:00:32.685 request id: app - uvicorn.server:serve - Finished server process [15006]
+INFO     2023-02-25 22:00:32.686 request id: app - uvicorn.server:serve - Finished server process [15006]
+WARNING  2023-02-25 22:00:35.407 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:00:35.962 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:00:35.981 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:00:36.004 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:00:36.020 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:00:36.042 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:00:36.070 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+WARNING  2023-02-25 22:00:36.343 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 81217, max 65000
+WARNING  2023-02-25 22:01:51.122 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:01:51.470 request id: SEND_USER_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_user_created_notification - User created testuser
+WARNING  2023-02-25 22:02:08.059 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:02:08.411 request id: SEND_USER_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_user_created_notification - User created testuser
+WARNING  2023-02-25 22:02:28.807 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:02:29.360 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:02:29.378 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:02:29.400 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:02:29.416 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:02:29.438 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:02:29.466 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+WARNING  2023-02-25 22:02:29.733 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 81235, max 65000
+WARNING  2023-02-25 22:06:48.607 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:06:49.165 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:06:49.183 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:06:49.205 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:06:49.222 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:06:49.248 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:06:49.278 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+WARNING  2023-02-25 22:06:49.552 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 81203, max 65000
+WARNING  2023-02-25 22:07:15.274 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:07:15.796 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:07:15.813 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:07:15.835 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:07:15.853 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:07:15.882 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:07:15.919 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+WARNING  2023-02-25 22:07:16.192 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 81218, max 65000
+WARNING  2023-02-25 22:09:28.930 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:09:29.461 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:09:29.479 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:09:29.499 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:09:29.519 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:09:29.555 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:09:29.590 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+WARNING  2023-02-25 22:09:29.783 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 80351, max 65000
+WARNING  2023-02-25 22:09:38.355 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:09:38.678 request id: SEND_USER_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_user_created_notification - User created testuser
+WARNING  2023-02-25 22:09:45.599 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:09:46.124 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:09:46.141 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:09:46.161 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:09:46.176 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:09:46.200 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:09:46.233 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+WARNING  2023-02-25 22:09:46.452 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 80351, max 65000
+WARNING  2023-02-25 22:13:26.368 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:13:26.877 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:13:26.894 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:13:26.914 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:13:26.928 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:13:26.946 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:13:26.971 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+WARNING  2023-02-25 22:13:27.156 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 80400, max 65000
+WARNING  2023-02-25 22:16:09.635 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:16:10.161 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:16:10.179 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:16:10.199 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:16:10.215 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:16:10.237 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:16:10.265 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+WARNING  2023-02-25 22:16:10.448 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 80421, max 65000
+WARNING  2023-02-25 22:19:33.533 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+WARNING  2023-02-25 22:19:55.854 request id: app - opentelemetry.attributes:_clean_attribute - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+INFO     2023-02-25 22:19:56.394 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:19:56.413 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:19:56.434 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:19:56.450 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:19:56.478 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:19:56.504 request id: SEND_JOB_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_job_created_notification - Job created New Job super
+INFO     2023-02-25 22:19:56.729 request id: SEND_USER_CREATED_NOTIFICATION - src.jobboard.domain.ports.common.messagebus:send_user_created_notification - User created testuser
+WARNING  2023-02-25 22:19:56.768 request id: app - opentelemetry.exporter.jaeger.thrift.send:emit - Data exceeds the max UDP packet size; size 86346, max 65000

@@ -11,7 +11,7 @@ classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
 requires-python = ">=3.9"
 dependencies = [
-    "fastapi >= 0.85.0",
+    "fastapi == 0.90.1",
     "uvicorn >= 0.18.3",
     "dependency-injector >= 4.40.0",
     "psycopg2-binary >= 2.9.3",
@@ -36,13 +36,14 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "black >=22.3.0",
-    "pylint >=2.12.2",
-    "isort >=5.9.3",
+    "black >=23.1.0",
+    "isort >=5.12.0",
     "autoflake >=1.4",
-    "flake8 >=4.0.1",
-    "pre-commit >=2.17.0",
-    "pytype >=2022.1.31",
+    "flake8 >=6.0.0",
+    "pre-commit >=2.21.0",
+    "pytype >= 2022.12.15",
+    "bandit >= 1.7.4",
+    "flake8-bugbear >= 22.12.6",
     ]
 test = [
     "pytest >=7.1.3",
@@ -56,7 +57,23 @@ skip = [".gitignore", ".dockerignore"]
 extend_skip = [".md", ".json"]
 skip_glob = ["docs/*"]
 
+
 [tool.black]
 line-length = 88
 target-version = ['py39']
 include = '\.pyi?$'
+
+[tool.bandit]
+skips = ["B311"]
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "serial",
+]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "-ra",
+]
+testpaths = "tests"

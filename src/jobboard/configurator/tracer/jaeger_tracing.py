@@ -13,7 +13,9 @@ trace.set_tracer_provider(tracer)
 
 jaeger_exporter = JaegerExporter(
     agent_host_name=os.environ.get("JAEGER_AGENT_HOST"),
-    agent_port=int(os.environ.get("JAEGER_AGENT_PORT")),
+    agent_port=int(os.environ.get("JAEGER_AGENT_PORT"))
+    if os.environ.get("JAEGER_AGENT_PORT")
+    else None,
 )
 
 span_processor = BatchSpanProcessor(jaeger_exporter)

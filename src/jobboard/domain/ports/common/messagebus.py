@@ -1,7 +1,6 @@
-from typing import Callable, Type
-
 from loguru import logger
 
+from typing import Callable
 from src.jobboard.domain.model import events
 
 
@@ -20,7 +19,7 @@ def send_job_created_notification(event: events.JobCreated):
         logger.info(f"Job created {event.title}")
 
 
-HANDLERS = {
+HANDLERS: dict[type[events.Event], list[Callable]] = {
     events.UserCreated: [send_user_created_notification],
     events.JobCreated: [send_job_created_notification],
-}  # type: dict[Type[events.Event], list[Callable]]
+}

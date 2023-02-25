@@ -1,7 +1,5 @@
 from typing import Any, Callable
 
-from sqlalchemy.orm.session import Session
-
 from src.jobboard.adapters.repositories.jobs import JobSqlAlchemyRepository
 from src.jobboard.domain.ports.unit_of_works.jobs import JobUnitOfWorkInterface
 
